@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">Vilnius Guide</string>
+
+    <string name="img_desc_object_picture">Object picture</string>
+    <string name="img_desc_favourites">Favourites</string>
+    <string name="img_desc_place_mark">Place mark</string>
+
+    <string name="category_name_arch">Architecture</string>
+    <string name="category_name_sculpt">Sculpture</string>
+    <string name="category_name_walks">Walks and Sightseeing</string>
+    <string name="category_name_cinema">Cinema and Theatre</string>
+    <string name="category_name_eat">Eat and Drink</string>
+    <string name="category_name_shop">Shopping</string>
+    <string name="category_name_favour">Favourites</string>
+
+    <string name="arch_object_name_1">Cathedral basilica</string>
+    <string name="arch_place_1">Katedros a. 1</string>
+    <string name="arch_official_link_1">http://www.katedra.lt/</string>
+    <string name="arch_description_1">The Cathedral of St. Stanislav and St. Vladislav is the most
+        important place of worship for Lithuania’s Catholics, and the venue for the country’s main
+        Christian and national festivities. \n\n
+        In 1922, the Cathedral was granted the title of ‘Basilica’, by Pope Pius XI. \n\n
+        Many key figures in Lithuanian history are buried in the Sovereigns’ Mausoleum, which is
+        located beneath the chapel of St. Casimir. Its vaults contain the remains of Vytautas The
+        Great, the Grand Duke of Lithuania, and King Alexander of Poland. The vaults are not only
+        restricted to kings, either - the two wives of Žygimantas Augustas, Queen Elisabeth of
+        Austria and Queen Barbora Radvilaitė. The cathedral containing the ashes of King Vladislovas
+        Vaza (Wladyslaw Vasa) are also buried here. \n\n
+        The cathedral’s original temple dates back to between the 13th or 15th century.
+    </string>
+    <string name="arch_resources_1">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/churches/cathedral-basilica/</string>
+    <string name="arch_google_link_1">https://goo.gl/maps/pr9kiHP6SJR2</string>
+
+    <string name="arch_object_name_2">Church St Bartholomew’s</string>
+    <string name="arch_place_2">Užupio g. 17A</string>
+    <string name="arch_description_2">Little Saint Bartholomew’s Church stands on the bank of the
+        Vilnia river in Užupis. As you approach it seems to hide, blending in with the houses along
+        the street leading to the Bernardine cemetery.\n\n
+        The newly-constructed church was the victim of a fire during a war with Muscovy. In 1778 an
+        oratory was built by the monks to a design by architect Martynas Knakfusas
+        (Martin Knackfuss). This was later converted into a church by Fr Augustinas Stodolnikas in
+        1823–1824. This church still survives, having had a steeple added in 1881.\n\n
+        However it was closed by the Soviet occupation regime in 1949 and converted into a sculpture
+        workshop. In 1997 Saint Bartholomew’s Church was presented to the Belarussian Catholic
+        community of Vilnius.
+    </string>
+    <string name="arch_resources_2">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/churches/st-bartholomew-e2-80-99s-church/</string>
+    <string name="arch_google_link_2">https://goo.gl/maps/9eaG964sGTS2</string>
+
+    <string name="arch_object_name_3">Church of Bernardine</string>
+    <string name="arch_place_3">Maironio g. 10</string>
+    <string name="arch_official_link_3">http://www.bernardinuansamblis.lt</string>
+    <string name="arch_description_3">A full name of the Church is the Church of St Francis from
+        Assisi (Bernardine). The building is monumental. In case of need it could have been used not
+        only for prayer but also for defense. This is testified to by 19 aleois in the northern
+        facade. Gothic pointed-arch windows and buttresses stand out on the facade; the 17th-century
+        renaissance pediment is adjusted to the Gothic part with a 19th-century fresco. In the times
+        of the Soviet occupation the Church was closed down and converted into a warehouse. After
+        Lithuania re-established its independence, the Franciscan monks came back to the Church from
+        the underground. The Bernardine complex has been declared to be a monument of Lithuanian
+        cultural heritage, and in 2008 it was granted the status of a cultural project of importance
+        to the state.\n\n
+        2008 Vilnius Bernardine historical – architectural ensemble was reconstructed (lofts of the
+        church, choir and administrative premises of the cloister, the gate of the church,
+        the passage, the basement and the inner courtyard were renovated), tourist observation paths
+        were made.\n\n
+        Well-ordered heritage of Vilnius Bernardine historical-architectural ensemble, the entire
+        complex of the tourist route and the Lithuanian museum of sacral art created will provide
+        local and foreign tourists with the opportunity to become acquainted with the heritage of
+        sacral art and gothic architecture in Lithuania.
+    </string>
+    <string name="arch_resources_3">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/churches/bernardine-church/</string>
+    <string name="arch_google_link_3">https://goo.gl/maps/oCaMa4VUdTH2</string>
+
+    <string name="arch_object_name_4">Church of Sts Johns</string>
+    <string name="arch_place_4">Šv. Jono g. 12</string>
+    <string name="arch_official_link_4">http://www.jonai.lt</string>
+    <string name="arch_description_4">One of the picturesque parts of the Vilnius University
+        building is the Church of Sts. Johns and its bell tower. The full name of the church is the
+        Church of St. John the Baptist and St. John the Evangelist.\n\n
+        The construction of this church lasted for almost 40 years and was completed in 1426.
+        At that time it was a Gothic building. In 1571 the church was transferred to the Order of
+        Jesuits and became a part of the university complexes.\n\n
+        Besides masses, the Church of Sts. Johns has also witnessed student protests, theatre
+        performances, and welcoming ceremonies for kings. In Soviet times, it was turned into a
+        warehouse. Later, the University Museum was established here.\n\n
+        Today, the Church of Sts. Johns performs its main functions once again.
+        It was visited by Pope John Paul II in 1993.\n\n
+        The bell tower of the church, which is 68 meters high, is among the highest buildings
+        in the Old Town. The present facade was designed in the 18th century by the most prominent
+        Vilnius Baroque architect, Jonas Kristupas Glaubicas (Johan Christoph Glaubitz).
+    </string>
+    <string name="arch_resources_4">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/churches/church-of-sts-johns/</string>
+    <string name="arch_google_link_4">https://goo.gl/maps/85XTqcJKEM32</string>
+
+    <string name="arch_object_name_5">Church of St Anne</string>
+    <string name="arch_place_5">Maironio g. 8</string>
+    <string name="arch_official_link_5">http://www.onosbaznycia.lt</string>
+    <string name="arch_description_5">The church of St Anne is a masterpiece of the late Gothic
+    period. There is no consensus about its originator or its construction period. Popular legend
+    says that Napoleon Bonaparte, who was fascinated by the beauty of the church, wanted to take it
+    back to Paris in the palm of his hand. Unfortunately, the reality is not that romantic: during
+    the march of the Napoleonic army through Lithuania, the church was consigned to the French
+    cavalry forces. However, Napoleon did mention in a letter to his wife that „Vilnius is a very
+    beautiful city“.\n\n
+    St Anne’s Church, which has survived to the present day without changing for over 500 years,
+    has become a symbol of Vilnius. At a closer look, one can see the letters A and M in the main
+    facade of St Anne‘s. The letters A and M could stand for the Latin Ana Mater Maria or Ave Maria,
+    i.e. „Saint Anne – Mother of Mary“ or „Hail Mary“. Some experts claim that the Pillars of
+    Gediminas have been highlighted in the composition of the facade with the three towers of the
+    church corresponding to the three pillars.\n\n
+    Next to the church there is a bell tower initiating the Gothic style and built in the 19th century.
+    </string>
+    <string name="arch_resources_5">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/churches/church-of-st-anne/</string>
+    <string name="arch_google_link_5">https://goo.gl/maps/oKx9UMCLJrm</string>
+
+    <string name="sculpt_object_name_1">Sculpture</string>
+    <string name="sculpt_place_1">Sculpture</string>
+    <string name="sculpt_description_1">Sculpture</string>
+
+    <string name="walks_object_name_1">Walks and Sightseeing</string>
+    <string name="walks_place_1">Walks and Sightseeing</string>
+    <string name="walks_description_1">Walks and Sightseeing</string>
+
+    <string name="cinema_object_name_1">Cinema and Theatre</string>
+    <string name="cinema_place_1">Cinema and Theatre</string>
+    <string name="cinema_description_1">Cinema and Theatre</string>
+
+    <string name="eat_object_name_1">Eat and Drink</string>
+    <string name="eat_place_1">Eat and Drink</string>
+    <string name="eat_description_1">Eat and Drink</string>
+
+    <string name="shop_object_name_1">Shopping</string>
+    <string name="shop_place_1">Shopping</string>
+    <string name="shop_description_1">Shopping</string>
+
+    <string name="favour_object_name_1">Favourites</string>
+    <string name="button_share">Share</string>
+    <string name="button_more">More</string>
+
+
+</resources>
