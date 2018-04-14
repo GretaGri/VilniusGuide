@@ -11,29 +11,29 @@
     <string name="category_name_cinema">Cinema and Theatre</string>
     <string name="category_name_eat">Eat and Drink</string>
     <string name="category_name_shop">Shopping</string>
-    <string name="category_name_favour">Favourites</string>
+    <string name="category_name_favour">Favorites</string>
 
     <string name="arch_object_name_1">Cathedral basilica</string>
     <string name="arch_place_1">Katedros a. 1</string>
     <string name="arch_official_link_1">http://www.katedra.lt/</string>
     <string name="arch_description_1">The Cathedral of St. Stanislav and St. Vladislav is the most
         important place of worship for Lithuania’s Catholics, and the venue for the country’s main
-        Christian and national festivities. \n\n
-        In 1922, the Cathedral was granted the title of ‘Basilica’, by Pope Pius XI. \n\n
-        Many key figures in Lithuanian history are buried in the Sovereigns’ Mausoleum, which is
-        located beneath the chapel of St. Casimir. Its vaults contain the remains of Vytautas The
-        Great, the Grand Duke of Lithuania, and King Alexander of Poland. The vaults are not only
-        restricted to kings, either - the two wives of Žygimantas Augustas, Queen Elisabeth of
-        Austria and Queen Barbora Radvilaitė. The cathedral containing the ashes of King Vladislovas
-        Vaza (Wladyslaw Vasa) are also buried here. \n\n
-        The cathedral’s original temple dates back to between the 13th or 15th century.
+        Christian and national festivities.\n\nIn 1922, the Cathedral was granted the title of
+        ‘Basilica’, by Pope Pius XI.\n\nMany key figures in Lithuanian history are buried in the
+        Sovereigns’ Mausoleum, which is located beneath the chapel of St. Casimir. Its vaults
+        contain the remains of Vytautas The Great, the Grand Duke of Lithuania, and King Alexander
+        of Poland. The vaults are not only restricted to kings, either - the two wives of Žygimantas
+        Augustas, Queen Elisabeth of Austria and Queen Barbora Radvilaitė. The cathedral containing
+        the ashes of King Vladislovas Vaza (Wladyslaw Vasa) are also buried here.\n\nThe cathedral’s
+        original temple dates back to between the 13th or 15th century.
     </string>
-    <string name="arch_resources_1">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/churches/cathedral-basilica/</string>
-    <string name="arch_google_link_1">https://goo.gl/maps/pr9kiHP6SJR2</string>
+    <string name="arch_resources_1">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/chu
+        rches/cathedral-basilica/</string>
+    <string name="arch_google_link_1">https://goo.gl/maps/X5pDAfpyeLk</string>
 
-    <string name="arch_object_name_2">Church St Bartholomew’s</string>
+    <string name="arch_object_name_2">Church St. Bartholomew\’s</string>
     <string name="arch_place_2">Užupio g. 17A</string>
-    <string name="arch_description_2">Little Saint Bartholomew’s Church stands on the bank of the
+    <string name="arch_description_2">Little Saint Bartholomew\’s Church stands on the bank of the
         Vilnia river in Užupis. As you approach it seems to hide, blending in with the houses along
         the street leading to the Bernardine cemetery.\n\n
         The newly-constructed church was the victim of a fire during a war with Muscovy. In 1778 an
@@ -41,16 +41,17 @@
         (Martin Knackfuss). This was later converted into a church by Fr Augustinas Stodolnikas in
         1823–1824. This church still survives, having had a steeple added in 1881.\n\n
         However it was closed by the Soviet occupation regime in 1949 and converted into a sculpture
-        workshop. In 1997 Saint Bartholomew’s Church was presented to the Belarussian Catholic
+        workshop. In 1997 Saint Bartholomew\’s Church was presented to the Belarussian Catholic
         community of Vilnius.
     </string>
-    <string name="arch_resources_2">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/churches/st-bartholomew-e2-80-99s-church/</string>
-    <string name="arch_google_link_2">https://goo.gl/maps/9eaG964sGTS2</string>
+    <string name="arch_resources_2">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/chu
+        rches/st-bartholomew-e2-80-99s-church/</string>
+    <string name="arch_google_link_2">https://goo.gl/maps/KkYDSMeDLRD2</string>
 
     <string name="arch_object_name_3">Church of Bernardine</string>
     <string name="arch_place_3">Maironio g. 10</string>
     <string name="arch_official_link_3">http://www.bernardinuansamblis.lt</string>
-    <string name="arch_description_3">A full name of the Church is the Church of St Francis from
+    <string name="arch_description_3">A full name of the Church is the Church of St. Francis from
         Assisi (Bernardine). The building is monumental. In case of need it could have been used not
         only for prayer but also for defense. This is testified to by 19 aleois in the northern
         facade. Gothic pointed-arch windows and buttresses stand out on the facade; the 17th-century
@@ -69,19 +70,20 @@
         local and foreign tourists with the opportunity to become acquainted with the heritage of
         sacral art and gothic architecture in Lithuania.
     </string>
-    <string name="arch_resources_3">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/churches/bernardine-church/</string>
-    <string name="arch_google_link_3">https://goo.gl/maps/oCaMa4VUdTH2</string>
+    <string name="arch_resources_3">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/chu
+        rches/bernardine-church/</string>
+    <string name="arch_google_link_3">https://goo.gl/maps/mmZjjSu4Py32</string>
 
-    <string name="arch_object_name_4">Church of Sts Johns</string>
+    <string name="arch_object_name_4">Church of Sts. Johns\'</string>
     <string name="arch_place_4">Šv. Jono g. 12</string>
     <string name="arch_official_link_4">http://www.jonai.lt</string>
     <string name="arch_description_4">One of the picturesque parts of the Vilnius University
-        building is the Church of Sts. Johns and its bell tower. The full name of the church is the
+        building is the Church of Sts. Johns\' and its bell tower. The full name of the church is the
         Church of St. John the Baptist and St. John the Evangelist.\n\n
         The construction of this church lasted for almost 40 years and was completed in 1426.
         At that time it was a Gothic building. In 1571 the church was transferred to the Order of
         Jesuits and became a part of the university complexes.\n\n
-        Besides masses, the Church of Sts. Johns has also witnessed student protests, theatre
+        Besides masses, the Church of Sts. Johns\' has also witnessed student protests, theatre
         performances, and welcoming ceremonies for kings. In Soviet times, it was turned into a
         warehouse. Later, the University Museum was established here.\n\n
         Today, the Church of Sts. Johns performs its main functions once again.
@@ -90,33 +92,269 @@
         in the Old Town. The present facade was designed in the 18th century by the most prominent
         Vilnius Baroque architect, Jonas Kristupas Glaubicas (Johan Christoph Glaubitz).
     </string>
-    <string name="arch_resources_4">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/churches/church-of-sts-johns/</string>
-    <string name="arch_google_link_4">https://goo.gl/maps/85XTqcJKEM32</string>
+    <string name="arch_resources_4">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/chu
+        rches/church-of-sts-johns/</string>
+    <string name="arch_google_link_4">https://goo.gl/maps/gA7rGGm1Gk62</string>
 
-    <string name="arch_object_name_5">Church of St Anne</string>
+    <string name="arch_object_name_5">Church of St. Anne</string>
     <string name="arch_place_5">Maironio g. 8</string>
     <string name="arch_official_link_5">http://www.onosbaznycia.lt</string>
-    <string name="arch_description_5">The church of St Anne is a masterpiece of the late Gothic
+    <string name="arch_description_5">The church of St. Anne’s is a masterpiece of the late Gothic
     period. There is no consensus about its originator or its construction period. Popular legend
     says that Napoleon Bonaparte, who was fascinated by the beauty of the church, wanted to take it
     back to Paris in the palm of his hand. Unfortunately, the reality is not that romantic: during
     the march of the Napoleonic army through Lithuania, the church was consigned to the French
     cavalry forces. However, Napoleon did mention in a letter to his wife that „Vilnius is a very
     beautiful city“.\n\n
-    St Anne’s Church, which has survived to the present day without changing for over 500 years,
+    St. Anne\’s Church, which has survived to the present day without changing for over 500 years,
     has become a symbol of Vilnius. At a closer look, one can see the letters A and M in the main
-    facade of St Anne‘s. The letters A and M could stand for the Latin Ana Mater Maria or Ave Maria,
+    facade of St. Anne\‘s. The letters A and M could stand for the Latin Ana Mater Maria or Ave Maria,
     i.e. „Saint Anne – Mother of Mary“ or „Hail Mary“. Some experts claim that the Pillars of
     Gediminas have been highlighted in the composition of the facade with the three towers of the
     church corresponding to the three pillars.\n\n
     Next to the church there is a bell tower initiating the Gothic style and built in the 19th century.
     </string>
-    <string name="arch_resources_5">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/churches/church-of-st-anne/</string>
-    <string name="arch_google_link_5">https://goo.gl/maps/oKx9UMCLJrm</string>
+    <string name="arch_resources_5">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/chu
+        rches/church-of-st-anne/</string>
+    <string name="arch_google_link_5">https://goo.gl/maps/wLBWPaxUXPq</string>
 
-    <string name="sculpt_object_name_1">Sculpture</string>
-    <string name="sculpt_place_1">Sculpture</string>
-    <string name="sculpt_description_1">Sculpture</string>
+    <string name="arch_object_name_6">Gates of Dawn</string>
+    <string name="arch_place_6">Aušros Vartų g. 12</string>
+    <string name="arch_official_link_6">http://www.ausrosvartai.lt</string>
+    <string name="arch_description_6">The Gates of Dawn is one of the most visited shrines in
+        Vilnius that is famous not only in Lithuania but also abroad, worshipped by the
+        representatives of other creeds too. This is the only surviving gate of the first original
+        five gates in the city wall that was built between 1503 and 1522.\n\nThe gates were first
+        mentioned in 1514. At first the Gates of Dawn were called the Medininkai Gate, as it is on
+        the road to Medininkai, in Polish Ostra Brama, the “Sharp Gate” because they were in the
+        southern end of the city, which was called the Sharp.\n\nLater, due to the cult of the
+        Virgin Mary they could be related to the sunrise, dawn.\n\nThe painting of the Blessed
+        Virgin Mary, Mother of Mercy, in the Chapel of the Gates of Dawn is known all over the
+        world. Many churches in other countries have copies of this painting. The picture, which is
+        also called “Vilnius Madonna”, was painted in 17th century. It is painted in the Renaissance
+        style, in tempera on oak boards, later repainted in oil. Since the middle of the 17th
+        century it has been said to have miracle-working powers. The Holy Mother of God of the Gates
+        of Dawn has been granted the title of Mother of Mercy twice.
+    </string>
+    <string name="arch_resources_6">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/chu
+        rches/gates-of-dawn/</string>
+    <string name="arch_google_link_6">https://goo.gl/maps/1FKDYBqMhqR2</string>
+
+    <string name="arch_object_name_7">Church of St. Nicholas\'</string>
+    <string name="arch_place_7">Didžioji g. 12</string>
+    <string name="arch_description_7">Grand Hetman of the Grand Duchy of Lithuania (LDK) Constantine
+        Astrozhski built this sanctuary in 1514. In the 18th century the Gothic Orhtodox Church was
+        damaged by fire, and thus, restored in the late Baroque style. Later, by order of General
+        Governor Muravyov, the Orthodox Church was remodelled in the Russian Byzantine style
+        (a marble board in the wall of the chapel is dedicated to Muravyov). Notwithstanding the
+        changes, a number of Gothic elements remained in the facade and interior.
+    </string>
+    <string name="arch_resources_7">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/shr
+        ines/russian-orthodox-church-of-st-nicholas/</string>
+    <string name="arch_google_link_7">https://goo.gl/maps/4uicWDWd8Mt</string>
+
+    <string name="arch_object_name_8">Palace of the Grand Dukes Of Lithuania</string>
+    <string name="arch_place_8">Katedros a. 4</string>
+    <string name="arch_official_link_8">http://www.valdovurumai.lt</string>
+    <string name="arch_description_8">The reconstructed Palace of the Grand Dukes of Lithuania, the
+        former political, diplomatic, cultural center of the State, was one of the most famous in
+        Europe in the 15th-17th centuries and was demolished in the beginning of the 19th century.
+        This Palace is excellent located just in the heart of Vilnius, within the confines of Lower
+        Castle. Nowadays the Gothic, Renaissance and Early Baroque halls of this multifunctional
+        Museum are ideally applicable to organize a different size and content public events,
+        official visits, conferences, meetings, seminars, concerts, performances, receptions and
+        other.\n\nPart of the reconstructed Palace of the Grand Dukes in Vilnius Lower Castle
+        officially transferred to the Museum. In the reconstructed Palace of the Grand Dukes of
+        Lithuania there are two exhibition tour routes directly related to the historical functions
+        of this residence. The first tour will show the historical and architectural development of
+        the palace by highlighting the ancient ruins still in place, excavated artifacts and by
+        using models and iconographic materials. The second tour route will bring the visitors into
+        the ceremonial halls, which have been reconstructed in such a way as to show the evolution
+        of architectural styles – from the late Gothic to the Renaissance to the early Baroque.
+    </string>
+    <string name="arch_resources_8">http://www.vilnius-tourism.lt/en/what-to-see/museums/palace-of-t
+        he-grand-dukes-of-lithuania/</string>
+    <string name="arch_google_link_8">https://goo.gl/maps/McwNw3iTuUJ2</string>
+
+    <string name="arch_object_name_9">Vilnius Town Hall</string>
+    <string name="arch_place_9">Didžioji g. 31</string>
+    <string name="arch_official_link_9">http://www.vilniausrotuse.lt</string>
+    <string name="arch_description_9">In 1387, Lithuania became a Christian state and Vilnius was
+    granted Magdeburg rights. Thus, there appeared a need for headquarters for the city authorities.
+    As the main square of the city was located here, it was decided to build the Town Hall in the
+    same place. The building housed the magistrate (in other words, the city councilors) as well as
+    court rooms, the treasury, archives, an arms and ammunition warehouse, and rooms for preserving
+    standards of measurement. A prison was established in the basement.\n\nThe Town Hall building
+    was Gothic to begin with and changed with time. The Town Hall was reconstructed for the last
+    time by the architect Laurynas Stuoka-Gucevičius at the end of the 18th century. During that
+    reconstruction, the Town Hall turned into a Classical building. In the 19th century, the Town
+    Hall was transformed into a city theatre where a famous personality – Polish composer Stanisław
+    Moniuszko – conducted the premier of his opera. Among all the Polish composers, only Frederic
+    Chopin could be considered more prominent than Moniuszko.\n\nIn the 20th century, an art museum
+    was housed in the Town Hall. Today Vilnius Town Hall is a representative building. Many
+    different events are organized at the Town Hall during a year: concerts, literary evenings,
+    presentations of books, exhibitions and festivals. The pediment of the Town Hall is adorned
+    with the coat-of-arms of the city of Vilnius – St Christopher carrying baby Jesus on his
+        shoulders.
+    </string>
+    <string name="arch_resources_9">http://www.vilnius-tourism.lt/en/what-to-see/top-20/town-hall/
+    </string>
+    <string name="arch_google_link_9">https://goo.gl/maps/S7hQp7zuJy42</string>
+
+    <string name="arch_object_name_10">The Bastion of Vilnius City Wall</string>
+    <string name="arch_place_10">Bokšto g. 20 / Subačiaus g. 18</string>
+    <string name="arch_official_link_10">http://www.lnm.lt</string>
+    <string name="arch_description_10">This is part of the Vilnius Defensive Wall, often called
+        “barbican”. The Bastion is a Renaissance-style fortification characterized by its original
+        construction. It consists of a tower installed in the city defense wall, underground gun
+        ports and a connecting corridor, which turns into a 48-metre long tunnel. The Bastion was
+        built in the first half of the 17th century by the German military engineer, Friedrich
+        Getkant. The Bastion was severely damaged during the wars with Moscow in the middle of the
+        17th century. During World Wars I and II, German military arsenals were located in the
+        building. You can enjoy a picturesque view of the Old Town from the Bastion terrace.
+    </string>
+    <string name="arch_resources_10">http://www.vilnius-tourism.lt/en/what-to-see/museums/the-basti
+        on-of-vilnius-city-wall/</string>
+    <string name="arch_google_link_10">https://goo.gl/maps/663TMyXx24J2</string>
+
+    <string name="sculpt_object_name_1">Monument to Tsemakh Shabad</string>
+    <string name="sculpt_place_1">Geto aukų aikštė</string>
+    <string name="sculpt_description_1">Sculptor: Romualdas Kvintas. 2007/n/nTsemakh Shabad was a
+        legendary personality. The doctor was active in various spheres of life, including charity
+        (he was one of the heads of the community for supporting refugees), health care
+        (as founder of the Ozė health community in Vilnius), education and science
+        (as an active figure in the Central Jewish Schools Organization and one of the initiators
+        of the establishment of YIVO), public affairs(together with J. Vygodskij he re-established
+        the Vilnius Jewish Community) and journalism.
+    </string>
+    <string name="sculpt_resources_1">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        monuments/tsemakh-shabad/</string>
+    <string name="sculpt_google_link_1">https://goo.gl/maps/q4ffxj7BJQn</string>
+
+    <string name="sculpt_object_name_2">Monument to Grand Duke Gediminas</string>
+    <string name="sculpt_place_2">Katedros aikštė</string>
+    <string name="sculpt_description_2">Created by the Lithuanian American Vytautas Kašuba and
+        Mindaugas Šnipas. 1996/n/nBesides being the founder of Vilnius and Trakai, Gediminas was
+        also one of the most famous rulers of Lithuania. His fame can only be compared to the fame
+        of his grandson Vytautas the Great.\n\nGediminas lived between 1275 and 1341 and ruled the
+        Grand Duchy of Lithuania for 25 years. He moved the capital of Lithuania from Trakai to
+        Vilnius. He was better known as a diplomat who attracted the attention of Europe to
+        Lithuania than as a military chief. It was in the letters of Gediminas to Western Europe
+        that the name of Vilnius was mentioned for the first time in 1323. This year is considered
+        to be the year of the founding of Vilnius.\n\nGediminas succeeded in expanding the state
+        borders and the sphere of influence of the Grand Duchy of Lithuania far to the east and
+        south. Under the rule of Gediminas, Vitebsk and Volyn were annexed while the lands of Kievan
+        Rus fell into a vassal dependence of the Duchy. On their trip west, the army of Gediminas
+        even approached Berlin. The area of the Lithuanian state doubled during the times of
+        Gediminas.
+    </string>
+    <string name="sculpt_resources_2">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        monuments/monument-to-grand-duke-gediminas/</string>
+    <string name="sculpt_google_link_2">https://goo.gl/maps/vjT34EnYYQ52</string>
+
+    <string name="sculpt_object_name_3">Romain Gary Statue</string>
+    <string name="sculpt_place_3">Mindaugo g. / J. Basanavičiaus g.</string>
+    <string name="sculpt_description_3">Sculptor: Romualdas Kvintas. 2007/n/nThis small statue was
+        made in remembrance of renowned writer Romain Gary, a famous French writer of the 20th
+        century as well as a pilot, diplomat and director. The small and frail figure of a boy,
+        positioned next to the house where the writer once lived, quaintly stands out against the
+        busy crossing. The story of the statue stems from the autobiographic story of the writer
+        in his book Promise at Dawn (La promesse de l’aube), in which he tells of his childhood
+        in Vilnius and his admiration for a girl named Valentina. Struggling to win her attention
+        the writer would cut and eat a gumshoe.
+    </string>
+    <string name="sculpt_resources_3">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        monuments/romain-gary/</string>
+    <string name="sculpt_google_link_3">https://goo.gl/maps/RhJjBGkQsk72</string>
+
+    <string name="sculpt_object_name_4">Užupis Mermaid Sculpture</string>
+    <string name="sculpt_place_4">Maironio g. / Užupio g.</string>
+    <string name="sculpt_description_4">Sculptor:Romas Vilčiauskas.2002\n\nThe name Užupis means
+        \"place beyond the river\". The Vilnia River, often called Vilnelė, is an integral part of
+        Užupis. It is therefore quite natural that one of the symbols of Užupis is a bronze mermaid,
+        also known as the Užupis Mermaid.\n\nThe mermaid occupies a special niche on the
+        embankment of the Vilnia. It is said that it is the mermaid who attracts people from all
+        over the world to Užupis. Those who surrender to her charm remain in Užupis forever.
+    </string>
+    <string name="sculpt_resources_4">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        monuments/uzupis-mermaid/</string>
+    <string name="sculpt_google_link_4">https://goo.gl/maps/oTe1MNNKntk</string>
+
+    <string name="sculpt_object_name_5">Three Muses Sculpture</string>
+    <string name="sculpt_place_5">Gedimino pr. 4</string>
+    <string name="sculpt_description_5">Sculptor: Stanislovas Kuzma. 1981\n\nThe “Three Muses” which
+        crown the main entrance to the National Drama Theatre, have already become its symbol. The
+        muses of Drama (Calliope), Comedy (Thalia) and Tragedy Melpomene) patronise the wide and
+        diverse genres in the theatre’s repertoire.
+    </string>
+    <string name="sculpt_resources_5"> http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        monuments/three-muses/</string>
+    <string name="sculpt_google_link_5">https://goo.gl/maps/e67ENuGSVQm</string>
+
+    <string name="sculpt_object_name_6">Užupis Angel Sculpture</string>
+    <string name="sculpt_place_6">Užupio g. 9</string>
+    <string name="sculpt_description_6">Sculptor: Romas Vilčiauskas. 2002\n\nA sculpture of an angel
+    was placed in the central square of Užupis in 2002. The bronze angel, also created by sculptor
+    Romas Vilčiauskas, has become the symbol of Užupis.
+    </string>
+    <string name="sculpt_resources_6">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        monuments/uzupis-angel/</string>
+    <string name="sculpt_google_link_6">https://goo.gl/maps/RUZGhB7LCXm</string>
+
+    <string name="sculpt_object_name_7">Monument to Vincas Kudirka</string>
+    <string name="sculpt_place_7">Vinco Kudirkos aikštė</string>
+    <string name="sculpt_description_7">Sculptor: Arūnas Sakalauskas. 2009\n\n.A monument to the
+        awakener of the Lithuanian nation, writer, publicist, composer, doctor and author of the
+        Lithuanian anthem, Dr. Vincas Kudirka has been erected in the square in the centre of the
+        capital.\n\nV. Kudirka (1858–1899) published most of his works in the magazine of
+        literature, politics and science Varpas, which he—along with other kindred spirits—launched
+        into publication in 1889. On 15 September 1898, V. Kudirka published Tautiška Giesmė
+        (National Song) with notes in the Varpas. This patriotic poem became the national anthem
+        of Lithuania in 1919. Following the restoration of independence, Tautiška Giesmė by
+        V. Kudirka again became the anthem of Lithuania.
+    </string>
+    <string name="sculpt_resources_7">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        monuments/monument-to-vincas-kudirka/</string>
+    <string name="sculpt_google_link_7">https://goo.gl/maps/1hzetrFqEuN2</string>
+
+    <string name="sculpt_object_name_8">Lamplighter Statue</string>
+    <string name="sculpt_place_8">Šv. Jono g.</string>
+    <string name="sculpt_description_8">Sculptor: Vytautas Nalivaika. 1986\n\nThis strange statue
+        stands near the bell tower of St. John\'s. This sculpture is the work of Vytautas Nalivaika,
+        a graduate student of the Institute of Fine Arts (now the Vilnius Academy of Fine Arts).
+        It is a sculpture "Lamplighter", which depicts a long-lost representative of the profession
+        - a lamplighter.\n\nThe sculpture depicts a man - a lamplighter who builds his hands on the
+        heavens, which is built on a high, narrow postage, which reinforces the gracefulness, giving
+        the impression of stretching into the top and fits into the Old Town environment. Sculpture
+        looks especially mysterious in the evenings when the street lights are on. 2008 an unknown
+        street artist painted on a neighboring building a shadow of the statue visible at a certain
+        time of the day.
+    </string>
+    <string name="sculpt_resources_8">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        monuments/lamplighter/</string>
+    <string name="sculpt_google_link_8">https://goo.gl/maps/VQWEJ7Rgj342</string>
+
+    <string name="sculpt_object_name_9">Monument to Frank Zappa</string>
+    <string name="sculpt_place_9">Kalinausko g. 1</string>
+    <string name="sculpt_description_9">Sculptor Konstantinas Bogdanas. 1996\n\nThis monument is
+        dedicated to eminent American composer, guitarist and singer Frank Zappa. This performer,
+        distinguished for the peculiar style of his creative work, is referred to as the father of
+        modern music. Frank Zappa’s music is characterised by its psychedelic style and elements of
+        parody, which combine rock, jazz, avant-garde and electronic music.
+    </string>
+    <string name="sculpt_resources_9">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        monuments/monument-to-frank-zappa/</string>
+    <string name="sculpt_google_link_9">https://goo.gl/maps/eKM5Fs67Cvq</string>
+
+    <string name="sculpt_object_name_10">Lithuanian Hounds</string>
+    <string name="sculpt_place_10">Barboros Radvilaitės g. 6A</string>
+    <string name="sculpt_description_10">Sculptors: Rimantas Keturka, Feliksas Volčakas. 2015\n\n
+        Lithuanian hound is the only Lithuanian hunting dog breed. They track and chase wild animals
+        and their melodic barking informs hunters on the location of the prey.
+    </string>
+    <string name="sculpt_resources_10">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        monuments/lithuanian-hounds/</string>
+    <string name="sculpt_google_link_10">https://goo.gl/maps/Hx9cHm2GSFn</string>
 
     <string name="walks_object_name_1">Walks and Sightseeing</string>
     <string name="walks_place_1">Walks and Sightseeing</string>
@@ -130,13 +368,33 @@
     <string name="eat_place_1">Eat and Drink</string>
     <string name="eat_description_1">Eat and Drink</string>
 
-    <string name="shop_object_name_1">Shopping</string>
-    <string name="shop_place_1">Shopping</string>
-    <string name="shop_description_1">Shopping</string>
+    <string name="shop_object_name_1">Shopping and entertainment center OZAS</string>
+    <string name="shop_place_1">Ozo g. 18</string>
+    <string name="shop_description_1">CONTACTS:\n\+370 5 210 0151\ninfocentras@ozas.lt\nSHOPS\n
+        I-VI 10:00 - 22:00\nVII 10:00 - 21:00\nRESTORANTS\nI-VII 10:00 - 22:00\nMAXIMA XXX\n
+        I-VII 8:00 - 22:00\nMULTIKINO cinema\nI-VII 10:00 - 22:00\nX PLANET\nI-V 12:00 - 22:00
+        \nVI 10:00 - 22:00\nVII 10:00 - 21:00\nPARKING\nI-VII 8:00 - 23:30\nTo leave parking is
+        possible till 1:30.
+    </string>
+    <string name="shop_resources_1">http://www.ozas.lt/en/</string>
+    <string name="shop_google_link_1">https://goo.gl/maps/7uT78Wh5QCp</string>
+
+    <string name="shop_object_name_2">Vilnius AKROPOLIS Shopping Center</string>
+    <string name="shop_place_2">Ozo g. 25</string>
+    <string name="shop_description_2">CONTACTS:\n1588\nSTORES\n
+        I-VII 10:00 - 22:00\nEUROVAISTINĖ\nI-VII 08:00 - 23:00\nHYPER MAXIMA XXX\n
+        I-VII 08:00 - 23:00\nERMITAŽAS\nI-VI 07:30 - 22:00\nVII 08:00 - 22:00
+    </string>
+    <string name="shop_resources_2">http://akropolis.lt/en/vilnius</string>
+    <string name="shop_google_link_2">https://goo.gl/maps/rpitb1ABTU72</string>
 
     <string name="favour_object_name_1">Favourites</string>
     <string name="button_share">Share</string>
     <string name="button_more">More</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="top_3_places">Top 3 places</string>
 
 
 </resources>

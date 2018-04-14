@@ -6,8 +6,28 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
-    android:background="@color/colorPrimary"
+    android:background="@color/colorPrimaryDark"
     tools:context="com.example.android.vilniusguide.MainActivity">
+    <!-- A CardView that contains a TextView -->
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_medium"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_small"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="8dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:background="@color/colorPrimary">
 
         <ImageView
             android:id="@+id/list_picture"
@@ -41,7 +61,6 @@
             tools:text="Place" />
 
 </LinearLayout>
-
     <ImageView
         android:id="@+id/favourites"
         android:layout_width="0dp"
@@ -50,5 +69,6 @@
         android:contentDescription="@string/img_desc_favourites"
         android:padding="@dimen/padding_medium"
         tools:src = "@drawable/ic_favorite_border_black_48dp"/>
-
-    </LinearLayout>
+</LinearLayout>
+    </android.support.v7.widget.CardView>
+   </LinearLayout>

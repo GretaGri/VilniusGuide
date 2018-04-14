@@ -1,13 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:fitsSystemWindows="true"
     tools:context="com.example.android.vilniusguide.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/main.appbar"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        app:layout_scrollFlags="scroll|snap">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|snap"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:id="@+id/custom_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/boycott"
+            android:text="@string/app_name"
+            android:textSize="@dimen/text_size_button"
+            android:textColor="@color/textColor"
+            android:padding="@dimen/padding_min"/>
+
+    </android.support.v7.widget.Toolbar>
 <RelativeLayout
     android:layout_width="match_parent"
-    android:layout_height="200dp">
+    android:layout_height="260dp"
+    android:fitsSystemWindows="true"
+    app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+    app:layout_collapseMode="pin">
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager_top3"
@@ -15,9 +49,12 @@
         android:layout_height="match_parent" />
 
     <android.support.design.widget.TabLayout
-        android:id="@+id/tab_dots"
+        android:id="@+id/tabs_dots"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="30dp"
+        app:tabGravity="center"
+        android:layout_centerHorizontal="true"
+    android:layout_alignParentBottom="true">
     </android.support.design.widget.TabLayout>
 
 </RelativeLayout>
@@ -26,12 +63,25 @@
         android:id="@+id/tabs_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbars="horizontal">
+        android:scrollbars="horizontal"
+        android:fitsSystemWindows="true"
+        app:tabTextAppearance="@style/tabTextAppearance"
+        app:tabMode="scrollable">
     </android.support.design.widget.TabLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
 
     <android.support.v4.view.ViewPager
     android:id="@+id/viewpager"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" />
+    android:layout_height="wrap_content" />
+    </android.support.v4.widget.NestedScrollView>
 
-</LinearLayout>
+</android.support.design.widget.CoordinatorLayout>
