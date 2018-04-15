@@ -48,14 +48,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tabs_dots"
-        android:layout_width="wrap_content"
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
         android:layout_height="30dp"
-        app:tabGravity="center"
-        android:layout_centerHorizontal="true"
-    android:layout_alignParentBottom="true">
-    </android.support.design.widget.TabLayout>
+        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>
 

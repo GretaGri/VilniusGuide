@@ -1,7 +1,7 @@
 package com.example.android.vilniusguide;
 
-import android.graphics.Movie;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
@@ -9,14 +9,18 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
+
+import me.relex.circleindicator.CircleIndicator;
 
 public class MainActivity extends AppCompatActivity {
-
-    private List<Object> objects = new ArrayList<>();
     private RecyclerView recyclerView;
     private ObjectAdapter mAdapter;
-    private TabLayout tabLayoutTop3;
+    private static ViewPager viewPagerTop3 ;
+    //TODO: save instance state for current page
+    private static int currentPage = 0;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,24 +31,6 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
-
-        // Create an adapter that knows which fragment should be shown on each page
-        Top3Adapter adapterTop3 = new Top3Adapter(this,getSupportFragmentManager());
-
-        // Find the view pager that will allow the user to swipe between fragments
-        ViewPager viewPagerTop3 = findViewById(R.id.viewpager_top3);
-
-        // Set the adapter onto the view pager
-        viewPagerTop3.setAdapter(adapterTop3);
-
-        // Give the TabLayout the ViewPager
-        // Connect the tab layout with the view pager. This will
-        //   1. Update the tab layout when the view pager is swiped
-        //   2. Update the view pager when a tab is selected
-        //   3. Set the tab layout's tab names with the view pager's adapter's titles
-        //      by calling onPageTitle()
-        tabLayoutTop3 = findViewById(R.id.tabs_dots);
-        tabLayoutTop3.setupWithViewPager(viewPagerTop3);
 
         // Create an adapter that knows which fragment should be shown on each page
         CategoryAdapter adapter = new CategoryAdapter(this,getSupportFragmentManager());
@@ -71,33 +57,42 @@ public class MainActivity extends AppCompatActivity {
         //      by calling onPageTitle()
         TabLayout tabLayout = findViewById(R.id.tabs_navigation);
         tabLayout.setupWithViewPager(viewPager);
-        setupTabIcons();
+
+        init();
+    }
+    private void init() {
+final ArrayList <Top> top3 = new ArrayList<>();
+        top3.add(new Top((getString(R.string.arch_object_name_1)),R.drawable.arch_kathedral_des_bw));
+        top3.add(new Top((getString(R.string.arch_object_name_2)),R.drawable.arch_kathedral_des_bw));
+        top3.add(new Top((getString(R.string.arch_object_name_3)),R.drawable.arch_kathedral_des_bw));
+
+
+        // Find the view pager that will allow the user to swipe between fragments
+        viewPagerTop3 = findViewById(R.id.viewpager_top3);
+
+        // Set the adapter onto the view pager
+        viewPagerTop3.setAdapter(new Top3Adapter(MainActivity.this,top3));
+
+        CircleIndicator indicator = findViewById(R.id.indicator);
+        indicator.setViewPager(viewPagerTop3);
+
+        // Auto start of viewpager
+        final Handler handler = new Handler();
+        final Runnable Update = new Runnable() {
+            public void run() {
+                viewPagerTop3.setCurrentItem(currentPage++, true);
+                if (currentPage == top3.size()) {
+                    currentPage = 0;
+                }
+            }
+        };
+        Timer swipeTimer = new Timer();
+        swipeTimer.schedule(new TimerTask() {
+            @Override
+            public void run() {
+                handler.post(Update);
+            }
+        }, 2500, 4500);
     }
 
-    private void setupTabIcons() {
-        tabLayoutTop3.getTabAt(0).setIcon(R.drawable.ic_dot_navigation_empty_white_18dp);
-        tabLayoutTop3.getTabAt(1).setIcon(R.drawable.ic_dot_navigation_empty_white_18dp);
-        tabLayoutTop3.getTabAt(2).setIcon(R.drawable.ic_dot_navigation_empty_white_18dp);
-        tabLayoutTop3.setSelectedTabIndicatorColor(getResources().getColor(R.color.tabIndicatorInv));
-
-        tabLayoutTop3.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
-            @Override
-            public void onTabSelected(TabLayout.Tab tab) {
-                int position = tab.getPosition();
-                tabLayoutTop3.getTabAt(position).setIcon(R.drawable.ic_dot_navigation_full_white_18dp);
-            }
-
-            @Override
-            public void onTabUnselected(TabLayout.Tab tab) {
-                int position = tab.getPosition();
-                tabLayoutTop3.getTabAt(position).setIcon(R.drawable.ic_dot_navigation_empty_white_18dp);
-            }
-
-            @Override
-            public void onTabReselected(TabLayout.Tab tab) {
-                int position = tab.getPosition();
-                tabLayoutTop3.getTabAt(position).setIcon(R.drawable.ic_dot_navigation_full_white_18dp);
-            }
-        });
-    }
 }

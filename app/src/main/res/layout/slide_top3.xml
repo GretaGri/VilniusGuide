@@ -1,10 +1,14 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="260dp"
-    tools:context="com.example.android.vilniusguide.Top3Fragment">
+    android:layout_height="260dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="260dp">
 
 <ImageView
+    android:id="@+id/imageDescription"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:contentDescription="@string/top_3_places"
@@ -12,6 +16,7 @@
     android:scaleType="centerCrop"/>
 
     <TextView
+        android:id="@+id/place_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/arch_object_name_2"
@@ -22,4 +27,4 @@
         android:layout_marginBottom="30dp"
         android:background="@color/colorAccentSeeTrough"/>
 </RelativeLayout>
-
+</FrameLayout>
