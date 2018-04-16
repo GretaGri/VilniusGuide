@@ -63,6 +63,7 @@
         android:scrollbars="horizontal"
         android:fitsSystemWindows="true"
         app:tabTextAppearance="@style/tabTextAppearance"
+        app:tabSelectedTextColor="@color/colorAccent"
         app:tabMode="scrollable">
     </android.support.design.widget.TabLayout>
 

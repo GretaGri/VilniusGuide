@@ -8,7 +8,7 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="tabTextAppearance" parent="TextAppearance.AppCompat">
-        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorAccentSeeTrough</item>
         <item name="android:fontFamily">@font/boycott</item>
         <item name="android:textSize">@dimen/text_size_description</item>
     </style>

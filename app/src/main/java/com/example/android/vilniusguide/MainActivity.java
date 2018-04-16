@@ -5,7 +5,6 @@ import android.os.Handler;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 
 import java.util.ArrayList;
@@ -15,16 +14,15 @@ import java.util.TimerTask;
 import me.relex.circleindicator.CircleIndicator;
 
 public class MainActivity extends AppCompatActivity {
-    private RecyclerView recyclerView;
-    private ObjectAdapter mAdapter;
-    private static ViewPager viewPagerTop3 ;
-    //TODO: save instance state for current page
-    private static int currentPage = 0;
+    private ViewPager viewPagerTop3 ;
+    private int currentPage = 0;
+    static final String STATE_CURRENT_PAGE = "currentPage";
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
 
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -60,6 +58,24 @@ public class MainActivity extends AppCompatActivity {
 
         init();
     }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        // Save the user's current game state
+        savedInstanceState.putInt(STATE_CURRENT_PAGE, currentPage);
+
+        super.onSaveInstanceState(savedInstanceState);
+    }
+
+    public void onRestoreInstanceState(Bundle savedInstanceState) {
+        // Always call the superclass so it can restore the view hierarchy
+        super.onRestoreInstanceState(savedInstanceState);
+
+
+        // Restore state members from saved instance
+        currentPage = savedInstanceState.getInt(STATE_CURRENT_PAGE);
+    }
+
     private void init() {
 final ArrayList <Top> top3 = new ArrayList<>();
         top3.add(new Top((getString(R.string.arch_object_name_1)),R.drawable.arch_kathedral_des_bw));

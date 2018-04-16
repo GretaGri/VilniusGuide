@@ -44,7 +44,7 @@ public class Top3Adapter extends PagerAdapter {
         View myImageLayout = inflater.inflate(R.layout.slide_top3, container, false);
         ImageView myImage =  myImageLayout.findViewById(R.id.imageDescription);
         myImage.setImageResource(top3.get(position).getPictureDescription());
-        container.addView(myImageLayout, position);
+        container.addView(myImageLayout, 0);
         TextView place = myImageLayout.findViewById(R.id.place_name);
         place.setText(top3.get(position).getPlace());
         return myImageLayout;
