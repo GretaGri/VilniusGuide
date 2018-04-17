@@ -16,8 +16,7 @@ import me.relex.circleindicator.CircleIndicator;
 public class MainActivity extends AppCompatActivity {
     private ViewPager viewPagerTop3 ;
     private int currentPage = 0;
-    static final String STATE_CURRENT_PAGE = "currentPage";
-
+    private ArrayList <Top> top3 = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,14 +31,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Create an adapter that knows which fragment should be shown on each page
         CategoryAdapter adapter = new CategoryAdapter(this,getSupportFragmentManager());
-
-        //Create a string ArrayList with ten words numbers from 1 to 10 with english and miwok translations.
-        final ArrayList<Object> objects = new ArrayList<>();
-        objects.add(new Object(getString(R.string.arch_object_name_1),
-                getString(R.string.arch_place_1), R.drawable.arch_kathedral_des_bw,
-                getString(R.string.arch_official_link_1), getString(R.string.arch_description_1),
-                getString(R.string.arch_resources_1), getString(R.string.arch_google_link_1),
-                R.drawable.arch_kathedral_des_bw));
 
         // Find the view pager that will allow the user to swipe between fragments
         ViewPager viewPager = findViewById(R.id.viewpager);
@@ -62,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
         // Save the user's current game state
-        savedInstanceState.putInt(STATE_CURRENT_PAGE, currentPage);
+        savedInstanceState.putInt(Utils.STATE_CURRENT_PAGE, currentPage);
 
         super.onSaveInstanceState(savedInstanceState);
     }
@@ -73,15 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
 
         // Restore state members from saved instance
-        currentPage = savedInstanceState.getInt(STATE_CURRENT_PAGE);
+        currentPage = savedInstanceState.getInt(Utils.STATE_CURRENT_PAGE);
     }
 
     private void init() {
-final ArrayList <Top> top3 = new ArrayList<>();
-        top3.add(new Top((getString(R.string.arch_object_name_1)),R.drawable.arch_kathedral_des_bw));
-        top3.add(new Top((getString(R.string.arch_object_name_2)),R.drawable.arch_kathedral_des_bw));
-        top3.add(new Top((getString(R.string.arch_object_name_3)),R.drawable.arch_kathedral_des_bw));
-
+        top3 = Utils.getTop3(this);
 
         // Find the view pager that will allow the user to swipe between fragments
         viewPagerTop3 = findViewById(R.id.viewpager_top3);

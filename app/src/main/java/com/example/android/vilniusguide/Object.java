@@ -5,7 +5,7 @@ package com.example.android.vilniusguide;
  */
 
 public class Object {
-
+    private int mCategory;
     private String mName;
     private String mPlace;
     private int mPictureList;
@@ -15,7 +15,8 @@ public class Object {
     private String mMapLink;
     private int mPictureDescription;
 
-    public Object (String name, String place, int pictureList) {
+    public Object (int category, String name, String place, int pictureList) {
+        this.mCategory = category;
         this.mName = name;
         this.mPlace = place;
         this.mPictureList = pictureList;
@@ -25,7 +26,8 @@ public class Object {
         this.mPictureDescription = pictureDescription;
     }
 
-    public Object (String name, String place, int pictureList, String homeLink, String description, String resources, String mapLink, int pictureDescription){
+    public Object (int category, String name, String place, int pictureList, String homeLink, String description, String resources, String mapLink, int pictureDescription){
+        this.mCategory = category;
         this.mName = name;
         this.mPlace = place;
         this.mPictureList = pictureList;
@@ -34,6 +36,13 @@ public class Object {
         this.mResources = resources;
         this.mMapLink = mapLink;
         this.mPictureDescription = pictureDescription;
+    }
+    public int getCategory() {
+        return mCategory;
+    }
+
+    public void setCategory(int category) {
+        this.mCategory = category;
     }
 
     public String getName() {

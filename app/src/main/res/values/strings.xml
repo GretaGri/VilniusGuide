@@ -4,6 +4,7 @@
     <string name="img_desc_object_picture">Object picture</string>
     <string name="img_desc_favourites">Favourites</string>
     <string name="img_desc_place_mark">Place mark</string>
+    <string name="no_link">No link</string>
 
     <string name="category_name_arch">Architecture</string>
     <string name="category_name_sculpt">Sculpture</string>
@@ -14,8 +15,9 @@
     <string name="category_name_favour">Favorites</string>
 
     <string name="arch_object_name_1">Cathedral basilica</string>
-    <string name="arch_place_1">Katedros a. 1</string>
-    <string name="arch_official_link_1">http://www.katedra.lt/</string>
+    <string name="arch_place_1">Katedros square. 1</string>
+    <string name="arch_official_link_1"><![CDATA[Official website: <a href= "http://www.katedra.lt/"
+    >www.katedra.lt</a>]]></string>
     <string name="arch_description_1">The Cathedral of St. Stanislav and St. Vladislav is the most
         important place of worship for Lithuania’s Catholics, and the venue for the country’s main
         Christian and national festivities.\n\nIn 1922, the Cathedral was granted the title of
@@ -32,7 +34,7 @@
     <string name="arch_google_link_1">https://goo.gl/maps/X5pDAfpyeLk</string>
 
     <string name="arch_object_name_2">Church St. Bartholomew\’s</string>
-    <string name="arch_place_2">Užupio g. 17A</string>
+    <string name="arch_place_2">Užupio str. 17A</string>
     <string name="arch_description_2">Little Saint Bartholomew\’s Church stands on the bank of the
         Vilnia river in Užupis. As you approach it seems to hide, blending in with the houses along
         the street leading to the Bernardine cemetery.\n\n
@@ -49,8 +51,10 @@
     <string name="arch_google_link_2">https://goo.gl/maps/KkYDSMeDLRD2</string>
 
     <string name="arch_object_name_3">Church of Bernardine</string>
-    <string name="arch_place_3">Maironio g. 10</string>
-    <string name="arch_official_link_3">http://www.bernardinuansamblis.lt</string>
+    <string name="arch_place_3">Maironio str. 10</string>
+    <string name="arch_official_link_3"><![CDATA[Official website: <a href= "http://www.bernardinu
+    ansamblis.lt">
+    www.bernardinuansamblis.lt</a>]]></string>
     <string name="arch_description_3">A full name of the Church is the Church of St. Francis from
         Assisi (Bernardine). The building is monumental. In case of need it could have been used not
         only for prayer but also for defense. This is testified to by 19 aleois in the northern
@@ -75,11 +79,12 @@
     <string name="arch_google_link_3">https://goo.gl/maps/mmZjjSu4Py32</string>
 
     <string name="arch_object_name_4">Church of Sts. Johns\'</string>
-    <string name="arch_place_4">Šv. Jono g. 12</string>
-    <string name="arch_official_link_4">http://www.jonai.lt</string>
+    <string name="arch_place_4">Šv. Jono str. 12</string>
+    <string name="arch_official_link_4"><![CDATA[Official website: <a href= "http://www.jonai.lt">
+    www.jonai.lt</a>]]></string>
     <string name="arch_description_4">One of the picturesque parts of the Vilnius University
-        building is the Church of Sts. Johns\' and its bell tower. The full name of the church is the
-        Church of St. John the Baptist and St. John the Evangelist.\n\n
+        building is the Church of Sts. Johns\' and its bell tower. The full name of the church is
+        the Church of St. John the Baptist and St. John the Evangelist.\n\n
         The construction of this church lasted for almost 40 years and was completed in 1426.
         At that time it was a Gothic building. In 1571 the church was transferred to the Order of
         Jesuits and became a part of the university complexes.\n\n
@@ -97,30 +102,33 @@
     <string name="arch_google_link_4">https://goo.gl/maps/gA7rGGm1Gk62</string>
 
     <string name="arch_object_name_5">Church of St. Anne</string>
-    <string name="arch_place_5">Maironio g. 8</string>
-    <string name="arch_official_link_5">http://www.onosbaznycia.lt</string>
-    <string name="arch_description_5">The church of St. Anne’s is a masterpiece of the late Gothic
+    <string name="arch_place_5">Maironio str. 8</string>
+    <string name="arch_official_link_5"><![CDATA[Official website: <a href= "http://www.onos
+    baznycia.lt">www.onosbaznycia.lt</a>]]></string>
+    <string name="arch_description_5">The church of St. Anne\’s is a masterpiece of the late Gothic
     period. There is no consensus about its originator or its construction period. Popular legend
     says that Napoleon Bonaparte, who was fascinated by the beauty of the church, wanted to take it
     back to Paris in the palm of his hand. Unfortunately, the reality is not that romantic: during
     the march of the Napoleonic army through Lithuania, the church was consigned to the French
-    cavalry forces. However, Napoleon did mention in a letter to his wife that „Vilnius is a very
-    beautiful city“.\n\n
+    cavalry forces. However, Napoleon did mention in a letter to his wife that \"Vilnius is a very
+    beautiful city\".\n\n
     St. Anne\’s Church, which has survived to the present day without changing for over 500 years,
     has become a symbol of Vilnius. At a closer look, one can see the letters A and M in the main
-    facade of St. Anne\‘s. The letters A and M could stand for the Latin Ana Mater Maria or Ave Maria,
-    i.e. „Saint Anne – Mother of Mary“ or „Hail Mary“. Some experts claim that the Pillars of
-    Gediminas have been highlighted in the composition of the facade with the three towers of the
-    church corresponding to the three pillars.\n\n
-    Next to the church there is a bell tower initiating the Gothic style and built in the 19th century.
+    facade of St. Anne\‘s. The letters A and M could stand for the Latin Ana Mater Maria or Ave
+    Maria, i.e. \"Saint Anne – Mother of Mary\" or \"Hail Mary\". Some experts claim that the
+    Pillars of Gediminas have been highlighted in the composition of the facade with the three
+    towers of the church corresponding to the three pillars.\n\n
+    Next to the church there is a bell tower initiating the Gothic style and built in the 19th
+    century.
     </string>
     <string name="arch_resources_5">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/chu
         rches/church-of-st-anne/</string>
     <string name="arch_google_link_5">https://goo.gl/maps/wLBWPaxUXPq</string>
 
     <string name="arch_object_name_6">Gates of Dawn</string>
-    <string name="arch_place_6">Aušros Vartų g. 12</string>
-    <string name="arch_official_link_6">http://www.ausrosvartai.lt</string>
+    <string name="arch_place_6">Aušros Vartų str. 12</string>
+    <string name="arch_official_link_6"><![CDATA[Official website: <a href= "http://www.ausros
+    vartai.lt">www.ausrosvartai.lt</a>]]></string>
     <string name="arch_description_6">The Gates of Dawn is one of the most visited shrines in
         Vilnius that is famous not only in Lithuania but also abroad, worshipped by the
         representatives of other creeds too. This is the only surviving gate of the first original
@@ -141,7 +149,7 @@
     <string name="arch_google_link_6">https://goo.gl/maps/1FKDYBqMhqR2</string>
 
     <string name="arch_object_name_7">Church of St. Nicholas\'</string>
-    <string name="arch_place_7">Didžioji g. 12</string>
+    <string name="arch_place_7">Didžioji str. 12</string>
     <string name="arch_description_7">Grand Hetman of the Grand Duchy of Lithuania (LDK) Constantine
         Astrozhski built this sanctuary in 1514. In the 18th century the Gothic Orhtodox Church was
         damaged by fire, and thus, restored in the late Baroque style. Later, by order of General
@@ -154,8 +162,9 @@
     <string name="arch_google_link_7">https://goo.gl/maps/4uicWDWd8Mt</string>
 
     <string name="arch_object_name_8">Palace of the Grand Dukes Of Lithuania</string>
-    <string name="arch_place_8">Katedros a. 4</string>
-    <string name="arch_official_link_8">http://www.valdovurumai.lt</string>
+    <string name="arch_place_8">Katedros square 4</string>
+    <string name="arch_official_link_8"><![CDATA[Official website: <a href= "http://www.valdovu
+    rumai.lt">www.valdovurumai.lt</a>]]></string>
     <string name="arch_description_8">The reconstructed Palace of the Grand Dukes of Lithuania, the
         former political, diplomatic, cultural center of the State, was one of the most famous in
         Europe in the 15th-17th centuries and was demolished in the beginning of the 19th century.
@@ -177,8 +186,9 @@
     <string name="arch_google_link_8">https://goo.gl/maps/McwNw3iTuUJ2</string>
 
     <string name="arch_object_name_9">Vilnius Town Hall</string>
-    <string name="arch_place_9">Didžioji g. 31</string>
-    <string name="arch_official_link_9">http://www.vilniausrotuse.lt</string>
+    <string name="arch_place_9">Didžioji str. 31</string>
+    <string name="arch_official_link_9"><![CDATA[Official website: <a href= "http://www.vilniaus
+    rotuse.lt">www.vilniausrotuse.lt</a>]]></string>
     <string name="arch_description_9">In 1387, Lithuania became a Christian state and Vilnius was
     granted Magdeburg rights. Thus, there appeared a need for headquarters for the city authorities.
     As the main square of the city was located here, it was decided to build the Town Hall in the
@@ -202,8 +212,9 @@
     <string name="arch_google_link_9">https://goo.gl/maps/S7hQp7zuJy42</string>
 
     <string name="arch_object_name_10">The Bastion of Vilnius City Wall</string>
-    <string name="arch_place_10">Bokšto g. 20 / Subačiaus g. 18</string>
-    <string name="arch_official_link_10">http://www.lnm.lt</string>
+    <string name="arch_place_10">Bokšto str. 20 / Subačiaus g. 18</string>
+    <string name="arch_official_link_10"><![CDATA[Official website: <a href= "http://www.lnm.lt">
+    www.lnm.lt</a>]]></string>
     <string name="arch_description_10">This is part of the Vilnius Defensive Wall, often called
         “barbican”. The Bastion is a Renaissance-style fortification characterized by its original
         construction. It consists of a tower installed in the city defense wall, underground gun
@@ -218,7 +229,9 @@
     <string name="arch_google_link_10">https://goo.gl/maps/663TMyXx24J2</string>
 
     <string name="sculpt_object_name_1">Monument to Tsemakh Shabad</string>
-    <string name="sculpt_place_1">Geto aukų aikštė</string>
+    <string name="sculpt_place_1">Mėsinių str. 5</string>
+    <string name="sculpt_official_link_1"><![CDATA[Part of <a href= "http://www.mmcentras.lt/
+    projects/70009#vilnius-talking-statues-77966">Vilnius talking statues</a>]]></string>
     <string name="sculpt_description_1">Sculptor: Romualdas Kvintas. 2007/n/nTsemakh Shabad was a
         legendary personality. The doctor was active in various spheres of life, including charity
         (he was one of the heads of the community for supporting refugees), health care
@@ -232,7 +245,9 @@
     <string name="sculpt_google_link_1">https://goo.gl/maps/q4ffxj7BJQn</string>
 
     <string name="sculpt_object_name_2">Monument to Grand Duke Gediminas</string>
-    <string name="sculpt_place_2">Katedros aikštė</string>
+    <string name="sculpt_place_2">Katedra square</string>
+    <string name="sculpt_official_link_2"><![CDATA[Part of <a href= "http://www.mmcentras.lt/
+    projects/70009#vilnius-talking-statues-77966">Vilnius talking statues</a>]]></string>
     <string name="sculpt_description_2">Created by the Lithuanian American Vytautas Kašuba and
         Mindaugas Šnipas. 1996/n/nBesides being the founder of Vilnius and Trakai, Gediminas was
         also one of the most famous rulers of Lithuania. His fame can only be compared to the fame
@@ -253,7 +268,9 @@
     <string name="sculpt_google_link_2">https://goo.gl/maps/vjT34EnYYQ52</string>
 
     <string name="sculpt_object_name_3">Romain Gary Statue</string>
-    <string name="sculpt_place_3">Mindaugo g. / J. Basanavičiaus g.</string>
+    <string name="sculpt_place_3">Mindaugo str. / J. Basanavičiaus str.</string>
+    <string name="sculpt_official_link_3"><![CDATA[Part of <a href= "http://www.mmcentras.lt/
+    projects/70009#vilnius-talking-statues-77966">Vilnius talking statues</a>]]></string>
     <string name="sculpt_description_3">Sculptor: Romualdas Kvintas. 2007/n/nThis small statue was
         made in remembrance of renowned writer Romain Gary, a famous French writer of the 20th
         century as well as a pilot, diplomat and director. The small and frail figure of a boy,
@@ -268,7 +285,9 @@
     <string name="sculpt_google_link_3">https://goo.gl/maps/RhJjBGkQsk72</string>
 
     <string name="sculpt_object_name_4">Užupis Mermaid Sculpture</string>
-    <string name="sculpt_place_4">Maironio g. / Užupio g.</string>
+    <string name="sculpt_place_4">Maironio str. / Užupio str.</string>
+    <string name="sculpt_official_link_4"><![CDATA[Part of <a href= "http://www.mmcentras.lt/
+    projects/70009#vilnius-talking-statues-77966">Vilnius talking statues</a>]]></string>
     <string name="sculpt_description_4">Sculptor:Romas Vilčiauskas.2002\n\nThe name Užupis means
         \"place beyond the river\". The Vilnia River, often called Vilnelė, is an integral part of
         Užupis. It is therefore quite natural that one of the symbols of Užupis is a bronze mermaid,
@@ -281,7 +300,7 @@
     <string name="sculpt_google_link_4">https://goo.gl/maps/oTe1MNNKntk</string>
 
     <string name="sculpt_object_name_5">Three Muses Sculpture</string>
-    <string name="sculpt_place_5">Gedimino pr. 4</string>
+    <string name="sculpt_place_5">Gedimino av. 4</string>
     <string name="sculpt_description_5">Sculptor: Stanislovas Kuzma. 1981\n\nThe “Three Muses” which
         crown the main entrance to the National Drama Theatre, have already become its symbol. The
         muses of Drama (Calliope), Comedy (Thalia) and Tragedy Melpomene) patronise the wide and
@@ -292,7 +311,9 @@
     <string name="sculpt_google_link_5">https://goo.gl/maps/e67ENuGSVQm</string>
 
     <string name="sculpt_object_name_6">Užupis Angel Sculpture</string>
-    <string name="sculpt_place_6">Užupio g. 9</string>
+    <string name="sculpt_place_6">Užupio str. 9</string>
+    <string name="sculpt_official_link_6"><![CDATA[Part of <a href= "http://www.mmcentras.lt/
+    projects/70009#vilnius-talking-statues-77966">Vilnius talking statues</a>]]></string>
     <string name="sculpt_description_6">Sculptor: Romas Vilčiauskas. 2002\n\nA sculpture of an angel
     was placed in the central square of Užupis in 2002. The bronze angel, also created by sculptor
     Romas Vilčiauskas, has become the symbol of Užupis.
@@ -302,7 +323,9 @@
     <string name="sculpt_google_link_6">https://goo.gl/maps/RUZGhB7LCXm</string>
 
     <string name="sculpt_object_name_7">Monument to Vincas Kudirka</string>
-    <string name="sculpt_place_7">Vinco Kudirkos aikštė</string>
+    <string name="sculpt_place_7">Vincas Kudirka square</string>
+    <string name="sculpt_official_link_7"><![CDATA[Part of <a href= "http://www.mmcentras.lt/
+    projects/70009#vilnius-talking-statues-77966">Vilnius talking statues</a>]]></string>
     <string name="sculpt_description_7">Sculptor: Arūnas Sakalauskas. 2009\n\n.A monument to the
         awakener of the Lithuanian nation, writer, publicist, composer, doctor and author of the
         Lithuanian anthem, Dr. Vincas Kudirka has been erected in the square in the centre of the
@@ -318,7 +341,9 @@
     <string name="sculpt_google_link_7">https://goo.gl/maps/1hzetrFqEuN2</string>
 
     <string name="sculpt_object_name_8">Lamplighter Statue</string>
-    <string name="sculpt_place_8">Šv. Jono g.</string>
+    <string name="sculpt_place_8">Šv. Jono str.</string>
+    <string name="sculpt_official_link_8"><![CDATA[Part of <a href= "http://www.mmcentras.lt/
+    projects/70009#vilnius-talking-statues-77966">Vilnius talking statues</a>]]></string>
     <string name="sculpt_description_8">Sculptor: Vytautas Nalivaika. 1986\n\nThis strange statue
         stands near the bell tower of St. John\'s. This sculpture is the work of Vytautas Nalivaika,
         a graduate student of the Institute of Fine Arts (now the Vilnius Academy of Fine Arts).
@@ -335,7 +360,9 @@
     <string name="sculpt_google_link_8">https://goo.gl/maps/VQWEJ7Rgj342</string>
 
     <string name="sculpt_object_name_9">Monument to Frank Zappa</string>
-    <string name="sculpt_place_9">Kalinausko g. 1</string>
+    <string name="sculpt_place_9">Kalinausko str. 1</string>
+    <string name="sculpt_official_link_9"><![CDATA[Part of <a href= "http://www.mmcentras.lt/
+    projects/70009#vilnius-talking-statues-77966">Vilnius talking statues</a>]]></string>
     <string name="sculpt_description_9">Sculptor Konstantinas Bogdanas. 1996\n\nThis monument is
         dedicated to eminent American composer, guitarist and singer Frank Zappa. This performer,
         distinguished for the peculiar style of his creative work, is referred to as the father of
@@ -347,7 +374,7 @@
     <string name="sculpt_google_link_9">https://goo.gl/maps/eKM5Fs67Cvq</string>
 
     <string name="sculpt_object_name_10">Lithuanian Hounds</string>
-    <string name="sculpt_place_10">Barboros Radvilaitės g. 6A</string>
+    <string name="sculpt_place_10">Barboros Radvilaitės str. 6A</string>
     <string name="sculpt_description_10">Sculptors: Rimantas Keturka, Feliksas Volčakas. 2015\n\n
         Lithuanian hound is the only Lithuanian hunting dog breed. They track and chase wild animals
         and their melodic barking informs hunters on the location of the prey.
@@ -356,37 +383,451 @@
         monuments/lithuanian-hounds/</string>
     <string name="sculpt_google_link_10">https://goo.gl/maps/Hx9cHm2GSFn</string>
 
-    <string name="walks_object_name_1">Walks and Sightseeing</string>
-    <string name="walks_place_1">Walks and Sightseeing</string>
-    <string name="walks_description_1">Walks and Sightseeing</string>
+    <string name="walks_object_name_1">Pilies Street</string>
+    <string name="walks_place_1">Pilies str.</string>
+    <string name="walks_description_1">Pilies Street is the oldest and most flamboyant street in the
+        Old Town of Vilnius. The street appeared in place of the former road from Vilnius Castle to
+        the south, towards Poland and Russia. This was the main road to the castle, with its
+        branches finally turning into side streets. The name of Pilies Street was mentioned in
+        historical annals as early as 1530.\n\nKings, legates of the Pope, and envoys from other
+        countries passed this street on their way to the castle. Noblemen and rich citizens built
+        their houses in Pilies Street. Vilnius University occupied a whole quarter of the city
+        beside Pilies Street, and university professors used to live there.\n\nThe Botanical Garden
+        of Vilnius University was established in one of the courtyards at the end of the 18th
+        century. Church processions also went along Pilies Street. The broadest parts of the
+        street were occupied by markets: the so-called Great Market near the Town Hall and the
+        fish market next to St. Paraskeva\’s Church (Pyatnickaya).\n\nThe street is distinguished
+        for its architectural variety: Pilies 12 and 14 are Gothic, Pilies 4 is a Renaissance
+        building of an episcopate college; and the pediment of the Church St. John is Baroque.\n\n
+        A beautiful view of Gediminas Tower can be seen from Pilies Street.
+    </string>
+    <string name="walks_resources_1">http://www.vilnius-tourism.lt/en/what-to-see/top-20/
+        pilies-street/</string>
+    <string name="walks_google_link_1">https://goo.gl/maps/k3JM7krZkaT2</string>
 
-    <string name="cinema_object_name_1">Cinema and Theatre</string>
-    <string name="cinema_place_1">Cinema and Theatre</string>
-    <string name="cinema_description_1">Cinema and Theatre</string>
+    <string name="walks_object_name_2">Gediminas Avenue</string>
+    <string name="walks_place_2">Gediminas av.</string>
+    <string name="walks_description_2">Vilnius started developing faster in the middle of the 19th
+        century, when the rail line St. Petersburg – Vilnius was built. New industrial, trading and
+        residential developments were established next to the Old Town. A new central street of the
+        city, Georgij Avenue was built. The names of the avenue changed with the change of
+        authorities. Later on the avenue had the names of A. Mickiewicz, Stalin, Lenin, and in 1989
+        it was known as Gediminas Avenue. Buildings of the 19th and 20th centuries were built next
+        to the avenue, currently housing central government authorities and public institutions,
+        trading and catering companies. Gediminas Avenue connects the historical city center,
+        Cathedral Square with the Seimas Palace.
+    </string>
+    <string name="walks_resources_2">http://www.vilnius-tourism.lt/en/what-to-see/top-20/
+        gediminas-avenue/</string>
+    <string name="walks_google_link_2">https://goo.gl/maps/HRDfNwNbLGA2</string>
 
-    <string name="eat_object_name_1">Eat and Drink</string>
-    <string name="eat_place_1">Eat and Drink</string>
-    <string name="eat_description_1">Eat and Drink</string>
+    <string name="walks_object_name_3">Literatai Street</string>
+    <string name="walks_place_3">Literatų str.</string>
+    <string name="walks_official_link_3"><![CDATA[Official website: <a href= "http://www.literatu
+    gatve.lt/">www.literatugatve.lt</a>]]></string>
+    <string name="walks_description_3">It is thought that this street was named “Literatai” only at
+        the second half of 19th century in the honour of Adam Mickiewicz who lived here. The poet
+        Adam Mickiewicz lived at the beginning of this street, what is witnessed by three plaques
+        on the building in the Lithuanian, Russian and Polish languages.\n\nFrom 2008 a group of
+        artists had an idea to revive the street and to decorate it with artworks related with
+        litterateurs. A wall was solemnly opened in the street where painters and other field
+        artists created plates or small objects made of metal, wood, glass, etc. in the honour
+        of litterateurs.\n\nA Modern Art Centre is located on Literatai street (Literatai St. 8),
+        http://www.mmcentras.lt.
+    </string>
+    <string name="walks_resources_3">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        places-of-interest/literatai-street-2/</string>
+    <string name="walks_google_link_3">https://goo.gl/maps/dXtVvDP8PeS2</string>
+
+    <string name="walks_object_name_4">Vilnius Cathedral Bell Tower</string>
+    <string name="walks_place_4">K^ventaragio str. 1</string>
+    <string name="walks_official_link_4"><![CDATA[Official website: <a href= "http://www.bp
+    muziejus.lt">www.bpmuziejus.lt</a>]]></string>
+    <string name="walks_description_4">The Bell Tower, one of the oldest and tallest towers of the
+        Old Town, offers a beautiful panorama. Residents and guests of Vilnius will be able to see
+        exposition of bells, the old clock of the city, explore the historic pictures of the
+        reconstruction of Bell Tower and the Cathedral. Video surveillance cameras installed
+        on the top floor of the Bell Tower will help the visitors to get acquainted with the city
+        panorama and famous architectural sights. The height of the Bell Tower is 52 m, with the
+        cross – 57 meters.\n\nChurch Heritage Museum will organize tours, educational programs and
+        events in the Bell Tower. In May-September, the Bell Tower will be open to visitors from
+        10 a.m. to 19 p.m. on weekdays and on Saturdays, in cold season – one hour shorter.
+    </string>
+    <string name="walks_resources_4">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        viewpoints/vilnius-cathedral-bell-tower/</string>
+    <string name="walks_google_link_4">https://goo.gl/maps/kmSdksg9Ht32</string>
+
+    <string name="walks_object_name_5">Gediminas\' Tower of the Upper Castle</string>
+    <string name="walks_place_5">Arsenalo str. 5</string>
+    <string name="walks_official_link_5"><![CDATA[Official website: <a href= "http://www.lnm.lt">
+    www.lnm.lt</a>]]></string>
+    <string name="walks_description_5">From 4 November 2017 the access to the territory of The
+        Gediminas Hill and Gediminas Castle Tower is temporarily closed due to repair works.\n\nThe
+        Vilnius Castle Museum was opened in 1960, and in 1968 it became a subdivision of the
+        Lithuanian National Museum. The exposition of the Vilnius Castle Museum displays
+        reconstruction models of Vilnius castles of the second part of the 14th and the beginning
+        of the 17th centuries, armament, iconographic material of old Vilnius. An observation deck
+        on the top of the tower is the best place from which to appreciate a magnificent panorama
+        of Vilnius.
+    </string>
+    <string name="walks_resources_5">http://www.vilnius-tourism.lt/en/what-to-see/museums/
+        gediminas-tower-2/</string>
+    <string name="walks_google_link_5">https://goo.gl/maps/arz3V1wk4Hs</string>
+
+    <string name="walks_object_name_6">Three Crosses Monument</string>
+    <string name="walks_place_6">T. Kosciuškos str.</string>
+      <string name="walks_description_6">Sculptor: Antanas Vivulskis. 1916. Kęstutis Šilgalis. 1989
+          \n\nSome say, that the origins of the three crosses date back to the 17th century when
+          three monks placed them there to pay tribute to a group of fellow monks who were martyred
+          in the 14th century. According to the history books, seven monks were killed and seven
+          were tied to wooden crosses and floated down the Neris River, with the instruction to
+          return to the west where they came from.\n\nThe monument has changed many times, and the
+          current one was built by the architect and sculptor, A. Vivulskis in 1989 at the beginning
+          of the Rebirth movement. It was built to replace the one that had been removed by the
+          Soviet authorities in the 1950s, pieces of which still remain on the far side of the
+          slope.\n\nOver the years, the monument has changed many times. The current one was built
+          by the architect and sculptor, K. Šilgalis in 1989, when the Soviet Union began to
+          collapse.n\nThe Hill of Three Crosses is also known as Kreivasis Hill (the Crooked Hill),
+          Plikasis Hill (the Bare Hill) or Tauro Hill.
+    </string>
+    <string name="walks_resources_6">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        monuments/three-crosses/</string>
+    <string name="walks_google_link_6">https://goo.gl/maps/nzmADQpzuQt</string>
+
+    <string name="walks_object_name_7">Bernardine Gardens</string>
+    <string name="walks_place_7">Maironio str.</string>
+    <string name="walks_official_link_7"><![CDATA[Official website: <a href= "http://www.vilniaus
+    parkai.lt/parkai/sereikiskiu-parko-bernardinu-sodas/">www.vilniausparkai.lt</a>]]></string>
+    <string name="walks_description_7">Bernardine Garden is situated right in the heart of Vilnius,
+        between Gediminas Hill, the Vilnelė River and the Bernardine monastery. After more than a
+        year of renovations, the Bernardine Gardens (former Sereikiškės Park) have opened to Vilnius
+        residents and guests. The restored park has regained its historic name, which was used from
+        the end of the XVth century up until World War II, as well as its authentic appearance,
+        which was created by artist Vladislovas Štrausas in the XIX century.\n\nThe park will
+        feature botanical and monastic expositions as well as authentic restored park elements,
+        such as an alpinarium, a pond, Belvedere Hill, a central square, and paths along the
+        Vilnelė River. Fountains have been rebuilt in their historical locations. There will also be
+        a rose garden, children’s playgrounds and a musical fountain.\n\nThe botanical exposition,
+        which features plants sorted by groups and classes, will be a very special part of the park.
+        Visitors will be able to see the ginko tree, the yellow dogwood, Canadian fir, black pine,
+        and three of the oldest oak trees in Vilnius. The oldest oak tree in Vilnius, at about 300
+        years, can be seen near the entrance on Šv. Brunono Street. There will also be an area for
+        students near the botanical exposition, where biology teachers will be able to hold classes
+        for their students and children will be able to plant various plants and care for them.\n\n
+        The central square features a musical fountain which plays rhythms from popular classical
+        and modern pieces.\n\nThe park dates back to 1469, when Lithuanian Grand Duke Kazimieras
+        invited the Bernardine monks to Vilnius. They established themselves at the south-eastern
+        part of Gediminas Hill and built their monastery and gardens where the park is today. In the
+        XVIIIth century, the Vilnius University Botanical Garden was planted, and later, in 1870,
+        three separate city gardens – the Botanical, Bernardine and Cathedral gardens – were linked
+        into one park accessible to the public.\n\nFree admission. Open daily 7:00 – 22:00.
+    </string>
+    <string name="walks_resources_7">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        parks-2/bernardine-gardens/</string>
+    <string name="walks_google_link_7">https://goo.gl/maps/2J6Kv8g2tRo</string>
+
+    <string name="walks_object_name_8">Vingis Park</string>
+    <string name="walks_place_8">M. K. Čiurlionio str. 100</string>
+    <string name="walks_official_link_8"><![CDATA[Official website: <a href= "http://www.vilniaus
+    parkai.lt/parkai/vingio-parkas/">www.vilniausparkai.lt</a>]]></string>
+    <string name="walks_description_8">Vingis Park is situated on a bend of the Neris River and
+        covers an area of 160 hectares. In the 15th–16th century, it belonged to the Radvila
+        (Radziwill) family, and later it belonged to Bishop Ignas Masalskis. Even later it was owned
+        by Vilnius Governor General Leontij Beningsen, who built an elaborate summer house in the
+        pine forest. In 1919, after the re-establishment of Vilnius University, a botanical garden
+        was located on the grounds of the former manor of Vingis Park. In the 20th century, the
+        garden was severely damaged by both a flood and by war. The major part of the recreated
+        garden was moved elsewhere.\n\nThe park has two entrances: one from M. K. Čiurlionio Street,
+        and the other from Birutės Street. Near the park entrance from M. K. Čiurlionis Street there
+        is a Classical chapel and a cemetery for German soldiers. Vingis Park is popular with the
+        residents of Vilnius as a place for walking, cycling or roller-skating. Various concerts
+        and events are held on the stage erected in the centre of the park. In 1988, Sąjūdis
+        meetings were held in the stadium next to the stage, and in 1993 Pope John Paul II
+        celebrated a Mass there.
+    </string>
+    <string name="walks_resources_8">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        parks-2/vingis-park/</string>
+    <string name="walks_google_link_8">https://goo.gl/maps/GREMTPnWFa52</string>
+
+    <string name="walks_object_name_9">Pavilniai Regional Park</string>
+    <string name="walks_place_9">Belmonto str. 17</string>
+    <string name="walks_official_link_9"><![CDATA[Official website: <a href= "http://www.pavilniai
+    -verkiai.lt/">www.pavilniai-verkiai.lt</a>]]></string>
+    <string name="walks_description_9">The core of the Pavilniai Regional Park is the valley of the
+        Vilnia River. Visitors can follow the tourist route of the park, which goes along the
+        Vilnia River from Pūčkorių Dam. The Pūčkorių exposure is a unique geological monument.\n\n
+        Nearby you can also visit the territory of the former water mill where a restaurant and an
+        entertainment centre Belmontas are situated now. There are also Belmontas waterfalls and
+        Belmontas Adventure Park for those who like an active rest. Next to Pūčkoriai exposure,
+        on the bank of the Vilnia River, there stands a sun clock. The Administration of the Park
+        invites people to take part in cognitive walking tours that are organised in spring and
+        autumn./n/nWhile in Pavilnių Regional Park, take the opportunity to visit Ribiškių hilly
+        area. A spectacular view opens from Liepkalnis hill situated alongside Minsk motorway.
+        In winter Liepkalnis Hill is the most favourite place of skiers.
+    </string>
+    <string name="walks_resources_9">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        parks-2/pavilniai-regional-park/</string>
+    <string name="walks_google_link_9">https://goo.gl/maps/SiM1TnZfASD2</string>
+
+    <string name="walks_object_name_10">Botanical Garden</string>
+    <string name="walks_place_10">Kairėnų str. 43</string>
+    <string name="walks_official_link_10"><![CDATA[Official website: <a href= " http://www.botanikos
+    -sodas.vu.lt">www.botanikos-sodas.vu.lt</a>]]></string>
+    <string name="walks_description_10">The Botanical Garden of Vilnius University is not only the
+        largest garden in Lithuania (total area is 199 ha) but also the richest one in its
+        collections: plants of 9 000 names belonging to 886 genera can be found there, and the best
+        and most impressive collections are those of rhododendrons, lilacs, lianas, peonies, dahlias
+        and bulb flowers. The Botanical Garden is interesting as an object of heritage – a part of
+        an outbuilding of an old estate that has survived in Kairėnai, as well as the old park with
+        ponds, has been adapted to being visited. Various cultural events (concerts, art
+        exhibitions) are held in the Garden. One can ride on horseback or go for a ride in a
+        carriage.
+    </string>
+    <string name="walks_resources_10">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        parks-2/botanical-garden/</string>
+    <string name="walks_google_link_10">https://goo.gl/maps/6cwg17nPbcA2</string>
+
+    <string name="cinema_object_name_1">Lithuanian National Opera And Ballet Theatre</string>
+    <string name="cinema_place_1">Vienuolio av. 1</string>
+    <string name="cinema_description_1">Vienuolio av. 1\n\n\+370 5 262 0727\n\ninfo@opera.lt\n\n
+        I–V 10:00 – 19:00\n\nVI 10:00 – 18:30\n\nVII 10:00 – 15:00</string>
+    <string name="cinema_resources_1">http://www.opera.lt</string>
+    <string name="cinema_google_link_1">https://goo.gl/maps/Nfq4cLJueLR2</string>
+
+    <string name="cinema_object_name_2">Lithuanian National Drama Theatre</string>
+    <string name="cinema_place_2">Gedimino av. 4</string>
+    <string name="cinema_description_2">Gedimino av. 4\n\n\+370 6 187 5780\n\ninfo@teatras.lt\n\n
+        I-V 10:00 – 19:00\n\nVI-VII 11:00 – 19:00</string>
+    <string name="cinema_resources_2">http://www.teatras.lt</string>
+    <string name="cinema_google_link_2">https://goo.gl/maps/vPpSWq3S6N42</string>
+    <string name="cinema_object_name_3">Arts Printing House (Menų Spaustuvė)</string>
+    <string name="cinema_place_3">Šiltadaržio str. 6</string>
+    <string name="cinema_description_3">Šiltadaržio str. 6\n\n\+370 5 204 0832\n\n
+        info@menuspaustuve.lt\n\nI  closed\n\nII-VII 9:00 – 12:00, 13:00 – 22:00</string>
+    <string name="cinema_resources_3">http://www.menuspaustuve.lt</string>
+    <string name="cinema_google_link_3">https://goo.gl/maps/rxaXCJr44iQ2</string>
+
+    <string name="cinema_object_name_4">Youth Theatre</string>
+    <string name="cinema_place_4">Arklių str. 5</string>
+    <string name="cinema_description_4">Arklių str. 5\n\n\+370 5 261 6126\n\ninfo@jaunimoteatras.lt\n\n
+        I closed\n\nII–VII 11:00 – 14:00, 14:30 – 18:00</string>
+    <string name="cinema_resources_4">http://www.jaunimoteatras.lt</string>
+    <string name="cinema_google_link_4">https://goo.gl/maps/PUk13azTC6A2</string>
+
+    <string name="cinema_object_name_5">Domino Theatre</string>
+    <string name="cinema_place_5">Savanorių av. 7</string>
+    <string name="cinema_description_5">Savanorių av. 7\n\n\+370 656 86383\n\ninfo@dominoteatras.lt
+        \n\n I–VII 11:00 – 14:00, 15:00 – 19:00</string>
+    <string name="cinema_resources_5">http://www.dominoteatras.lt</string>
+    <string name="cinema_google_link_5">https://goo.gl/maps/aCAHbim4Z9F2</string>
+
+    <string name="cinema_object_name_6">The Odd Man Theatre (Keistuolių Teatras)</string>
+    <string name="cinema_place_6">Laisvės av. 60</string>
+    <string name="cinema_description_6">Laisvės av. 60\n\n\+370 5 242 4585\n\n
+        keistuoliai@keistuoliai.lt\n\n I–V 11:00 – 19:00</string>
+    <string name="cinema_resources_6">http://www.keistuoliai.lt</string>
+    <string name="cinema_google_link_6">https://goo.gl/maps/594U9ohL6ZJ2</string>
+
+    <string name="cinema_object_name_7">Multikino</string>
+    <string name="cinema_place_7">Ozo str. 18</string>
+    <string name="cinema_description_7">Ozo str. 18\n\n\+370 5 219 5378\n\nvilniusozas@multikino.lt\n\n
+        I-VII 10:00 - 22:00</string>
+    <string name="cinema_resources_7">http://www.multikino.lt</string>
+    <string name="cinema_google_link_7">https://goo.gl/maps/vV64Px6W1uA2</string>
+
+    <string name="cinema_object_name_8">Forum Cinemas Vingis</string>
+    <string name="cinema_place_8">Savanorių av. 7</string>
+    <string name="cinema_description_8">Savanorių av. 7\n\n1567 (0,55€/min)\n\nI–VII 10:30 – 22:00
+    </string>
+    <string name="cinema_resources_8">http://www.forumcinemas.lt/</string>
+    <string name="cinema_google_link_8">https://goo.gl/maps/T1sK2Cr1jYJ2</string>
+
+    <string name="cinema_object_name_9">Pasaka</string>
+    <string name="cinema_place_9">Šv. Ignoto str. 4 / 3</string>
+    <string name="cinema_description_9">Šv. Ignoto str. 4 / 3\n\n\+370 5 261 1516\n\nkasa@kinopasaka.lt
+    </string>
+    <string name="cinema_resources_9">http://www.kinopasaka.lt</string>
+    <string name="cinema_google_link_9">https://goo.gl/maps/8HtMatBsLEq</string>
+
+    <string name="cinema_object_name_10">Skalvija</string>
+    <string name="cinema_place_10">Goštauto str. 2/15</string>
+    <string name="cinema_description_10">Goštauto str. 2/15\n\n\+370 5 261 0505\n\ninfo@skalvija.lt\n\n
+        I-V 16:00 – till last session end\n\nVI-VII 13:00 – till last session end</string>
+    <string name="cinema_resources_10">http://www.skalvija.lt</string>
+    <string name="cinema_google_link_10">https://goo.gl/maps/AA3kKCa8mjq</string>
+
+    <string name="eat_object_name_1">Boom! Burgers</string>
+    <string name="eat_place_1">Gedimino av. 1</string>
+    <string name="eat_description_1">Gedimino av. 1\n\n\+370 652 14534\n\nboom@boomburgers.lt\n\n
+        I-IV 11:30 – 22:00\n\nV 11:30 – 23:00\n\nVI 12:00 – 23:00\n\nVII 12:00 – 22:00</string>
+    <string name="eat_resources_1">https://www.facebook.com/boomburgerslithuania</string>
+    <string name="eat_google_link_1">https://goo.gl/maps/tyc3CZaRjdm</string>
+
+    <string name="eat_object_name_2">Briusly</string>
+    <string name="eat_place_2">Islandijos str. 4</string>
+    <string name="eat_description_2">Islandijos str. 4\n\n\+370 691 41205\n\ninfo@briusly.lt\n\n
+        I-IV 11:00 – 00:00\n\nV 11:00 – 05:00\n\nVI 12:00 – 05:00\n\nVII 12:00 – 00:00</string>
+    <string name="eat_resources_2">http://www.briusly.lt</string>
+    <string name="eat_google_link_2">https://goo.gl/maps/bjPwSuMDuXB2</string>
+
+    <string name="eat_object_name_3">Keulė Rūkė</string>
+    <string name="eat_place_3">Pylimo str. 66</string>
+    <string name="eat_description_3">Pylimo str. 66\n\n\+370 623 29839\n\nnomnom@keuleruke.lt\n\nI-V 11:30 – 20:00\n\n
+        VI-VII 12:00 – 20:00\n\nV-VI 22:00 – 4:00</string>
+    <string name="eat_resources_3">https://www.facebook.com/keule.ruke/</string>
+    <string name="eat_google_link_3">https://goo.gl/maps/Snbo6YJ6PKr</string>
+
+    <string name="eat_object_name_4">Maghrib</string>
+    <string name="eat_place_4">Užupio str. 22</string>
+    <string name="eat_description_4">Užupio str. 22\n\n\+370 614 98283\n\ninfo@maghrib.lt\n\nI closed
+        \n\nII-IV 16:30 – 22:00\n\nV-VII 12:00 – 23:00</string>
+    <string name="eat_resources_4">https://www.facebook.com/MaghribLT/</string>
+    <string name="eat_google_link_4">https://goo.gl/maps/Bsmvzz2ppsQ2</string>
+
+    <string name="eat_object_name_5">Gusto Blyninė</string>
+    <string name="eat_place_5">Aušros Vartų str. 6</string>
+    <string name="eat_description_5">Aušros Vartų str. 6\n\n\+370 647 17777\n\ngusto@gusto.lt\n\n
+        I-VII 9:00 – 22:00</string>
+    <string name="eat_resources_5">http://www.gusto.lt</string>
+    <string name="eat_google_link_5">https://goo.gl/maps/s1rSEYwxsqz</string>
+
+    <string name="eat_object_name_6">La Boheme</string>
+    <string name="eat_place_6">Šv. Ignoto str. 4/3</string>
+    <string name="eat_description_6">Šv. Ignoto str. 4/3\n\n\+370 657 56270\n\nI-III 11:00 – 24:00\n\n
+        IV 11:00 – 01:00\n\nV 11:00 – 02:00\n\nVI 12:00 – 02:00\n\nVII 12:00 – 00:00</string>
+    <string name="eat_resources_6">https://www.facebook.com/la.boheme2008</string>
+    <string name="eat_google_link_6">https://goo.gl/maps/7FkMJWhaiQv</string>
+
+    <string name="eat_object_name_7">Rene</string>
+    <string name="eat_place_7">M. Antokolskio str. 13</string>
+    <string name="eat_description_7">M. Antokolskio str. 13\n\n\+370 5 2126858\n\n
+        vilnius@restoranasrene.lt\n\nI-IV 11:00 – 23:00\n\nV 11:00 – 24:00\n\nVI 12:00 – 24:00\n\n
+        VII 12:00 – 21:00</string>
+    <string name="eat_resources_7">http://www.restoranasrene.lt</string>
+    <string name="eat_google_link_7">https://goo.gl/maps/wLJdmehJnp72</string>
+
+    <string name="eat_object_name_8">Jurgis ir Drakonas (Pylimo)</string>
+    <string name="eat_place_8">Pylimo str. 22 D</string>
+    <string name="eat_description_8">Pylimo str. 22 D\n\n\+370 600 77977\n\nI-V 11:00 – 22:00\n\n
+        VI-VII 12:00 – 22:00</string>
+    <string name="eat_resources_8">https://jurgisirdrakonas.lt/en/</string>
+    <string name="eat_google_link_8">https://goo.gl/maps/Bmg82rYrPpu</string>
+
+    <string name="eat_object_name_9">Užupio Picerija</string>
+    <string name="eat_place_9">Paupio str. 3</string>
+    <string name="eat_description_9">Paupio str. 3\n\n\+370 5 215 3666\n\nI-V 8:00 – 23:00\n\n
+        VI-VII 9:00 – 23:00</string>
+    <string name="eat_resources_9">https://www.facebook.com/UzupioPicerijaPaupio3/</string>
+    <string name="eat_google_link_9">https://goo.gl/maps/EN6tKjCuPsu</string>
+
+    <string name="eat_object_name_10">Town</string>
+    <string name="eat_place_10">Gedimino av. 26</string>
+    <string name="eat_description_10">Gedimino av. 26\n\n\+370 5 2031228\n\ninfo@town.lt\n\nBreakfast
+        \n\nVI 10:30 – 13:30\n\nVII 10:30 – 15:00\n\nMain menu\n\nI-IV 11:30 – 22:30\n\n
+        V 11:30 – 23:30\n\nVI 14:00 – 23:30</string>
+    <string name="eat_resources_10">http://town.lt/en/</string>
+    <string name="eat_google_link_10">https://goo.gl/maps/PgZ2R5hpHss</string>
 
     <string name="shop_object_name_1">Shopping and entertainment center OZAS</string>
-    <string name="shop_place_1">Ozo g. 18</string>
-    <string name="shop_description_1">CONTACTS:\n\+370 5 210 0151\ninfocentras@ozas.lt\nSHOPS\n
-        I-VI 10:00 - 22:00\nVII 10:00 - 21:00\nRESTORANTS\nI-VII 10:00 - 22:00\nMAXIMA XXX\n
-        I-VII 8:00 - 22:00\nMULTIKINO cinema\nI-VII 10:00 - 22:00\nX PLANET\nI-V 12:00 - 22:00
-        \nVI 10:00 - 22:00\nVII 10:00 - 21:00\nPARKING\nI-VII 8:00 - 23:30\nTo leave parking is
+    <string name="shop_place_1">Ozo str. 18</string>
+    <string name="shop_description_1">CONTACTS\n\n\+370 5 210 0151\n\ninfocentras@ozas.lt\n\nSHOPS\n\n
+        I-VI 10:00 - 22:00\n\nVII 10:00 - 21:00\n\nRESTORANTS\nI-VII 10:00 - 22:00\n\nMAXIMA XXX\n\n
+        I-VII 8:00 - 22:00\n\nMULTIKINO cinema\n\nI-VII 10:00 - 22:00\n\nX PLANET\n\nI-V 12:00 - 22:00
+        \nVI 10:00 - 22:00\n\nVII 10:00 - 21:00\n\nPARKING\nI-VII 8:00 - 23:30\n\nTo leave parking is
         possible till 1:30.
     </string>
     <string name="shop_resources_1">http://www.ozas.lt/en/</string>
     <string name="shop_google_link_1">https://goo.gl/maps/7uT78Wh5QCp</string>
 
     <string name="shop_object_name_2">Vilnius AKROPOLIS Shopping Center</string>
-    <string name="shop_place_2">Ozo g. 25</string>
-    <string name="shop_description_2">CONTACTS:\n1588\nSTORES\n
-        I-VII 10:00 - 22:00\nEUROVAISTINĖ\nI-VII 08:00 - 23:00\nHYPER MAXIMA XXX\n
-        I-VII 08:00 - 23:00\nERMITAŽAS\nI-VI 07:30 - 22:00\nVII 08:00 - 22:00
+    <string name="shop_place_2">Ozo str. 25</string>
+    <string name="shop_description_2">CONTACTS\n\n1588\n\nSTORES\n\n
+        I-VII 10:00 - 22:00\n\nEUROVAISTINĖ\n\nI-VII 08:00 - 23:00\n\nHYPER MAXIMA XXX\n\n
+        I-VII 08:00 - 23:00\n\nERMITAŽAS\n\nI-VI 07:30 - 22:00\n\nVII 08:00 - 22:00
     </string>
     <string name="shop_resources_2">http://akropolis.lt/en/vilnius</string>
     <string name="shop_google_link_2">https://goo.gl/maps/rpitb1ABTU72</string>
+
+    <string name="shop_object_name_3">Shopping and leisure center PANORAMA</string>
+    <string name="shop_place_3">Saltoniškių str. 9</string>
+    <string name="shop_description_3">INFORMATION CENTER\n\n\+370 5 219 5811\n\n\+370 6 86 39060\n\n
+        SHOPS\n\n I-VI 10:00 - 22:00\n\nVII 10:00 – 21:00\n\nSERVICES\n\nI-VII 10:00 – 22:00\n\n
+        RESTAURANTS\n\nI-VII 8:00 -23:00\n\nRIMI\n\n8:00 - 23:00</string>
+    <string name="shop_resources_3">https://www.panorama.lt/en/</string>
+    <string name="shop_google_link_3">https://goo.gl/maps/2Z1pWwgqZov</string>
+
+    <string name="shop_object_name_4">City Style Center EUROPA</string>
+    <string name="shop_place_4">Konstitucijos av. 7A</string>
+    <string name="shop_description_4">INFORMATION CENTER\n\n\+370 616 95680\n\ninfo@pceuropa.lt\n\n
+        PC EUROPA\n\nI-VII 07:00 – 24:00\n\nMOST SHOPS\n\nI-VI 10:00 – 21:00\n\nVII 10:00 – 20:00
+        \n\nEUROPA is a centre of style, elegance and fashion. Its concept is based on “GOOD STYLE,
+        GOOD ATTITUDE” phylosophy, which becomes a foundation for EUROPA brand. It connects style
+        with personality, quality concepts with intellect and understanding, conceptual retail
+        design with sincere service and beautiful communication. We aim to connect shopping centre
+        with personalities, people who strive to succeed in what they do, who seek classic values
+        with a twist of modernity.\n\n</string>
+    <string name="shop_resources_4">http://pceuropa.lt/en/</string>
+    <string name="shop_google_link_4">https://goo.gl/maps/ZeLb9hWJjQy</string>
+
+    <string name="shop_object_name_5">OGMIOS CITY Shopping Place</string>
+    <string name="shop_place_5">Verkių str. 29</string>
+    <string name="shop_description_5">CONTACTS\n\\+370 6 800 29292\n\ncentras@ogmios.lt</string>
+    <string name="shop_resources_5">https://www.ogmiosmiestas.lt/</string>
+    <string name="shop_google_link_5">https://goo.gl/maps/KBpedCaKpQM2</string>
+
+    <string name="shop_object_name_6">Shopping Center GO9</string>
+    <string name="shop_place_6">Gedimino av. 9</string>
+    <string name="shop_description_6">CONTACTS\n\n+370 655 92 550\n\ninfo@go9.lt\n\nWORKING HOURS
+        \n\nI-V 7:00 - 22:00\n\nVI-VII 8:00 - 22:00\n\nRIMI\n\nI-V 7:00 - 22:00\n\n
+        VI-VII 9:00 - 22:00</string>
+    <string name="shop_resources_6">http://go9.lt/en/</string>
+    <string name="shop_google_link_6">https://goo.gl/maps/EZ5Yvr9RwfH2</string>
+
+    <string name="shop_object_name_7">VCUP Shopping Mall</string>
+    <string name="shop_place_7">Upės str. 9</string>
+    <string name="shop_description_7">CONTACTS\n\n\+370 5 273 1515\n\ninfo@vcup.lt\n\nMAXIMA\n\n
+        I-VII 8:00 – 22:00\n\nSHOPS\n\nI-VII 10:00 – 22:00\n\nRESTAURANTS\n\nI-VII 10:00 – 24:00\n\n
+        Here are nearly 180 sales outlets and 50 service points in the shopping center.\n\nThis part
+        of the city promises pleasant memories, where in the commercial space of 26 000 sqm visitors
+        feel comfortable thanks to convenient and special layout design of the shopping center.
+        Searching for shopping, you can relax in cafes and restaurants, facing the old city of
+        Vilnius.
+    </string>
+    <string name="shop_resources_7">http://www.vcup.lt/en/</string>
+    <string name="shop_google_link_7">https://goo.gl/maps/YJzKCi26WQM2</string>
+
+    <string name="shop_object_name_8">Shopping Center BIG VILNIUS</string>
+    <string name="shop_place_8">Ukmergės str. 369</string>
+    <string name="shop_description_8">CONTACTS\n\n\+370 5 264 3324\n\ninfobig@newsec.lt\n\n
+        WORKING HOURS\n\nI-VI 10:00 - 21:00\n\nVII 10:00 - 20:00</string>
+    <string name="shop_resources_8">http://www.big-vilnius.lt/</string>
+    <string name="shop_google_link_8">https://goo.gl/maps/obzx5vHc2yt</string>
+
+    <string name="shop_object_name_9">Shopping Center MADA</string>
+    <string name="shop_place_9">Viršuliškių str. 40</string>
+    <string name="shop_description_9">CONTACTS\n\n\+370 5 241 6583\n\nlimada@mada.lt\n\n
+        MADA – is an entire family focused shopping center. Modern, however, still retaining its
+        cozy environment, MADA is a place where a customer can shop conveniently and quickly. We
+        offer a range of stores, which you will not find anywhere else.\n\nEach day shopping center
+        MADA is visited by around 14 000 Vilnius residents as well as city guests. MADA shopping
+        center arranged in an area of 27 800 square meters hosts over 100 modern shops: grocery,
+        clothes, fabric and sewing accessories, footwear, haberdashery, accessories and jewelry,
+        cosmetics and perfumery, optician, pharmacy, bank and other companies providing a wide
+        range of services.
+    </string>
+    <string name="shop_resources_9">http://www.mada.lt/en</string>
+    <string name="shop_google_link_9">https://goo.gl/maps/uyapVJnjaAt</string>
+
+    <string name="shop_object_name_10">HALĖS Market</string>
+    <string name="shop_place_10">Pylimo str. 58</string>
+    <string name="shop_description_10">CONTACTS\n\n\+370 5 2625536\n\nhale@tugva.lt\n\nII-VI 7.00 -
+        18.00\n\nHales market is one of the largest and oldest markets in Vilnius. It was
+        constructed in 1906 by a famous architect and engineer Vaclovas Michnevicius.\n\nLocated in
+        the Old town, the Marketplace has always been popular among the townspeople and its guests
+        for its locally grown and very fresh produce as well as for the home manufactured goods.
+    </string>
+    <string name="shop_resources_10">http://www.halesturgaviete.lt/en/</string>
+    <string name="shop_google_link_10">https://goo.gl/maps/NWP1M9iJmkr</string>
 
     <string name="favour_object_name_1">Favourites</string>
     <string name="button_share">Share</string>
@@ -394,6 +835,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
     <string name="top_3_places">Top 3 places</string>
 
 

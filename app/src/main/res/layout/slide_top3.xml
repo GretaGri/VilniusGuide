@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="260dp">
+    android:layout_height="260dp"
+    tools:context="com.example.android.vilniusguide.MainActivity">
+
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="260dp">
@@ -12,14 +15,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:contentDescription="@string/top_3_places"
-    android:src="@drawable/arch_kathedral_des_bw"
+    tools:src="@drawable/arch_1_cathedral_des_bw"
     android:scaleType="centerCrop"/>
 
     <TextView
         android:id="@+id/place_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/arch_object_name_2"
+        tools:text="@string/arch_object_name_1"
         android:textSize="@dimen/text_size_button"
         android:fontFamily="@font/boycott"
         android:gravity="center_horizontal"

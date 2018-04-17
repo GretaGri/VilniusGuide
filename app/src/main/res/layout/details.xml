@@ -43,7 +43,6 @@
         android:layout_height="260dp"
         android:contentDescription="@string/img_desc_object_picture"
         android:scaleType="centerCrop"
-        android:src="@drawable/arch_kathedral_des_bw"
         tools:src="@drawable/sculpture_angel"
         android:fitsSystemWindows="true"
         app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
@@ -64,7 +63,6 @@
                 android:background="@color/colorPrimary"
                 android:fontFamily="@font/boycott"
                 android:gravity="center_vertical"
-                android:text="@string/arch_object_name_8"
                 tools:text="Heading"
                 android:textColor="@color/textColor"
                 android:textSize="@dimen/text_size_button"
@@ -141,7 +139,6 @@
                     android:fontFamily="@font/advent_pro_extralight"
                     android:padding="@dimen/padding_medium"
                     android:textSize="@dimen/text_size_description"
-                    android:text="@string/arch_description_1"
                     tools:text="@string/arch_description_1" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
