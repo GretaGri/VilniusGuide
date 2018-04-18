@@ -1,6 +1,7 @@
 package com.example.android.vilniusguide;
 
 import android.content.Context;
+import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
@@ -12,6 +13,8 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class CategoryAdapter extends FragmentPagerAdapter {
     //Context of the app
     private Context mContext;
+    private Bundle mBundle;
+    private Fragment mFragment;
 
 
     //@param fm is the fragment manager that will keep each fragment's state in the adapter
@@ -25,21 +28,51 @@ public class CategoryAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        if (position == 0) {
-            return new ArchitectureFragment();
-        } else if (position == 1) {
-            return new SculptureFragment();
-        } else if (position == 2) {
-            return new WalksFragment();
-        } else if (position == 3) {
-            return new CinemaFragment();
-        } else if (position == 4) {
-            return new EatFragment();
-        } else if (position == 5) {
-            return new ShoppingFragment();
-        } else  {
-            return new FavoritesFragment();
+           switch (position){
+            case 0:
+                mBundle = new Bundle();
+                mBundle.putInt("position",0);
+                mFragment = new ArchitectureFragment();
+                mFragment.setArguments(mBundle);
+                return mFragment;
+            case 1:
+                mBundle = new Bundle();
+                mBundle.putInt("position",1);
+                mFragment = new ArchitectureFragment();
+                mFragment.setArguments(mBundle);
+                return mFragment;
+            case 2:
+                mBundle = new Bundle();
+                mBundle.putInt("position",2);
+                mFragment = new ArchitectureFragment();
+                mFragment.setArguments(mBundle);
+                return mFragment;
+            case 3:
+                mBundle = new Bundle();
+                mBundle.putInt("position",3);
+                mFragment = new ArchitectureFragment();
+                mFragment.setArguments(mBundle);
+                return mFragment;
+            case 4:
+                mBundle = new Bundle();
+                mBundle.putInt("position",4);
+                mFragment = new ArchitectureFragment();
+                mFragment.setArguments(mBundle);
+                return mFragment;
+            case 5:
+                mBundle = new Bundle();
+                mBundle.putInt("position",5);
+                mFragment = new ArchitectureFragment();
+                mFragment.setArguments(mBundle);
+                return mFragment;
+            case 6:
+                return new FavoritesFragment();
+
+// Supply a default return statement
+            default:
+                return null;
         }
+
     }
 
     @Override
