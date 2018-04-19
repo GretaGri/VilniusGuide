@@ -93,12 +93,12 @@ public class Utils {
         objects.add(new Object(ARCHITECTURE,
                 context.getString(R.string.arch_object_name_6),
                 context.getString(R.string.arch_place_6),
-                R.drawable.arch_1_cathedral_bw,
+                R.drawable.dummy_sq,
                 context.getString(R.string.arch_official_link_6),
                 context.getString(R.string.arch_description_6),
                 context.getString(R.string.arch_resources_6),
                 context.getString(R.string.arch_google_link_6),
-                R.drawable.arch_1_cathedral_des_bw));
+                R.drawable.dummy));
         objects.add(new Object(ARCHITECTURE,
                 context.getString(R.string.arch_object_name_7),
                 context.getString(R.string.arch_place_7),

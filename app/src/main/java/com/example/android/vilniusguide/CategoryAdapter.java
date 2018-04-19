@@ -32,37 +32,37 @@ public class CategoryAdapter extends FragmentPagerAdapter {
             case 0:
                 mBundle = new Bundle();
                 mBundle.putInt("position",0);
-                mFragment = new ArchitectureFragment();
+                mFragment = new ObjectFragment();
                 mFragment.setArguments(mBundle);
                 return mFragment;
             case 1:
                 mBundle = new Bundle();
                 mBundle.putInt("position",1);
-                mFragment = new ArchitectureFragment();
+                mFragment = new ObjectFragment();
                 mFragment.setArguments(mBundle);
                 return mFragment;
             case 2:
                 mBundle = new Bundle();
                 mBundle.putInt("position",2);
-                mFragment = new ArchitectureFragment();
+                mFragment = new ObjectFragment();
                 mFragment.setArguments(mBundle);
                 return mFragment;
             case 3:
                 mBundle = new Bundle();
                 mBundle.putInt("position",3);
-                mFragment = new ArchitectureFragment();
+                mFragment = new ObjectFragment();
                 mFragment.setArguments(mBundle);
                 return mFragment;
             case 4:
                 mBundle = new Bundle();
                 mBundle.putInt("position",4);
-                mFragment = new ArchitectureFragment();
+                mFragment = new ObjectFragment();
                 mFragment.setArguments(mBundle);
                 return mFragment;
             case 5:
                 mBundle = new Bundle();
                 mBundle.putInt("position",5);
-                mFragment = new ArchitectureFragment();
+                mFragment = new ObjectFragment();
                 mFragment.setArguments(mBundle);
                 return mFragment;
             case 6:

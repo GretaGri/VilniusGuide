@@ -1,6 +1,7 @@
 package com.example.android.vilniusguide;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -9,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +18,7 @@ import java.util.List;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ArchitectureFragment extends Fragment {
+public class ObjectFragment extends Fragment {
     private RecyclerView mRecyclerView;
     private ObjectAdapter mAdapter;
     private List<Object> objectList = new ArrayList<>();
@@ -28,7 +30,7 @@ public class ArchitectureFragment extends Fragment {
     private List<Object> mShoppingObjectList = new ArrayList<>();
     private int mPosition;
 
-    public ArchitectureFragment() {
+    public ObjectFragment() {
         // Required empty public constructor
     }
 
@@ -84,38 +86,27 @@ public class ArchitectureFragment extends Fragment {
 
         mAdapter = new ObjectAdapter(objectList);
         mRecyclerView.setAdapter(mAdapter);
+        mRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(getContext(), mRecyclerView, new RecyclerTouchListener.ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+                Intent intent = new Intent(getActivity(),DetailsActivity.class);
+                intent.putExtra("picture",objectList.get(position).getPictureDescription());
+                intent.putExtra("name", objectList.get(position).getName());
+                intent.putExtra("mapLink",objectList.get(position).getMapLink());
+                intent.putExtra("homeLink",objectList.get(position).getHomeLink());
+                intent.putExtra("description",objectList.get(position).getDescription());
+                intent.putExtra("resources",objectList.get(position).getResources());
+               startActivity(intent);
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+                Toast.makeText(getContext(), "Long click", Toast.LENGTH_SHORT).show();
+            }
+        }));
+        mAdapter.notifyDataSetChanged();
         return rootView ;
     }
-//    private void prepareObjectListData() {
- //   objectList = Utils.getObjects(getContext());
-/*
-    private void getCategoryList(){
-    for (int position = 0; position < objectList.size();position++){
-        if (objectList.get(position).getCategory()==Utils.ARCHITECTURE){
-            mArchitectureObjectList.add(objectList.get(position));
-            objectList = mArchitectureObjectList;
-        }
-        else if (objectList.get(position).getCategory()==Utils.SCULPTURE){
-          mSculptureObjectList.add(objectList.get(position));
-          objectList = mSculptureObjectList;
-        }
-        else if (objectList.get(position).getCategory()==Utils.CINEMA){
-            mWalksObjectList.add(objectList.get(position));
-            objectList = mCinemaObjectList;
-        }
-        else if (objectList.get(position).getCategory()==Utils.CINEMA){
-            mCinemaObjectList.add(objectList.get(position));
-            objectList = mCinemaObjectList;
-        }
-        else if (objectList.get(position).getCategory()==Utils.EAT){
-            mEatObjectList.add(objectList.get(position));
-            objectList = mEatObjectList;
-        }
-        else if (objectList.get(position).getCategory()==Utils.SHOPPING){
-            mShoppingObjectList.add(objectList.get(position));
-            objectList = mShoppingObjectList;
-        }
-    }
- */    //   mAdapter.notifyDataSetChanged();
-    }
+//   mAdapter.notifyDataSetChanged();
 
+}

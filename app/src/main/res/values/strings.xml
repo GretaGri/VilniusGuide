@@ -46,8 +46,8 @@
         workshop. In 1997 Saint Bartholomew\’s Church was presented to the Belarussian Catholic
         community of Vilnius.
     </string>
-    <string name="arch_resources_2">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/chu
-        rches/st-bartholomew-e2-80-99s-church/</string>
+    <string name="arch_resources_2">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
+        churches/st-bartholomew-e2-80-99s-church/</string>
     <string name="arch_google_link_2">https://goo.gl/maps/KkYDSMeDLRD2</string>
 
     <string name="arch_object_name_3">Church of Bernardine</string>
@@ -65,7 +65,7 @@
         the underground. The Bernardine complex has been declared to be a monument of Lithuanian
         cultural heritage, and in 2008 it was granted the status of a cultural project of importance
         to the state.\n\n
-        2008 Vilnius Bernardine historical – architectural ensemble was reconstructed (lofts of the
+        2008 Vilnius Bernardine historical-architectural ensemble was reconstructed (lofts of the
         church, choir and administrative premises of the cloister, the gate of the church,
         the passage, the basement and the inner courtyard were renovated), tourist observation paths
         were made.\n\n
@@ -231,13 +231,13 @@
     <string name="sculpt_object_name_1">Monument to Tsemakh Shabad</string>
     <string name="sculpt_place_1">Mėsinių str. 5</string>
     <string name="sculpt_official_link_1"><![CDATA[Part of <a href= "http://www.mmcentras.lt/
-    projects/70009#vilnius-talking-statues-77966">Vilnius talking statues</a>]]></string>
-    <string name="sculpt_description_1">Sculptor: Romualdas Kvintas. 2007/n/nTsemakh Shabad was a
+    projects/70009">Vilnius talking statues</a>]]></string>
+    <string name="sculpt_description_1">Sculptor: Romualdas Kvintas. 2007\n\nTsemakh Shabad was a
         legendary personality. The doctor was active in various spheres of life, including charity
-        (he was one of the heads of the community for supporting refugees), health care
-        (as founder of the Ozė health community in Vilnius), education and science
-        (as an active figure in the Central Jewish Schools Organization and one of the initiators
-        of the establishment of YIVO), public affairs(together with J. Vygodskij he re-established
+        (he was one of the heads of the community for supporting refugees), health care (as founder
+        of the Ozė health community in Vilnius), education and science as an active figure in the
+        Central Jewish Schools Organization and one of the initiators
+        of the establishment of YIVO), public affairs (together with J. Vygodskij he re-established
         the Vilnius Jewish Community) and journalism.
     </string>
     <string name="sculpt_resources_1">http://www.vilnius-tourism.lt/en/what-to-see/places-to-visit/
@@ -247,7 +247,7 @@
     <string name="sculpt_object_name_2">Monument to Grand Duke Gediminas</string>
     <string name="sculpt_place_2">Katedra square</string>
     <string name="sculpt_official_link_2"><![CDATA[Part of <a href= "http://www.mmcentras.lt/
-    projects/70009#vilnius-talking-statues-77966">Vilnius talking statues</a>]]></string>
+    projects/70009">Vilnius talking statues</a>]]></string>
     <string name="sculpt_description_2">Created by the Lithuanian American Vytautas Kašuba and
         Mindaugas Šnipas. 1996/n/nBesides being the founder of Vilnius and Trakai, Gediminas was
         also one of the most famous rulers of Lithuania. His fame can only be compared to the fame
@@ -284,7 +284,7 @@
         monuments/romain-gary/</string>
     <string name="sculpt_google_link_3">https://goo.gl/maps/RhJjBGkQsk72</string>
 
-    <string name="sculpt_object_name_4">Užupis Mermaid Sculpture</string>
+    <string name="sculpt_object_name_4">Uzupis Mermaid Sculpture</string>
     <string name="sculpt_place_4">Maironio str. / Užupio str.</string>
     <string name="sculpt_official_link_4"><![CDATA[Part of <a href= "http://www.mmcentras.lt/
     projects/70009#vilnius-talking-statues-77966">Vilnius talking statues</a>]]></string>
@@ -476,7 +476,7 @@
 
     <string name="walks_object_name_6">Three Crosses Monument</string>
     <string name="walks_place_6">T. Kosciuškos str.</string>
-      <string name="walks_description_6">Sculptor: Antanas Vivulskis. 1916. Kęstutis Šilgalis. 1989
+    <string name="walks_description_6">Sculptor: Antanas Vivulskis. 1916. Kęstutis Šilgalis. 1989
           \n\nSome say, that the origins of the three crosses date back to the 17th century when
           three monks placed them there to pay tribute to a group of fellow monks who were martyred
           in the 14th century. According to the history books, seven monks were killed and seven
@@ -659,7 +659,7 @@
     <string name="eat_object_name_1">Boom! Burgers</string>
     <string name="eat_place_1">Gedimino av. 1</string>
     <string name="eat_description_1">Gedimino av. 1\n\n\+370 652 14534\n\nboom@boomburgers.lt\n\n
-        I-IV 11:30 – 22:00\n\nV 11:30 – 23:00\n\nVI 12:00 – 23:00\n\nVII 12:00 – 22:00</string>
+        I-IV 11:30 - 22:00\n\nV 11:30 - 23:00\n\nVI 12:00 – 23:00\n\nVII 12:00 – 22:00</string>
     <string name="eat_resources_1">https://www.facebook.com/boomburgerslithuania</string>
     <string name="eat_google_link_1">https://goo.gl/maps/tyc3CZaRjdm</string>
 
@@ -713,7 +713,7 @@
     <string name="eat_resources_8">https://jurgisirdrakonas.lt/en/</string>
     <string name="eat_google_link_8">https://goo.gl/maps/Bmg82rYrPpu</string>
 
-    <string name="eat_object_name_9">Užupio Picerija</string>
+    <string name="eat_object_name_9">Uzupio Picerija</string>
     <string name="eat_place_9">Paupio str. 3</string>
     <string name="eat_description_9">Paupio str. 3\n\n\+370 5 215 3666\n\nI-V 8:00 – 23:00\n\n
         VI-VII 9:00 – 23:00</string>
