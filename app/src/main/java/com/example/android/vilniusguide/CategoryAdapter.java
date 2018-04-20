@@ -66,7 +66,11 @@ public class CategoryAdapter extends FragmentPagerAdapter {
                 mFragment.setArguments(mBundle);
                 return mFragment;
             case 6:
-                return new FavoritesFragment();
+                mBundle = new Bundle();
+                mBundle.putInt("position",6);
+                mFragment = new ObjectFragment();
+                mFragment.setArguments(mBundle);
+                return mFragment;
 
 // Supply a default return statement
             default:

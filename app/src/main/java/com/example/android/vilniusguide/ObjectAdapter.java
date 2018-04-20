@@ -1,6 +1,5 @@
 package com.example.android.vilniusguide;
 
-import android.graphics.Movie;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -24,12 +23,14 @@ public class ObjectAdapter extends RecyclerView.Adapter<ObjectAdapter.MyViewHold
         public TextView name;
         public TextView place;
         public ImageView picture;
+        public ImageView favorite;
 
         public MyViewHolder(View view) {
             super(view);
             name = view.findViewById(R.id.list_item_name);
             place = view.findViewById(R.id.list_item_place);
             picture = view.findViewById(R.id.list_picture);
+            favorite = view.findViewById(R.id.favourites);
         }
     }
 

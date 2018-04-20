@@ -142,7 +142,7 @@
                     android:fontFamily="@font/advent_pro_extralight"
                     android:padding="@dimen/padding_medium"
                     android:textSize="@dimen/text_size_description"
-                    android:autoLink="web|phone|email"
+                    android:autoLink="email"
                     tools:text="@string/arch_description_1" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
@@ -168,8 +168,7 @@
                     android:fontFamily="@font/boycott"
                     android:gravity="center"
                     android:text="@string/button_more"
-                    android:textSize="@dimen/text_size_button"
-                    style="?android:attr/borderlessButtonStyle" />
+                    android:textSize="@dimen/text_size_button" />
 
                 <Button
                     android:id="@+id/buttonShare"

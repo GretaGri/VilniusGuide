@@ -10,6 +10,8 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -28,7 +30,9 @@ public class ObjectFragment extends Fragment {
     private List<Object> mCinemaObjectList = new ArrayList<>();
     private List<Object> mEatObjectList = new ArrayList<>();
     private List<Object> mShoppingObjectList = new ArrayList<>();
+    private List<Object> mFavoritesList = new ArrayList<>();
     private int mPosition;
+    boolean pickedAsFavourite = false;
 
     public ObjectFragment() {
         // Required empty public constructor
@@ -37,18 +41,12 @@ public class ObjectFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-    }
+        if (savedInstanceState!=null){
+        pickedAsFavourite = savedInstanceState.getBoolean(Utils.FAVORITES);}
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.recycler_view, container, false);
-        mRecyclerView = rootView.findViewById(R.id.recycler_view);
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
-        mRecyclerView.setLayoutManager(mLayoutManager);
-        mRecyclerView.setItemAnimator(new DefaultItemAnimator());
+
         objectList = Utils.getObjects(getContext());
-       for (int position = 0; position < objectList.size();position++) {
+        for (int position = 0; position < objectList.size();position++) {
             if (objectList.get(position).getCategory() == Utils.ARCHITECTURE) {
                 mArchitectureObjectList.add(objectList.get(position));
             }
@@ -68,6 +66,15 @@ public class ObjectFragment extends Fragment {
                 mShoppingObjectList.add(objectList.get(position));
             }
         }
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.recycler_view, container, false);
+        mRecyclerView = rootView.findViewById(R.id.recycler_view);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getContext());
+        mRecyclerView.setLayoutManager(mLayoutManager);
 
         mPosition = getArguments().getInt("position");
         if (mPosition == 0) {
@@ -82,14 +89,17 @@ public class ObjectFragment extends Fragment {
             objectList = mEatObjectList;
         } else if (mPosition == 5) {
             objectList = mShoppingObjectList;
+        } else if (mPosition == 6) {
+            objectList = mFavoritesList;
         }
-
+        mRecyclerView.setItemAnimator(new DefaultItemAnimator());
         mAdapter = new ObjectAdapter(objectList);
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(getContext(), mRecyclerView, new RecyclerTouchListener.ClickListener() {
             @Override
             public void onClick(View view, int position) {
                 Intent intent = new Intent(getActivity(),DetailsActivity.class);
+                intent.putExtra("category",objectList.get(position).getCategory());
                 intent.putExtra("picture",objectList.get(position).getPictureDescription());
                 intent.putExtra("name", objectList.get(position).getName());
                 intent.putExtra("mapLink",objectList.get(position).getMapLink());
@@ -98,15 +108,33 @@ public class ObjectFragment extends Fragment {
                 intent.putExtra("resources",objectList.get(position).getResources());
                startActivity(intent);
             }
-
+            
             @Override
             public void onLongClick(View view, int position) {
                 Toast.makeText(getContext(), "Long click", Toast.LENGTH_SHORT).show();
+                if (!pickedAsFavourite) {
+                    mFavoritesList.add(objectList.get(mPosition));
+                    mAdapter.notifyDataSetChanged();
+                    pickedAsFavourite = true;
+                } else {
+                    mFavoritesList.remove(objectList.get(mPosition));
+                    mAdapter.notifyDataSetChanged();
+                    pickedAsFavourite = false;
+                }
             }
         }));
-        mAdapter.notifyDataSetChanged();
+
         return rootView ;
     }
-//   mAdapter.notifyDataSetChanged();
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstanceState) {
+        // Save the mFavoritesList
+       savedInstanceState.putBoolean(Utils.FAVORITES, pickedAsFavourite);
+
+        super.onSaveInstanceState(savedInstanceState);
+    }
+
+
 
 }

@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
-        // Save the user's current game state
+        // Save the user's current page state
         savedInstanceState.putInt(Utils.STATE_CURRENT_PAGE, currentPage);
 
         super.onSaveInstanceState(savedInstanceState);
