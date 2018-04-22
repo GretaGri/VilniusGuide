@@ -1,6 +1,7 @@
 package com.example.android.vilniusguide;
 
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -136,15 +137,19 @@ public class ObjectFragment extends Fragment {
         if (mFavoritesList.size() > 0) {
             SharedPreferences.Editor editor = getActivity().getSharedPreferences(Utils.MY_PREFS_NAME, getContext().MODE_PRIVATE).edit();
             editor.putInt("favorites", 1);
-            editor.apply();
+            editor.commit();
         }
+        else {
+            SharedPreferences.Editor editor = getActivity().getSharedPreferences(Utils.MY_PREFS_NAME, getContext().MODE_PRIVATE).edit();
+        editor.putInt("favorites", 0);
+        editor.commit();}
+
         return rootView ;
     }
 
     @Override
     public void onSaveInstanceState(Bundle savedInstanceState) {
         // Save the current objectList
-
 
         super.onSaveInstanceState(savedInstanceState);
     }
