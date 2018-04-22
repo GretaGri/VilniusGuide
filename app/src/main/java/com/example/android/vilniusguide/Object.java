@@ -14,19 +14,9 @@ public class Object {
     private String mResources;
     private String mMapLink;
     private int mPictureDescription;
+    private boolean mFavorite;
 
-    public Object (int category, String name, String place, int pictureList) {
-        this.mCategory = category;
-        this.mName = name;
-        this.mPlace = place;
-        this.mPictureList = pictureList;
-    }
-    public Object (String name, int pictureDescription) {
-        this.mName = name;
-        this.mPictureDescription = pictureDescription;
-    }
-
-    public Object (int category, String name, String place, int pictureList, String homeLink, String description, String resources, String mapLink, int pictureDescription){
+    public Object (int category, String name, String place, int pictureList, String homeLink, String description, String resources, String mapLink, int pictureDescription, boolean favorite){
         this.mCategory = category;
         this.mName = name;
         this.mPlace = place;
@@ -36,6 +26,7 @@ public class Object {
         this.mResources = resources;
         this.mMapLink = mapLink;
         this.mPictureDescription = pictureDescription;
+        this.mFavorite = favorite;
     }
     public int getCategory() {
         return mCategory;
@@ -107,5 +98,12 @@ public class Object {
 
     public void setPictureDescription(int pictureDescription) {
         this.mPictureDescription = pictureDescription;
+    }
+    public boolean getFavorite() {
+        return mFavorite;
+    }
+
+    public void setFavorite(boolean favorite) {
+        this.mFavorite = favorite;
     }
 }

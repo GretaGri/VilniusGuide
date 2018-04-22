@@ -16,7 +16,11 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class DetailsActivity extends AppCompatActivity {
+    private int position;
     private int category;
     private int picture;
     private String name;
@@ -33,6 +37,7 @@ public class DetailsActivity extends AppCompatActivity {
     private TextView details;
     private Button more;
     private Button share;
+    private boolean favoriteSelected;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +49,6 @@ public class DetailsActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setIcon(R.mipmap.ic_launcher);
 
         itemPicture = findViewById(R.id.imageView);
         heading = findViewById(R.id.heading);
@@ -57,6 +61,7 @@ public class DetailsActivity extends AppCompatActivity {
 
         // Get necessary values from category fragment
         Intent intent = getIntent();
+        position = intent.getIntExtra("position",0);
         category = intent.getIntExtra("category",0);
         picture = intent.getIntExtra("picture", 0);
         name = intent.getStringExtra("name");
@@ -64,6 +69,8 @@ public class DetailsActivity extends AppCompatActivity {
         homeLink = intent.getStringExtra("homeLink");
         description = intent.getStringExtra("description");
         resources = intent.getStringExtra("resources");
+        favoriteSelected = intent.getBooleanExtra("favorite",false);
+
 
         // Set resources
         itemPicture.setImageResource(picture);
@@ -81,13 +88,13 @@ public class DetailsActivity extends AppCompatActivity {
             officialLink.setVisibility(View.VISIBLE);
             if (category == Utils.SHOPPING||category==Utils.EAT||category==Utils.CINEMA){
                 ;
-                Drawable img = this.getResources().getDrawable( R.drawable.ic_favorite_black_24dp );
-                officialLink.setCompoundDrawables(img,null,null,null);
+                Drawable img = this.getResources().getDrawable( R.drawable.ic_call_black_18dp);
+                officialLink.setCompoundDrawablesWithIntrinsicBounds(img,null,null,null);
                 officialLink.setAutoLinkMask(Linkify.PHONE_NUMBERS);
                 officialLink.setText(homeLink);
             } else {
                 Drawable img = this.getResources().getDrawable( R.drawable.ic_link_black_18dp);
-                officialLink.setCompoundDrawables(img,null,null,null);
+                officialLink.setCompoundDrawablesWithIntrinsicBounds(img,null,null,null);
                 officialLink.setText(Html.fromHtml(homeLink));
                 officialLink.setMovementMethod(LinkMovementMethod.getInstance());
             }
@@ -110,6 +117,21 @@ public class DetailsActivity extends AppCompatActivity {
                 sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Let's visit this place "+ mapLink);
 
                 startActivity(Intent.createChooser(sharingIntent, getResources().getText(R.string.share)));
+            }
+        });
+if (favoriteSelected) {favorite.setImageDrawable(getResources().getDrawable(R.drawable.ic_favorite_black_24dp));}
+
+        favorite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(!favoriteSelected) {
+                    favorite.setImageDrawable(getResources().getDrawable(R.drawable.ic_favorite_black_24dp));
+                favoriteSelected = true;
+                }
+                else {
+                    favorite.setImageDrawable(getResources().getDrawable(R.drawable.ic_favorite_border_black_24dp));
+                favoriteSelected = false;
+                }
             }
         });
     }

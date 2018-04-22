@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/text_size_button"
+        android:textStyle="italic"
+        android:fontFamily="@font/advent_pro_extralight"
+        android:gravity="center"
+        android:text="@string/no_favorites"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

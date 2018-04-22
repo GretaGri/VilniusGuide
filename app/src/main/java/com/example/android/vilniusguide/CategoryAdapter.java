@@ -1,6 +1,7 @@
 package com.example.android.vilniusguide;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -68,8 +69,14 @@ public class CategoryAdapter extends FragmentPagerAdapter {
             case 6:
                 mBundle = new Bundle();
                 mBundle.putInt("position",6);
-                mFragment = new ObjectFragment();
-                mFragment.setArguments(mBundle);
+                int favorite;
+                SharedPreferences prefs = mContext.getSharedPreferences(Utils.MY_PREFS_NAME, mContext.MODE_PRIVATE);
+                favorite = prefs.getInt("favorites", 0); //0 is the default value.
+
+                if (favorite==0){mFragment = new FavoritesFragment();
+                }
+                else {mFragment = new ObjectFragment();
+                    mFragment.setArguments(mBundle);}
                 return mFragment;
 
 // Supply a default return statement

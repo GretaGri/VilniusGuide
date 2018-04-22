@@ -9,9 +9,16 @@ import java.util.ArrayList;
  */
 
 public class Utils {
-    // For saving instance state
+    // For saving instance state, shared pref./keys
     public static final String STATE_CURRENT_PAGE = "currentPage";
     public static final String FAVORITES = "favorites";
+    public static final String FAVORITES_SELECTED = "selected";
+    public static final String MY_PREFS_NAME = "MyPrefsFile";
+
+    //For saving favorite state
+    public static final boolean FAVORITE_STATE_FALSE = false;
+    public static final boolean FAVORITE_STATE_TRUE = true;
+
 
     //For describing category
     public static final int ARCHITECTURE = 1;
@@ -34,9 +41,9 @@ public class Utils {
     }
 
     private static void Top3Data(Context context) {
-        top3.add(new Top(context.getString(R.string.arch_object_name_1), R.drawable.arch_1_cathedral_des_bw));
-        top3.add(new Top(context.getString(R.string.arch_object_name_2), R.drawable.arch_2_sts_bartholomews_church_des_bw));
-        top3.add(new Top(context.getString(R.string.arch_object_name_3), R.drawable.arch_3_bernardine_church1_des_bw));
+        top3.add(new Top(context.getString(R.string.arch_object_name_5), R.drawable.arch_5_annas_church_des_bw));
+        top3.add(new Top(context.getString(R.string.sculpt_object_name_10), R.drawable.sculpt_10_lithuanian_hounds_des_bw));
+        top3.add(new Top(context.getString(R.string.walks_object_name_4), R.drawable.walks_4_cathedral_belltower_des_bw));
     }
 
     public static ArrayList<Object> getObjects(Context context) {
@@ -54,7 +61,8 @@ public class Utils {
                 context.getString(R.string.arch_description_1),
                 context.getString(R.string.arch_resources_1),
                 context.getString(R.string.arch_google_link_1),
-                R.drawable.arch_1_cathedral_des_bw));
+                R.drawable.arch_1_cathedral_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(ARCHITECTURE,
                 context.getString(R.string.arch_object_name_2),
                 context.getString(R.string.arch_place_2),
@@ -63,7 +71,8 @@ public class Utils {
                 context.getString(R.string.arch_description_2),
                 context.getString(R.string.arch_resources_2),
                 context.getString(R.string.arch_google_link_2),
-                R.drawable.arch_2_sts_bartholomews_church_des_bw));
+                R.drawable.arch_2_sts_bartholomews_church_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(ARCHITECTURE,
                 context.getString(R.string.arch_object_name_3),
                 context.getString(R.string.arch_place_3),
@@ -72,7 +81,8 @@ public class Utils {
                 context.getString(R.string.arch_description_3),
                 context.getString(R.string.arch_resources_3),
                 context.getString(R.string.arch_google_link_3),
-                R.drawable.arch_3_bernardine_church1_des_bw));
+                R.drawable.arch_3_bernardine_church1_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(ARCHITECTURE,
                 context.getString(R.string.arch_object_name_4),
                 context.getString(R.string.arch_place_4),
@@ -81,7 +91,8 @@ public class Utils {
                 context.getString(R.string.arch_description_4),
                 context.getString(R.string.arch_resources_4),
                 context.getString(R.string.arch_google_link_4),
-                R.drawable.arch_4_jonu_church_des_bw));
+                R.drawable.arch_4_jonu_church_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(ARCHITECTURE,
                 context.getString(R.string.arch_object_name_5),
                 context.getString(R.string.arch_place_5),
@@ -90,7 +101,8 @@ public class Utils {
                 context.getString(R.string.arch_description_5),
                 context.getString(R.string.arch_resources_5),
                 context.getString(R.string.arch_google_link_5),
-                R.drawable.arch_5_annas_church_des_bw));
+                R.drawable.arch_5_annas_church_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(ARCHITECTURE,
                 context.getString(R.string.arch_object_name_6),
                 context.getString(R.string.arch_place_6),
@@ -99,7 +111,8 @@ public class Utils {
                 context.getString(R.string.arch_description_6),
                 context.getString(R.string.arch_resources_6),
                 context.getString(R.string.arch_google_link_6),
-                R.drawable.dummy));
+                R.drawable.dummy,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(ARCHITECTURE,
                 context.getString(R.string.arch_object_name_7),
                 context.getString(R.string.arch_place_7),
@@ -108,7 +121,8 @@ public class Utils {
                 context.getString(R.string.arch_description_7),
                 context.getString(R.string.arch_resources_7),
                 context.getString(R.string.arch_google_link_7),
-                R.drawable.arch_7_russian_church_des_bw));
+                R.drawable.arch_7_russian_church_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(ARCHITECTURE,
                 context.getString(R.string.arch_object_name_8),
                 context.getString(R.string.arch_place_8),
@@ -117,7 +131,8 @@ public class Utils {
                 context.getString(R.string.arch_description_8),
                 context.getString(R.string.arch_resources_8),
                 context.getString(R.string.arch_google_link_8),
-                R.drawable.arch_8_grand_dukes_palace_des_bw));
+                R.drawable.arch_8_grand_dukes_palace_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(ARCHITECTURE,
                 context.getString(R.string.arch_object_name_9),
                 context.getString(R.string.arch_place_9),
@@ -126,7 +141,8 @@ public class Utils {
                 context.getString(R.string.arch_description_9),
                 context.getString(R.string.arch_resources_9),
                 context.getString(R.string.arch_google_link_9),
-                R.drawable.arch_9_town_hall_des_bw));
+                R.drawable.arch_9_town_hall_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(ARCHITECTURE,
                 context.getString(R.string.arch_object_name_10),
                 context.getString(R.string.arch_place_10),
@@ -135,7 +151,8 @@ public class Utils {
                 context.getString(R.string.arch_description_10),
                 context.getString(R.string.arch_resources_10),
                 context.getString(R.string.arch_google_link_10),
-                R.drawable.arch_10_bastion_des_bw));
+                R.drawable.arch_10_bastion_des_bw,
+                FAVORITE_STATE_FALSE));
 
         objects.add(new Object(SCULPTURE,
                 context.getString(R.string.sculpt_object_name_1),
@@ -145,7 +162,8 @@ public class Utils {
                 context.getString(R.string.sculpt_description_1),
                 context.getString(R.string.sculpt_resources_1),
                 context.getString(R.string.sculpt_google_link_1),
-                R.drawable.dummy));
+                R.drawable.dummy,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SCULPTURE,
                 context.getString(R.string.sculpt_object_name_2),
                 context.getString(R.string.sculpt_place_2),
@@ -154,7 +172,8 @@ public class Utils {
                 context.getString(R.string.sculpt_description_2),
                 context.getString(R.string.sculpt_resources_2),
                 context.getString(R.string.sculpt_google_link_2),
-                R.drawable.sculpt_2_gediminas_des_bw));
+                R.drawable.sculpt_2_gediminas_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SCULPTURE,
                 context.getString(R.string.sculpt_object_name_3),
                 context.getString(R.string.sculpt_place_3),
@@ -163,7 +182,8 @@ public class Utils {
                 context.getString(R.string.sculpt_description_3),
                 context.getString(R.string.sculpt_resources_3),
                 context.getString(R.string.sculpt_google_link_3),
-                R.drawable.dummy));
+                R.drawable.dummy,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SCULPTURE,
                 context.getString(R.string.sculpt_object_name_4),
                 context.getString(R.string.sculpt_place_4),
@@ -172,7 +192,8 @@ public class Utils {
                 context.getString(R.string.sculpt_description_4),
                 context.getString(R.string.sculpt_resources_4),
                 context.getString(R.string.sculpt_google_link_4),
-                R.drawable.sculpt_4_uzupis_mermaid_des_bw));
+                R.drawable.sculpt_4_uzupis_mermaid_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SCULPTURE,
                 context.getString(R.string.sculpt_object_name_5),
                 context.getString(R.string.sculpt_place_5),
@@ -181,7 +202,8 @@ public class Utils {
                 context.getString(R.string.sculpt_description_5),
                 context.getString(R.string.sculpt_resources_5),
                 context.getString(R.string.sculpt_google_link_5),
-                R.drawable.sculpt_5three_muses_des_bw));
+                R.drawable.sculpt_5three_muses_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SCULPTURE,
                 context.getString(R.string.sculpt_object_name_6),
                 context.getString(R.string.sculpt_place_6),
@@ -190,7 +212,8 @@ public class Utils {
                 context.getString(R.string.sculpt_description_6),
                 context.getString(R.string.sculpt_resources_6),
                 context.getString(R.string.sculpt_google_link_6),
-                R.drawable.sculpt_6_uzupis_angel_des_bw));
+                R.drawable.sculpt_6_uzupis_angel_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SCULPTURE,
                 context.getString(R.string.sculpt_object_name_7),
                 context.getString(R.string.sculpt_place_7),
@@ -199,7 +222,8 @@ public class Utils {
                 context.getString(R.string.sculpt_description_7),
                 context.getString(R.string.sculpt_resources_7),
                 context.getString(R.string.sculpt_google_link_7),
-                R.drawable.sculpt_7_kudirka_monument_des_bw));
+                R.drawable.sculpt_7_kudirka_monument_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SCULPTURE,
                 context.getString(R.string.sculpt_object_name_8),
                 context.getString(R.string.sculpt_place_8),
@@ -208,7 +232,8 @@ public class Utils {
                 context.getString(R.string.sculpt_description_8),
                 context.getString(R.string.sculpt_resources_8),
                 context.getString(R.string.sculpt_google_link_8),
-                R.drawable.sculpt_8_lamplighter_des_bw));
+                R.drawable.sculpt_8_lamplighter_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SCULPTURE,
                 context.getString(R.string.sculpt_object_name_9),
                 context.getString(R.string.sculpt_place_9),
@@ -217,7 +242,8 @@ public class Utils {
                 context.getString(R.string.sculpt_description_9),
                 context.getString(R.string.sculpt_resources_9),
                 context.getString(R.string.sculpt_google_link_9),
-                R.drawable.dummy));
+                R.drawable.dummy,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SCULPTURE,
                 context.getString(R.string.sculpt_object_name_10),
                 context.getString(R.string.sculpt_place_10),
@@ -226,7 +252,8 @@ public class Utils {
                 context.getString(R.string.sculpt_description_10),
                 context.getString(R.string.sculpt_resources_10),
                 context.getString(R.string.sculpt_google_link_10),
-                R.drawable.sculpt_10_lithuanian_hounds_des_bw));
+                R.drawable.sculpt_10_lithuanian_hounds_des_bw,
+                FAVORITE_STATE_FALSE));
 
         objects.add(new Object(WALKS,
                 context.getString(R.string.walks_object_name_1),
@@ -236,7 +263,8 @@ public class Utils {
                 context.getString(R.string.walks_description_1),
                 context.getString(R.string.walks_resources_1),
                 context.getString(R.string.walks_google_link_1),
-                R.drawable.walks_1_pilies_str_des_bw));
+                R.drawable.walks_1_pilies_str_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(WALKS,
                 context.getString(R.string.walks_object_name_2),
                 context.getString(R.string.walks_place_2),
@@ -245,7 +273,8 @@ public class Utils {
                 context.getString(R.string.walks_description_2),
                 context.getString(R.string.walks_resources_2),
                 context.getString(R.string.walks_google_link_2),
-                R.drawable.walks_2_gediminas_des_bw));
+                R.drawable.walks_2_gediminas_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(WALKS,
                 context.getString(R.string.walks_object_name_3),
                 context.getString(R.string.walks_place_3),
@@ -254,7 +283,8 @@ public class Utils {
                 context.getString(R.string.walks_description_1),
                 context.getString(R.string.walks_resources_1),
                 context.getString(R.string.walks_google_link_1),
-                R.drawable.walks_3_literatu_street_des_bw));
+                R.drawable.walks_3_literatu_street_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(WALKS,
                 context.getString(R.string.walks_object_name_4),
                 context.getString(R.string.walks_place_4),
@@ -263,7 +293,8 @@ public class Utils {
                 context.getString(R.string.walks_description_4),
                 context.getString(R.string.walks_resources_4),
                 context.getString(R.string.walks_google_link_4),
-                R.drawable.walks_4_cathedral_belltower_des_bw));
+                R.drawable.walks_4_cathedral_belltower_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(WALKS,
                 context.getString(R.string.walks_object_name_5),
                 context.getString(R.string.walks_place_5),
@@ -272,7 +303,8 @@ public class Utils {
                 context.getString(R.string.walks_description_5),
                 context.getString(R.string.walks_resources_5),
                 context.getString(R.string.walks_google_link_5),
-                R.drawable.walks_5_gediminas_tower_des_bw));
+                R.drawable.walks_5_gediminas_tower_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(WALKS,
                 context.getString(R.string.walks_object_name_6),
                 context.getString(R.string.walks_place_6),
@@ -281,7 +313,8 @@ public class Utils {
                 context.getString(R.string.walks_description_6),
                 context.getString(R.string.walks_resources_6),
                 context.getString(R.string.walks_google_link_6),
-                R.drawable.walks_6_three_croses_des_bw));
+                R.drawable.walks_6_three_croses_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(WALKS,
                 context.getString(R.string.walks_object_name_7),
                 context.getString(R.string.walks_place_7),
@@ -290,7 +323,8 @@ public class Utils {
                 context.getString(R.string.walks_description_7),
                 context.getString(R.string.walks_resources_7),
                 context.getString(R.string.walks_google_link_7),
-                R.drawable.walks_7_bernardine_gardens_des_bw));
+                R.drawable.walks_7_bernardine_gardens_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(WALKS,
                 context.getString(R.string.walks_object_name_8),
                 context.getString(R.string.walks_place_8),
@@ -299,7 +333,8 @@ public class Utils {
                 context.getString(R.string.walks_description_8),
                 context.getString(R.string.walks_resources_8),
                 context.getString(R.string.walks_google_link_8),
-                R.drawable.walks_8_vingis_park_des_bw));
+                R.drawable.walks_8_vingis_park_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(WALKS,
                 context.getString(R.string.walks_object_name_9),
                 context.getString(R.string.walks_place_9),
@@ -308,7 +343,8 @@ public class Utils {
                 context.getString(R.string.walks_description_9),
                 context.getString(R.string.walks_resources_9),
                 context.getString(R.string.walks_google_link_9),
-                R.drawable.walks_9_pavilniai_des_bw));
+                R.drawable.walks_9_pavilniai_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(WALKS,
                 context.getString(R.string.walks_object_name_10),
                 context.getString(R.string.walks_place_10),
@@ -317,7 +353,8 @@ public class Utils {
                 context.getString(R.string.walks_description_10),
                 context.getString(R.string.walks_resources_10),
                 context.getString(R.string.walks_google_link_10),
-                R.drawable.walks_10_vu_garden_des_bw));
+                R.drawable.walks_10_vu_garden_des_bw,
+                FAVORITE_STATE_FALSE));
 
         objects.add(new Object(CINEMA,
                 context.getString(R.string.cinema_object_name_1),
@@ -327,7 +364,8 @@ public class Utils {
                 context.getString(R.string.cinema_description_1),
                 context.getString(R.string.cinema_resources_1),
                 context.getString(R.string.cinema_google_link_1),
-                R.drawable.dummy));
+                R.drawable.dummy,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(CINEMA,
                 context.getString(R.string.cinema_object_name_2),
                 context.getString(R.string.cinema_place_2),
@@ -336,7 +374,8 @@ public class Utils {
                 context.getString(R.string.cinema_description_2),
                 context.getString(R.string.cinema_resources_2),
                 context.getString(R.string.cinema_google_link_2),
-                R.drawable.cin_2_drama_theatre_des_bw));
+                R.drawable.cin_2_drama_theatre_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(CINEMA,
                 context.getString(R.string.cinema_object_name_3),
                 context.getString(R.string.cinema_place_3),
@@ -345,7 +384,8 @@ public class Utils {
                 context.getString(R.string.cinema_description_3),
                 context.getString(R.string.cinema_resources_3),
                 context.getString(R.string.cinema_google_link_3),
-                R.drawable.cin_3_arts_printing_house_des_bw));
+                R.drawable.cin_3_arts_printing_house_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(CINEMA,
                 context.getString(R.string.cinema_object_name_4),
                 context.getString(R.string.cinema_place_4),
@@ -354,7 +394,8 @@ public class Utils {
                 context.getString(R.string.cinema_description_4),
                 context.getString(R.string.cinema_resources_4),
                 context.getString(R.string.cinema_google_link_4),
-                R.drawable.dummy));
+                R.drawable.dummy,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(CINEMA,
                 context.getString(R.string.cinema_object_name_5),
                 context.getString(R.string.cinema_place_5),
@@ -363,7 +404,8 @@ public class Utils {
                 context.getString(R.string.cinema_description_5),
                 context.getString(R.string.cinema_resources_5),
                 context.getString(R.string.cinema_google_link_5),
-                R.drawable.dummy));
+                R.drawable.dummy,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(CINEMA,
                 context.getString(R.string.cinema_object_name_6),
                 context.getString(R.string.cinema_place_6),
@@ -372,7 +414,8 @@ public class Utils {
                 context.getString(R.string.cinema_description_6),
                 context.getString(R.string.cinema_resources_6),
                 context.getString(R.string.cinema_google_link_6),
-                R.drawable.dummy));
+                R.drawable.dummy,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(CINEMA,
                 context.getString(R.string.cinema_object_name_7),
                 context.getString(R.string.cinema_place_7),
@@ -381,7 +424,8 @@ public class Utils {
                 context.getString(R.string.cinema_description_7),
                 context.getString(R.string.cinema_resources_7),
                 context.getString(R.string.cinema_google_link_7),
-                R.drawable.dummy));
+                R.drawable.dummy,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(CINEMA,
                 context.getString(R.string.cinema_object_name_8),
                 context.getString(R.string.cinema_place_8),
@@ -390,7 +434,8 @@ public class Utils {
                 context.getString(R.string.cinema_description_8),
                 context.getString(R.string.cinema_resources_8),
                 context.getString(R.string.cinema_google_link_8),
-                R.drawable.dummy));
+                R.drawable.dummy,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(CINEMA,
                 context.getString(R.string.cinema_object_name_9),
                 context.getString(R.string.cinema_place_9),
@@ -399,7 +444,8 @@ public class Utils {
                 context.getString(R.string.cinema_description_9),
                 context.getString(R.string.cinema_resources_9),
                 context.getString(R.string.cinema_google_link_9),
-                R.drawable.cin_9_pasaka_des_bw));
+                R.drawable.cin_9_pasaka_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(CINEMA,
                 context.getString(R.string.cinema_object_name_10),
                 context.getString(R.string.cinema_place_10),
@@ -408,7 +454,8 @@ public class Utils {
                 context.getString(R.string.cinema_description_10),
                 context.getString(R.string.cinema_resources_10),
                 context.getString(R.string.cinema_google_link_10),
-                R.drawable.dummy));
+                R.drawable.dummy,
+                FAVORITE_STATE_FALSE));
 
         objects.add(new Object(EAT,
                 context.getString(R.string.eat_object_name_1),
@@ -418,7 +465,8 @@ public class Utils {
                 context.getString(R.string.eat_description_1),
                 context.getString(R.string.eat_resources_1),
                 context.getString(R.string.eat_google_link_1),
-                R.drawable.eat_1_boom_burgers_des_bw));
+                R.drawable.eat_1_boom_burgers_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(EAT,
                 context.getString(R.string.eat_object_name_2),
                 context.getString(R.string.eat_place_2),
@@ -427,7 +475,8 @@ public class Utils {
                 context.getString(R.string.eat_description_2),
                 context.getString(R.string.eat_resources_2),
                 context.getString(R.string.eat_google_link_2),
-                R.drawable.dummy));
+                R.drawable.dummy,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(EAT,
                 context.getString(R.string.eat_object_name_3),
                 context.getString(R.string.eat_place_3),
@@ -436,7 +485,8 @@ public class Utils {
                 context.getString(R.string.eat_description_3),
                 context.getString(R.string.eat_resources_3),
                 context.getString(R.string.eat_google_link_3),
-                R.drawable.dummy));
+                R.drawable.dummy,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(EAT,
                 context.getString(R.string.eat_object_name_4),
                 context.getString(R.string.eat_place_4),
@@ -445,7 +495,8 @@ public class Utils {
                 context.getString(R.string.eat_description_4),
                 context.getString(R.string.eat_resources_4),
                 context.getString(R.string.eat_google_link_4),
-                R.drawable.dummy));
+                R.drawable.dummy,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(EAT,
                 context.getString(R.string.eat_object_name_5),
                 context.getString(R.string.eat_place_5),
@@ -454,7 +505,8 @@ public class Utils {
                 context.getString(R.string.eat_description_5),
                 context.getString(R.string.eat_resources_5),
                 context.getString(R.string.eat_google_link_5),
-                R.drawable.dummy));
+                R.drawable.dummy,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(EAT,
                 context.getString(R.string.eat_object_name_6),
                 context.getString(R.string.eat_place_6),
@@ -463,7 +515,8 @@ public class Utils {
                 context.getString(R.string.eat_description_6),
                 context.getString(R.string.eat_resources_6),
                 context.getString(R.string.eat_google_link_6),
-                R.drawable.eat_6_la_boheme_des_bw));
+                R.drawable.eat_6_la_boheme_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(EAT,
                 context.getString(R.string.eat_object_name_7),
                 context.getString(R.string.eat_place_7),
@@ -472,7 +525,8 @@ public class Utils {
                 context.getString(R.string.eat_description_7),
                 context.getString(R.string.eat_resources_7),
                 context.getString(R.string.eat_google_link_7),
-                R.drawable.dummy));
+                R.drawable.dummy,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(EAT,
                 context.getString(R.string.eat_object_name_8),
                 context.getString(R.string.eat_place_8),
@@ -481,7 +535,8 @@ public class Utils {
                 context.getString(R.string.eat_description_8),
                 context.getString(R.string.eat_resources_8),
                 context.getString(R.string.eat_google_link_8),
-                R.drawable.dummy));
+                R.drawable.dummy,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(EAT,
                 context.getString(R.string.eat_object_name_9),
                 context.getString(R.string.eat_place_9),
@@ -490,7 +545,8 @@ public class Utils {
                 context.getString(R.string.eat_description_9),
                 context.getString(R.string.eat_resources_9),
                 context.getString(R.string.eat_google_link_9),
-                R.drawable.eat_9_uzupio_pizza_des_bw));
+                R.drawable.eat_9_uzupio_pizza_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(EAT,
                 context.getString(R.string.eat_object_name_10),
                 context.getString(R.string.eat_place_10),
@@ -499,7 +555,8 @@ public class Utils {
                 context.getString(R.string.eat_description_10),
                 context.getString(R.string.eat_resources_10),
                 context.getString(R.string.eat_google_link_10),
-                R.drawable.eat_10_town_restaurant_des_bw));
+                R.drawable.eat_10_town_restaurant_des_bw,
+                FAVORITE_STATE_FALSE));
 
         objects.add(new Object(SHOPPING,
                 context.getString(R.string.shop_object_name_1),
@@ -509,7 +566,8 @@ public class Utils {
                 context.getString(R.string.shop_description_1),
                 context.getString(R.string.shop_resources_1),
                 context.getString(R.string.shop_google_link_1),
-                R.drawable.shop_1_ozas_des_bw));
+                R.drawable.shop_1_ozas_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SHOPPING,
                 context.getString(R.string.shop_object_name_2),
                 context.getString(R.string.shop_place_2),
@@ -518,7 +576,8 @@ public class Utils {
                 context.getString(R.string.shop_description_2),
                 context.getString(R.string.shop_resources_2),
                 context.getString(R.string.shop_google_link_2),
-                R.drawable.shop_2_akropolis_des_bw));
+                R.drawable.shop_2_akropolis_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SHOPPING,
                 context.getString(R.string.shop_object_name_3),
                 context.getString(R.string.shop_place_3),
@@ -527,7 +586,8 @@ public class Utils {
                 context.getString(R.string.shop_description_3),
                 context.getString(R.string.shop_resources_3),
                 context.getString(R.string.shop_google_link_3),
-                R.drawable.shop_3_panorama_des_bw));
+                R.drawable.shop_3_panorama_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SHOPPING,
                 context.getString(R.string.shop_object_name_4),
                 context.getString(R.string.shop_place_4),
@@ -536,7 +596,8 @@ public class Utils {
                 context.getString(R.string.shop_description_4),
                 context.getString(R.string.shop_resources_4),
                 context.getString(R.string.shop_google_link_4),
-                R.drawable.shop_4_europa_des_bw));
+                R.drawable.shop_4_europa_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SHOPPING,
                 context.getString(R.string.shop_object_name_5),
                 context.getString(R.string.shop_place_5),
@@ -545,7 +606,8 @@ public class Utils {
                 context.getString(R.string.shop_description_5),
                 context.getString(R.string.shop_resources_5),
                 context.getString(R.string.shop_google_link_5),
-                R.drawable.shop_5_ogmios_city_des_bw));
+                R.drawable.shop_5_ogmios_city_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SHOPPING,
                 context.getString(R.string.shop_object_name_6),
                 context.getString(R.string.shop_place_6),
@@ -554,7 +616,8 @@ public class Utils {
                 context.getString(R.string.shop_description_6),
                 context.getString(R.string.shop_resources_6),
                 context.getString(R.string.shop_google_link_6),
-                R.drawable.shop_6_go_9_des_bw));
+                R.drawable.shop_6_go_9_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SHOPPING,
                 context.getString(R.string.shop_object_name_7),
                 context.getString(R.string.shop_place_7),
@@ -563,7 +626,8 @@ public class Utils {
                 context.getString(R.string.shop_description_7),
                 context.getString(R.string.shop_resources_7),
                 context.getString(R.string.shop_google_link_7),
-                R.drawable.shop_7_v_cup_des_bw));
+                R.drawable.shop_7_v_cup_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SHOPPING,
                 context.getString(R.string.shop_object_name_8),
                 context.getString(R.string.shop_place_8),
@@ -572,7 +636,8 @@ public class Utils {
                 context.getString(R.string.shop_description_8),
                 context.getString(R.string.shop_resources_8),
                 context.getString(R.string.shop_google_link_8),
-                R.drawable.shop_8_big_des_bw));
+                R.drawable.shop_8_big_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SHOPPING,
                 context.getString(R.string.shop_object_name_9),
                 context.getString(R.string.shop_place_9),
@@ -581,7 +646,8 @@ public class Utils {
                 context.getString(R.string.shop_description_9),
                 context.getString(R.string.shop_resources_9),
                 context.getString(R.string.shop_google_link_9),
-                R.drawable.shop_9_mada_des_bw));
+                R.drawable.shop_9_mada_des_bw,
+                FAVORITE_STATE_FALSE));
         objects.add(new Object(SHOPPING,
                 context.getString(R.string.shop_object_name_10),
                 context.getString(R.string.shop_place_10),
@@ -590,7 +656,8 @@ public class Utils {
                 context.getString(R.string.shop_description_10),
                 context.getString(R.string.shop_resources_10),
                 context.getString(R.string.shop_google_link_10),
-                R.drawable.shop_10_hales_des_bw));
+                R.drawable.shop_10_hales_des_bw,
+                FAVORITE_STATE_FALSE));
     }
 }
 

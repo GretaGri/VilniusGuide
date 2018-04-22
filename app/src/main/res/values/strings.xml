@@ -557,7 +557,7 @@
     <string name="cinema_place_1">Vienuolio av. 1</string>
     <string name="cinema_official_link_1">\+370 5 262 0727</string>
     <string name="cinema_description_1">Vienuolio av. 1\n\ninfo@opera.lt\n\n
-        I–V 10:00 - 19:00\n\nVI 10:00 - 18:30\n\nVII 10:00 - 15:00</string>
+        I-V 10:00 - 19:00\n\nVI 10:00 - 18:30\n\nVII 10:00 - 15:00</string>
     <string name="cinema_resources_1">http://www.opera.lt</string>
     <string name="cinema_google_link_1">https://goo.gl/maps/Nfq4cLJueLR2</string>
 
@@ -573,7 +573,7 @@
     <string name="cinema_place_3">Šiltadaržio str. 6</string>
     <string name="cinema_official_link_3">\+370 5 204 0832</string>
     <string name="cinema_description_3">Šiltadaržio str. 6\n\ninfo@menuspaustuve.lt\n\n
-        I closed\n\nII-VII 9:00 – 12:00, 13:00 – 22:00</string>
+        I closed\n\nII-VII 9:00 - 12:00, 13:00 - 22:00</string>
     <string name="cinema_resources_3">http://www.menuspaustuve.lt</string>
     <string name="cinema_google_link_3">https://goo.gl/maps/rxaXCJr44iQ2</string>
 
@@ -702,8 +702,7 @@
     <string name="eat_object_name_9">Uzupio Picerija</string>
     <string name="eat_place_9">Paupio str. 3</string>
     <string name="eat_official_link_9">\+370 5 215 3666</string>
-    <string name="eat_description_9">Paupio str. 3\n\nI-V 8:00 - 23:00\n\n
-        VI-VII 9:00 - 23:00</string>
+    <string name="eat_description_9">Paupio str. 3\n\nI-V 8:00 - 23:00\n\nVI-VII 9:00 - 23:00</string>
     <string name="eat_resources_9">https://www.facebook.com/UzupioPicerijaPaupio3/</string>
     <string name="eat_google_link_9">https://goo.gl/maps/EN6tKjCuPsu</string>
 
@@ -711,14 +710,14 @@
     <string name="eat_place_10">Gedimino av. 26</string>
     <string name="eat_official_link_10">\+370 5 2031228</string>
     <string name="eat_description_10">Gedimino av. 26\n\ninfo@town.lt\n\nBreakfast
-        \n\nVI 10:30 - 13:30\n\nVII 10:30 - 15:00\n\nMain menu\n\nI-IV 11:30 - 22:30\n\n
-        V 11:30 - 23:30\n\nVI 14:00 - 23:30</string>
+        \n\nVI 10:30 - 13:30\n\nVII 10:30 - 15:00\n\nMain menu\n\nI-IV 11:30 - 22:30\n\nV
+        11:30 - 23:30\n\nVI 14:00 - 23:30</string>
     <string name="eat_resources_10">http://town.lt/en/</string>
     <string name="eat_google_link_10">https://goo.gl/maps/PgZ2R5hpHss</string>
 
     <string name="shop_object_name_1">Shopping and entertainment center OZAS</string>
     <string name="shop_place_1">Ozo str. 18</string>
-    <string name="shop_official_link_1">CONTACTS\n\n\+370 5 210 0151</string>
+    <string name="shop_official_link_1">\+370 5 210 0151</string>
     <string name="shop_description_1">infocentras@ozas.lt\n\nSHOPS\n\n
         I-VI 10:00 - 22:00\n\nVII 10:00 - 21:00\n\nRESTORANTS\nI-VII 10:00 - 22:00\n\nMAXIMA XXX\n\n
         I-VII 8:00 - 22:00\n\nMULTIKINO cinema\n\nI-VII 10:00 - 22:00\n\nX PLANET\n\nI-V 12:00 - 22:00
@@ -730,7 +729,7 @@
 
     <string name="shop_object_name_2">Vilnius AKROPOLIS Shopping Center</string>
     <string name="shop_place_2">Ozo str. 25</string>
-    <string name="shop_official_link_2">CONTACTS\n\n1588</string>
+    <string name="shop_official_link_2">1588</string>
     <string name="shop_description_2">STORES\n\n
         I-VII 10:00 - 22:00\n\nEUROVAISTINĖ\n\nI-VII 08:00 - 23:00\n\nHYPER MAXIMA XXX\n\n
         I-VII 08:00 - 23:00\n\nERMITAŽAS\n\nI-VI 07:30 - 22:00\n\nVII 08:00 - 22:00
@@ -740,7 +739,7 @@
 
     <string name="shop_object_name_3">Shopping and leisure center PANORAMA</string>
     <string name="shop_place_3">Saltoniškių str. 9</string>
-    <string name="shop_official_link_3">INFORMATION CENTER\n\n\+370 5 219 5811\n\n\+370 6 86 39060</string>
+    <string name="shop_official_link_3">\+370 5 219 5811</string>
     <string name="shop_description_3">SHOPS\n\n I-VI 10:00 - 22:00\n\nVII 10:00 - 21:00
         \n\nSERVICES\n\nI-VII 10:00 - 22:00\n\n
         RESTAURANTS\n\nI-VII 8:00 - 23:00\n\nRIMI\n\n8:00 - 23:00</string>
@@ -749,7 +748,7 @@
 
     <string name="shop_object_name_4">City Style Center EUROPA</string>
     <string name="shop_place_4">Konstitucijos av. 7A</string>
-    <string name="shop_official_link_4">INFORMATION CENTER\n\n\+370 616 95680</string>
+    <string name="shop_official_link_4">\+370 616 95680</string>
     <string name="shop_description_4">info@pceuropa.lt\n\n
         PC EUROPA\n\nI-VII 07:00 - 24:00\n\nMOST SHOPS\n\nI-VI 10:00 - 21:00\n\nVII 10:00 - 20:00
         \n\nEUROPA is a centre of style, elegance and fashion. Its concept is based on \"GOOD STYLE,
@@ -763,7 +762,7 @@
 
     <string name="shop_object_name_5">OGMIOS CITY Shopping Place</string>
     <string name="shop_place_5">Verkių str. 29</string>
-    <string name="shop_official_link_5">CONTACTS\n\n\+370 6 800 29292</string>
+    <string name="shop_official_link_5">\+370 6 800 29292</string>
     <string name="shop_description_5">centras@ogmios.lt\n\n\
         "Ogmios miestas\" is a shopping island in a very convenient place in Vilnius. The shopping
         mall located on the edge of Žirmūnai is easily accessible by private and public transport.
@@ -777,7 +776,7 @@
 
     <string name="shop_object_name_6">Shopping Center GO9</string>
     <string name="shop_place_6">Gedimino av. 9</string>
-    <string name="shop_official_link_6">CONTACTS\n\n+370 655 92 550</string>
+    <string name="shop_official_link_6">+370 6559 2550</string>
     <string name="shop_description_6">info@go9.lt\n\nWORKING HOURS
         \n\nI-V 7:00 - 22:00\n\nVI-VII 8:00 - 22:00\n\nRIMI\n\nI-V 7:00 - 22:00\n\n
         VI-VII 9:00 - 22:00</string>
@@ -786,7 +785,7 @@
 
     <string name="shop_object_name_7">VCUP Shopping Mall</string>
     <string name="shop_place_7">Upės str. 9</string>
-    <string name="shop_official_link_7">CONTACTS\n\n\+370 5 273 1515</string>
+    <string name="shop_official_link_7">\+370 5 273 1515</string>
     <string name="shop_description_7">info@vcup.lt\n\nMAXIMA\n\n
         I-VII 8:00 - 22:00\n\nSHOPS\n\nI-VII 10:00 - 22:00\n\nRESTAURANTS\n\nI-VII 10:00 - 24:00\n\n
         Here are nearly 180 sales outlets and 50 service points in the shopping center.\n\nThis part
@@ -800,7 +799,7 @@
 
     <string name="shop_object_name_8">Shopping Center BIG VILNIUS</string>
     <string name="shop_place_8">Ukmergės str. 369</string>
-    <string name="shop_official_link_8">CONTACTS\n\n\+370 5 264 3324</string>
+    <string name="shop_official_link_8">\+370 5 264 3324</string>
     <string name="shop_description_8">infobig@newsec.lt
         \n\nWORKING HOURS\n\nI-VI 10:00 - 21:00\n\nVII 10:00 - 20:00</string>
     <string name="shop_resources_8">http://www.big-vilnius.lt/</string>
@@ -808,7 +807,7 @@
 
     <string name="shop_object_name_9">Shopping Center MADA</string>
     <string name="shop_place_9">Viršuliškių str. 40</string>
-    <string name="shop_official_link_9">CONTACTS\n\n\+370 5 241 6583</string>
+    <string name="shop_official_link_9">\+370 5 241 6583</string>
     <string name="shop_description_9">limada@mada.lt\n\nMADA - is an entire family focused shopping
         center. Modern, however, still retaining its
         cozy environment, MADA is a place where a customer can shop conveniently and quickly. We
@@ -824,7 +823,7 @@
 
     <string name="shop_object_name_10">HALES Market</string>
     <string name="shop_place_10">Pylimo str. 58</string>
-    <string name="shop_official_link_10">CONTACTS\n\n\+370 5 2625536</string>
+    <string name="shop_official_link_10">\+370 5 2625536</string>
     <string name="shop_description_10">hale@tugva.lt\n\nII-VI 7.00 -
         18.00\n\nHales market is one of the largest and oldest markets in Vilnius. It was
         constructed in 1906 by a famous architect and engineer Vaclovas Michnevicius.\n\nLocated in
@@ -838,11 +837,34 @@
     <string name="button_share">Share</string>
     <string name="button_more">More</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-
     <string name="top_3_places">Top 3 places</string>
     <string name="share">Share</string>
-
-
+    <string name="about_application">About application</string>
+    <string name="title_activity_about_application">AboutApplicationActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="about_app_description">Application created by Greta Grigutė as part of
+        Google developer Android Basics Nanodegree, 5th project. \n\n<b>Pictures authors:</b>
+        \n\nLiteratu Street, Cathedral Bell Tower, St. Annes Church, Gediminas av., Bernardine Church - Marius Grigutis;
+        \n\nVingis Park, Bernardine Gardens and Grand Duke Gediminas Monument - Rūta Klimienė;
+        \n\nAll other pictures - Greta Grigutė.
+        \n\n<b>Icons:</b> https://material.io/icons/
+        \n\n<b>Custom ripple effect solution:</b>
+        \nhttps://stackoverflow.com/questions/30931889/adding-ripple-effect-to-recyclerview-item/30933094#30933094
+        \nand to be able to apply it on card view: https://stackoverflow.com/a/28041873/5770629
+        \n\n<b>Coordinator layout learning sources:</b>
+        \nhttps://developer.android.com/reference/android/support/design/widget/CoordinatorLayout.html
+        \nhttp://saulmm.github.io/mastering-coordinator https://lab.getbase.com/introduction-to-coordinator-layout-on-android/
+        \n\n<b>Solution how to add view pager in nested scroll view:</b>
+        \nhttps://stackoverflow.com/questions/30580954/viewpager-in-a-nestedscrollview/33385207#33385207
+        \n\n<b>Solution to data storage as shared preferences:</b>
+        \nhttps://developer.android.com/training/data-storage/shared-preferences.html#WriteSharedPreference
+        \n\n<b>Recycler view learning sources:</b>
+        \nhttp://www.vogella.com/tutorials/AndroidRecyclerView/article.html
+        \nhttps://www.androidhive.info/2016/01/android-working-with-recycler-view/\n\n
+        </string>
+    <string name="description">Description</string>
+    <string name="no_favorites">No favorites.
+        \n\nPlease, push heart item to select your favorite</string>
+    <string name="email">greta.klimaite@gmail.com</string>
+    <string name="feedback">Feedback about \"Vilnius guide\" application</string>
 </resources>

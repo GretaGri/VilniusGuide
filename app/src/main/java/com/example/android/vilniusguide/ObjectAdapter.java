@@ -1,5 +1,7 @@
 package com.example.android.vilniusguide;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -53,6 +55,9 @@ public class ObjectAdapter extends RecyclerView.Adapter<ObjectAdapter.MyViewHold
         holder.name.setText(object.getName());
         holder.place.setText(object.getPlace());
         holder.picture.setImageResource(object.getPictureList());
+
+        if (object.getFavorite()==Utils.FAVORITE_STATE_FALSE) {holder.favorite.setImageResource(R.drawable.ic_favorite_border_black_48dp);
+        } else holder.favorite.setImageResource(R.drawable.ic_favorite_black_48dp);
     }
 
     @Override
