@@ -24,7 +24,7 @@ public class Top3Adapter extends PagerAdapter {
 
     //@param context is the context of the app.
 
-    public Top3Adapter(Context context, ArrayList <Top> top3) {
+    public Top3Adapter(Context context, ArrayList<Top> top3) {
         this.mContext = context;
         this.top3 = top3;
         inflater = LayoutInflater.from(mContext);
@@ -34,6 +34,7 @@ public class Top3Adapter extends PagerAdapter {
     public void destroyItem(ViewGroup container, int position, Object object) {
         container.removeView((View) object);
     }
+
     @Override
     public int getCount() {
         return top3.size();
@@ -42,7 +43,7 @@ public class Top3Adapter extends PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         View myImageLayout = inflater.inflate(R.layout.slide_top3, container, false);
-        ImageView myImage =  myImageLayout.findViewById(R.id.imageDescription);
+        ImageView myImage = myImageLayout.findViewById(R.id.imageDescription);
         myImage.setImageResource(top3.get(position).getPictureDescription());
         container.addView(myImageLayout, 0);
         TextView place = myImageLayout.findViewById(R.id.place_name);

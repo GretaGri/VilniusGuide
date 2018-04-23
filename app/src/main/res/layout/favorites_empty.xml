@@ -13,25 +13,25 @@
         android:fitsSystemWindows="true"
         android:theme="@style/ThemeOverlay.AppCompat.Light">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/appbar_height_favorites"
-        android:background="?attr/colorPrimary"
-        android:fitsSystemWindows="true"
-        app:layout_scrollFlags="scroll|snap">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/appbar_height_favorites"
+            android:background="?attr/colorPrimary"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="scroll|snap">
 
-        <TextView
-            android:id="@+id/custom_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/boycott"
-            android:padding="@dimen/padding_min"
-            android:text="@string/favorites"
-            android:textColor="@color/textColor"
-            android:textSize="@dimen/text_size_button" />
+            <TextView
+                android:id="@+id/custom_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/boycott"
+                android:padding="@dimen/padding_min"
+                android:text="@string/favorites"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size_button" />
 
-    </android.support.v7.widget.Toolbar>
+        </android.support.v7.widget.Toolbar>
     </android.support.design.widget.AppBarLayout>
 
     <TextView
@@ -54,6 +54,6 @@
         android:clickable="true"
         android:focusable="true"
         android:scrollbars="vertical"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"></android.support.v7.widget.RecyclerView>
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
 </LinearLayout>

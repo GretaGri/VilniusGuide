@@ -1,9 +1,11 @@
 package com.example.android.vilniusguide;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.view.menu.MenuBuilder;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -33,12 +35,10 @@ public class FavoritesActivity extends AppCompatActivity {
         mNoFavorites = findViewById(R.id.no_favorites);
         mRecyclerView = findViewById(R.id.recycler_view);
 
-
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
 
         objectList = Utils.getObjects(this);
 
@@ -72,14 +72,14 @@ public class FavoritesActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View view, int position) {
                     Intent intent = new Intent(FavoritesActivity.this, DetailsActivity.class);
-                    intent.putExtra("category", objectList.get(position).getCategory());
-                    intent.putExtra("picture", objectList.get(position).getPictureDescription());
-                    intent.putExtra("name", objectList.get(position).getName());
-                    intent.putExtra("mapLink", objectList.get(position).getMapLink());
-                    intent.putExtra("homeLink", objectList.get(position).getHomeLink());
-                    intent.putExtra("description", objectList.get(position).getDescription());
-                    intent.putExtra("resources", objectList.get(position).getResources());
-                    intent.putExtra("favorite",objectList.get(position).getFavorite());
+                    intent.putExtra(Utils.CATEGORY, objectList.get(position).getCategory());
+                    intent.putExtra(Utils.PICTURE, objectList.get(position).getPictureDescription());
+                    intent.putExtra(Utils.NAME, objectList.get(position).getName());
+                    intent.putExtra(Utils.MAP_LINK, objectList.get(position).getMapLink());
+                    intent.putExtra(Utils.HOME_LINK, objectList.get(position).getHomeLink());
+                    intent.putExtra(Utils.DESCRIPTION, objectList.get(position).getDescription());
+                    intent.putExtra(Utils.RESOURCES, objectList.get(position).getResources());
+                    intent.putExtra(Utils.FAVORITE, objectList.get(position).getFavorite());
                     startActivity(intent);
                 }
 
@@ -92,9 +92,10 @@ public class FavoritesActivity extends AppCompatActivity {
                     mFavoritesList.remove(objectList.get(position));
                     mAdapter.notifyDataSetChanged();
                     //Put the state of the object removed as favorite in shared pref.
-                    if (mFavoritesList.size()==0){
-                    mRecyclerView.setVisibility(View.GONE);
-                    mNoFavorites.setVisibility(View.VISIBLE);}
+                    if (mFavoritesList.size() == 0) {
+                        mRecyclerView.setVisibility(View.GONE);
+                        mNoFavorites.setVisibility(View.VISIBLE);
+                    }
                 }
             }));
         } else {
@@ -103,10 +104,15 @@ public class FavoritesActivity extends AppCompatActivity {
         }
     }
 
+    @SuppressLint("RestrictedApi")
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu, menu);
+        if (menu instanceof MenuBuilder) {
+            MenuBuilder m = (MenuBuilder) menu;
+            m.setOptionalIconsVisible(true);
+        }
         return true;
     }
 

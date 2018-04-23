@@ -64,7 +64,7 @@
             android:scrollbars="horizontal"
             app:tabMode="scrollable"
             app:tabSelectedTextColor="@color/colorAccent"
-            app:tabTextAppearance="@style/tabTextAppearance"></android.support.design.widget.TabLayout>
+            app:tabTextAppearance="@style/tabTextAppearance" />
 
     </android.support.design.widget.AppBarLayout>
 

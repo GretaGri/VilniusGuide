@@ -1,12 +1,13 @@
 package com.example.android.vilniusguide;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
-import android.provider.ContactsContract;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.view.menu.MenuBuilder;
 import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
@@ -19,9 +20,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class DetailsActivity extends AppCompatActivity {
     private int category;
@@ -53,7 +51,6 @@ public class DetailsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-
         itemPicture = findViewById(R.id.imageView);
         heading = findViewById(R.id.heading);
         goTo = findViewById(R.id.buttonGoToPlace);
@@ -65,15 +62,14 @@ public class DetailsActivity extends AppCompatActivity {
 
         // Get necessary values from category fragment
         Intent intent = getIntent();
-        category = intent.getIntExtra("category",0);
-        picture = intent.getIntExtra("picture", 0);
-        name = intent.getStringExtra("name");
-        mapLink = intent.getStringExtra("mapLink");
-        homeLink = intent.getStringExtra("homeLink");
-        description = intent.getStringExtra("description");
-        resources = intent.getStringExtra("resources");
-        favoriteSelected = intent.getBooleanExtra("favorite",false);
-
+        category = intent.getIntExtra(Utils.CATEGORY, 0);
+        picture = intent.getIntExtra(Utils.PICTURE, 0);
+        name = intent.getStringExtra(Utils.NAME);
+        mapLink = intent.getStringExtra(Utils.MAP_LINK);
+        homeLink = intent.getStringExtra(Utils.HOME_LINK);
+        description = intent.getStringExtra(Utils.DESCRIPTION);
+        resources = intent.getStringExtra(Utils.RESOURCES);
+        favoriteSelected = intent.getBooleanExtra(Utils.FAVORITE, false);
 
         // Set resources
         itemPicture.setImageResource(picture);
@@ -87,17 +83,17 @@ public class DetailsActivity extends AppCompatActivity {
             }
         });
 
-        if (!homeLink.equals(getString(R.string.no_link))){
+        if (!homeLink.equals(getString(R.string.no_link))) {
             officialLink.setVisibility(View.VISIBLE);
-            if (category == Utils.SHOPPING||category==Utils.EAT||category==Utils.CINEMA){
+            if (category == Utils.SHOPPING || category == Utils.EAT || category == Utils.CINEMA) {
                 ;
-                Drawable img = this.getResources().getDrawable( R.drawable.ic_call_black_18dp);
-                officialLink.setCompoundDrawablesWithIntrinsicBounds(img,null,null,null);
+                Drawable img = this.getResources().getDrawable(R.drawable.ic_call_black_18dp);
+                officialLink.setCompoundDrawablesWithIntrinsicBounds(img, null, null, null);
                 officialLink.setAutoLinkMask(Linkify.PHONE_NUMBERS);
                 officialLink.setText(homeLink);
             } else {
-                Drawable img = this.getResources().getDrawable( R.drawable.ic_link_black_18dp);
-                officialLink.setCompoundDrawablesWithIntrinsicBounds(img,null,null,null);
+                Drawable img = this.getResources().getDrawable(R.drawable.ic_link_black_18dp);
+                officialLink.setCompoundDrawablesWithIntrinsicBounds(img, null, null, null);
                 officialLink.setText(Html.fromHtml(homeLink));
                 officialLink.setMovementMethod(LinkMovementMethod.getInstance());
             }
@@ -117,39 +113,46 @@ public class DetailsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent sharingIntent = new Intent(Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
-                sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Let's visit this place "+ mapLink);
+                sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, getString(R.string.email_text) + mapLink);
 
                 startActivity(Intent.createChooser(sharingIntent, getResources().getText(R.string.share)));
             }
         });
-if (favoriteSelected) {favorite.setImageDrawable(getResources().getDrawable(R.drawable.ic_favorite_black_24dp));}
+        if (favoriteSelected) {
+            favorite.setImageDrawable(getResources().getDrawable(R.drawable.ic_favorite_black_24dp));
+        }
 
         favorite.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(!favoriteSelected) {
+                if (!favoriteSelected) {
                     Toast.makeText(DetailsActivity.this, R.string.selected_as_favorite, Toast.LENGTH_SHORT).show();
                     favorite.setImageDrawable(getResources().getDrawable(R.drawable.ic_favorite_black_24dp));
-                favoriteSelected = true;
-                    SharedPreferences.Editor editor = DetailsActivity.this.getSharedPreferences(Utils.MY_PREFS_NAME,DetailsActivity.MODE_PRIVATE).edit();
+                    favoriteSelected = true;
+                    SharedPreferences.Editor editor = DetailsActivity.this.getSharedPreferences(Utils.MY_PREFS_NAME, DetailsActivity.MODE_PRIVATE).edit();
                     editor.putBoolean(name, true);
                     editor.apply();
-                }
-                else {
-                    Toast.makeText(DetailsActivity.this, "Removed from favorites", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(DetailsActivity.this, R.string.removed_from_favorites, Toast.LENGTH_SHORT).show();
                     favorite.setImageDrawable(getResources().getDrawable(R.drawable.ic_favorite_border_black_24dp));
-                favoriteSelected = false;
-                    SharedPreferences.Editor editor = DetailsActivity.this.getSharedPreferences(Utils.MY_PREFS_NAME,DetailsActivity.MODE_PRIVATE).edit();
+                    favoriteSelected = false;
+                    SharedPreferences.Editor editor = DetailsActivity.this.getSharedPreferences(Utils.MY_PREFS_NAME, DetailsActivity.MODE_PRIVATE).edit();
                     editor.putBoolean(name, false);
                     editor.apply();
                 }
             }
         });
     }
+
+    @SuppressLint("RestrictedApi")
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu, menu);
+        if (menu instanceof MenuBuilder) {
+            MenuBuilder m = (MenuBuilder) menu;
+            m.setOptionalIconsVisible(true);
+        }
         return true;
     }
 

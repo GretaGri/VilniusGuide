@@ -847,6 +847,7 @@
         \n\nLiteratu Street, Cathedral Bell Tower, St. Annes Church, Gediminas av., Bernardine Church - Marius Grigutis;
         \n\nVingis Park, Bernardine Gardens and Grand Duke Gediminas Monument - Rūta Klimienė;
         \n\nAll other pictures - Greta Grigutė.
+        \n\n<b>Objects description source:</b> http://www.vilnius-tourism.lt/
         \n\n<b>Icons:</b> https://material.io/icons/
         \n\n<b>Custom ripple effect solution:</b>
         \nhttps://stackoverflow.com/questions/30931889/adding-ripple-effect-to-recyclerview-item/30933094#30933094
@@ -869,4 +870,6 @@
     <string name="feedback">Feedback about \"Vilnius guide\" application</string>
     <string name="favorites">Favorites</string>
     <string name="selected_as_favorite">Selected as favorite</string>
+    <string name="removed_from_favorites">Removed from favorites</string>
+    <string name="email_text">Let\'s visit this place</string>
 </resources>

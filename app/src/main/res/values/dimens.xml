@@ -21,4 +21,7 @@
     <dimen name="relative_layout_height_main">260dp</dimen>
     <dimen name="circle_indicator_height">30dp</dimen>
     <dimen name="appbar_height_favorites">60dp</dimen>
+    <dimen name="zero_dp">0dp</dimen>
+    <dimen name="frame_layout_height">260dp</dimen>
+    <dimen name="margin_bottom_slide">30dp</dimen>
 </resources>

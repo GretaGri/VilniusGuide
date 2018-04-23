@@ -31,53 +31,50 @@ public class CategoryAdapter extends FragmentPagerAdapter {
         switch (position) {
             case 0:
                 mBundle = new Bundle();
-                mBundle.putInt("position", 0);
+                mBundle.putInt(Utils.POSITION, 0);
                 mFragment = new ObjectFragment();
                 mFragment.setArguments(mBundle);
                 return mFragment;
             case 1:
                 mBundle = new Bundle();
-                mBundle.putInt("position", 1);
+                mBundle.putInt(Utils.POSITION, 1);
                 mFragment = new ObjectFragment();
                 mFragment.setArguments(mBundle);
                 return mFragment;
             case 2:
                 mBundle = new Bundle();
-                mBundle.putInt("position", 2);
+                mBundle.putInt(Utils.POSITION, 2);
                 mFragment = new ObjectFragment();
                 mFragment.setArguments(mBundle);
                 return mFragment;
             case 3:
                 mBundle = new Bundle();
-                mBundle.putInt("position", 3);
+                mBundle.putInt(Utils.POSITION, 3);
                 mFragment = new ObjectFragment();
                 mFragment.setArguments(mBundle);
                 return mFragment;
             case 4:
                 mBundle = new Bundle();
-                mBundle.putInt("position", 4);
+                mBundle.putInt(Utils.POSITION, 4);
                 mFragment = new ObjectFragment();
                 mFragment.setArguments(mBundle);
                 return mFragment;
             case 5:
                 mBundle = new Bundle();
-                mBundle.putInt("position", 5);
+                mBundle.putInt(Utils.POSITION, 5);
                 mFragment = new ObjectFragment();
                 mFragment.setArguments(mBundle);
                 return mFragment;
-
-// Supply a default return statement
+            // Supply a default return statement
             default:
                 return null;
         }
-
     }
 
     @Override
     public int getCount() {
         return 6;
     }
-
 
     @Override
     public CharSequence getPageTitle(int position) {

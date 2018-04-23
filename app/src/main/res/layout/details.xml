@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -13,45 +12,44 @@
         android:layout_width="match_parent"
         android:layout_height="380dp"
         android:theme="@style/ThemeOverlay.AppCompat.Light"
-        app:layout_scrollFlags="scroll|snap"
-        >
-
-        <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:background="?attr/colorPrimary"
         app:layout_scrollFlags="scroll|snap">
 
-        <TextView
-            android:id="@+id/custom_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/boycott"
-            android:text="@string/description"
-            android:textSize="@dimen/text_size_button"
-            android:textColor="@color/textColor"
-            android:padding="@dimen/padding_min"/>
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|snap">
 
-    </android.support.v7.widget.Toolbar>
+            <TextView
+                android:id="@+id/custom_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/boycott"
+                android:padding="@dimen/padding_min"
+                android:text="@string/description"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/text_size_button" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="260dp"
-        android:contentDescription="@string/img_desc_object_picture"
-        android:scaleType="centerCrop"
-        tools:src="@drawable/sculpture_angel"
-        android:fitsSystemWindows="true"
-        app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
-        app:layout_collapseMode="pin"/>
+        </android.support.v7.widget.Toolbar>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="260dp"
+            android:contentDescription="@string/img_desc_object_picture"
+            android:fitsSystemWindows="true"
+            android:scaleType="centerCrop"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            tools:src="@drawable/sculpture_angel" />
 
         <LinearLayout
             android:id="@+id/linearLayout1"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:fitsSystemWindows="true"
             android:background="@color/colorPrimary"
+            android:fitsSystemWindows="true"
             android:orientation="horizontal">
 
             <TextView
@@ -62,33 +60,33 @@
                 android:background="@color/colorPrimary"
                 android:fontFamily="@font/boycott"
                 android:gravity="center_vertical"
-                tools:text="Heading is very long heading"
-                android:textColor="@color/textColor"
-                android:textSize="18sp"
+                android:paddingEnd="@dimen/padding_medium"
+                android:paddingLeft="@dimen/padding_medium"
                 android:paddingRight="@dimen/padding_medium"
                 android:paddingStart="@dimen/padding_medium"
-                android:paddingLeft="@dimen/padding_medium"
-                android:paddingEnd="@dimen/padding_medium"/>
+                android:textColor="@color/textColor"
+                android:textSize="18sp"
+                tools:text="Heading is very long heading" />
 
             <ImageButton
                 android:id="@+id/buttonGoToPlace"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
-                android:src="@drawable/ic_room_black_24dp"
-                android:layout_gravity="center"
-                android:padding="@dimen/padding_medium"/>
+                android:padding="@dimen/padding_medium"
+                android:src="@drawable/ic_room_black_24dp" />
 
             <ImageButton
                 android:id="@+id/buttonFavorite"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_gravity="center"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
-                android:src="@drawable/ic_favorite_border_black_24dp"
-                android:layout_gravity="center"
-                android:padding="@dimen/padding_medium"/>
+                android:padding="@dimen/padding_medium"
+                android:src="@drawable/ic_favorite_border_black_24dp" />
         </LinearLayout>
 
     </android.support.design.widget.AppBarLayout>
@@ -98,8 +96,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fillViewport="true"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        >
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -118,32 +115,31 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical">
 
-                <TextView
-                    android:id="@+id/officialLink"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/advent_pro_extralight"
-                    android:padding="@dimen/padding_min"
-                    android:textSize="@dimen/text_size_description"
-                    android:text="@string/arch_official_link_1"
-                    android:gravity="center_vertical"
-                    android:textStyle="italic"
-                    android:drawableLeft="@drawable/ic_link_black_18dp"
-                    android:drawableStart="@drawable/ic_link_black_18dp"
-                    android:drawablePadding="@dimen/padding_min"
-                    android:linksClickable="true"
-                    android:visibility="gone"
-                    />
+                    <TextView
+                        android:id="@+id/officialLink"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/ic_link_black_18dp"
+                        android:drawablePadding="@dimen/padding_min"
+                        android:drawableStart="@drawable/ic_link_black_18dp"
+                        android:fontFamily="@font/advent_pro_extralight"
+                        android:gravity="center_vertical"
+                        android:linksClickable="true"
+                        android:padding="@dimen/padding_min"
+                        android:text="@string/arch_official_link_1"
+                        android:textSize="@dimen/text_size_description"
+                        android:textStyle="italic"
+                        android:visibility="gone" />
 
-                <TextView
-                    android:id="@+id/details"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/advent_pro_extralight"
-                    android:padding="@dimen/padding_medium"
-                    android:textSize="@dimen/text_size_description"
-                    android:autoLink="email"
-                    tools:text="@string/arch_description_1" />
+                    <TextView
+                        android:id="@+id/details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:autoLink="email"
+                        android:fontFamily="@font/advent_pro_extralight"
+                        android:padding="@dimen/padding_medium"
+                        android:textSize="@dimen/text_size_description"
+                        tools:text="@string/arch_description_1" />
                 </LinearLayout>
             </android.support.v7.widget.CardView>
 
@@ -156,8 +152,8 @@
                 <View
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:background="@color/colorPrimaryDark"
-                    android:layout_weight="3"/>
+                    android:layout_weight="3"
+                    android:background="@color/colorPrimaryDark" />
 
                 <Button
                     android:id="@+id/buttonMore"
@@ -172,6 +168,7 @@
 
                 <Button
                     android:id="@+id/buttonShare"
+                    style="?android:attr/borderlessButtonStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
@@ -183,9 +180,8 @@
                     android:paddingLeft="@dimen/padding_medium"
                     android:paddingRight="@dimen/padding_medium"
                     android:text="@string/button_share"
-                    android:textSize="@dimen/text_size_button"
-                    style="?android:attr/borderlessButtonStyle" />
+                    android:textSize="@dimen/text_size_button" />
             </LinearLayout>
         </LinearLayout>
     </android.support.v4.widget.NestedScrollView>
-  </android.support.design.widget.CoordinatorLayout>
+</android.support.design.widget.CoordinatorLayout>
