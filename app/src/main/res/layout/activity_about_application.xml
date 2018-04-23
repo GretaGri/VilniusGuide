@@ -39,7 +39,8 @@
             android:scaleType="centerCrop"
             android:src="@drawable/author"
             app:layout_collapseMode="pin"
-            app:layout_scrollFlags="scroll|enterAlwaysCollapsed" />
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed"
+            android:contentDescription="@string/img_desc_author_image" />
     </android.support.design.widget.AppBarLayout>
 
 

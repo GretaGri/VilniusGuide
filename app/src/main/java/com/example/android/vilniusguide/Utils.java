@@ -287,9 +287,9 @@ public class Utils {
                 context.getString(R.string.walks_place_3),
                 R.drawable.walks_3_literatu_street_bw,
                 context.getString(R.string.walks_official_link_3),
-                context.getString(R.string.walks_description_1),
-                context.getString(R.string.walks_resources_1),
-                context.getString(R.string.walks_google_link_1),
+                context.getString(R.string.walks_description_3),
+                context.getString(R.string.walks_resources_3),
+                context.getString(R.string.walks_google_link_3),
                 R.drawable.walks_3_literatu_street_des_bw,
                 FAVORITE_STATE_FALSE));
         objects.add(new Object(WALKS,

@@ -76,7 +76,8 @@
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
                 android:padding="@dimen/padding_medium"
-                android:src="@drawable/ic_room_black_24dp" />
+                android:src="@drawable/ic_room_black_24dp"
+                android:contentDescription="@string/img_desc_place_mark" />
 
             <ImageButton
                 android:id="@+id/buttonFavorite"
@@ -86,7 +87,8 @@
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
                 android:padding="@dimen/padding_medium"
-                android:src="@drawable/ic_favorite_border_black_24dp" />
+                android:src="@drawable/ic_favorite_border_black_24dp"
+                android:contentDescription="@string/img_desc_favourites" />
         </LinearLayout>
 
     </android.support.design.widget.AppBarLayout>
