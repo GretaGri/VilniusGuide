@@ -85,7 +85,7 @@ public class FavoritesActivity extends AppCompatActivity {
 
                 @Override
                 public void onLongClick(View view, int position) {
-                    Toast.makeText(FavoritesActivity.this, "Removed from favorites", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(FavoritesActivity.this, R.string.removed_from_favorites, Toast.LENGTH_SHORT).show();
                     SharedPreferences.Editor editor = FavoritesActivity.this.getSharedPreferences(Utils.MY_PREFS_NAME, FavoritesActivity.MODE_PRIVATE).edit();
                     editor.putBoolean(objectList.get(position).getName(), false);
                     editor.apply();

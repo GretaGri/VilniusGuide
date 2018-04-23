@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/frame_layout_height"
+    android:layout_height="@dimen/top3_layout_height"
     tools:context="com.example.android.vilniusguide.MainActivity">
 
-    <RelativeLayout
+    <ImageView
+        android:id="@+id/imageDescription"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/frame_layout_height">
+        android:layout_height="match_parent"
+        android:contentDescription="@string/top_3_places"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/arch_1_cathedral_des_bw" />
 
-        <ImageView
-            android:id="@+id/imageDescription"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:contentDescription="@string/top_3_places"
-            android:scaleType="centerCrop"
-            tools:src="@drawable/arch_1_cathedral_des_bw" />
-
-        <TextView
-            android:id="@+id/place_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="@dimen/margin_bottom_slide"
-            android:background="@color/colorAccentSeeTrough"
-            android:fontFamily="@font/boycott"
-            android:gravity="center_horizontal"
-            android:textSize="@dimen/text_size_button"
-            tools:text="@string/arch_object_name_1" />
-    </RelativeLayout>
-</FrameLayout>
+    <TextView
+        android:id="@+id/place_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_bottom_slide"
+        android:background="@color/colorAccentSeeTrough"
+        android:fontFamily="@font/boycott"
+        android:gravity="center_horizontal"
+        android:textSize="@dimen/text_size_button"
+        tools:text="@string/arch_object_name_1" />
+</RelativeLayout>
