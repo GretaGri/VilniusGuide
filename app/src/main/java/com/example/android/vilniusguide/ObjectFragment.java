@@ -34,6 +34,7 @@ public class ObjectFragment extends Fragment {
     private List<Object> mEatObjectList = new ArrayList<>();
     private List<Object> mShoppingObjectList = new ArrayList<>();
     private int mPosition;
+    private boolean favorite;
 
     public ObjectFragment() {
         // Required empty public constructor
@@ -63,6 +64,11 @@ public class ObjectFragment extends Fragment {
             else if (objectList.get(position).getCategory()==Utils.SHOPPING){
                 mShoppingObjectList.add(objectList.get(position));
             }
+        }
+        for (int position = 0; position < objectList.size(); position++) {
+            SharedPreferences prefs = getContext().getSharedPreferences(Utils.MY_PREFS_NAME, MainActivity.MODE_PRIVATE);
+            favorite = prefs.getBoolean(objectList.get(position).getName(), false);
+            objectList.get(position).setFavorite(favorite);
         }
     }
 
