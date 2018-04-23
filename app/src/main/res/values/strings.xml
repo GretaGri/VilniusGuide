@@ -719,9 +719,9 @@
     <string name="shop_place_1">Ozo str. 18</string>
     <string name="shop_official_link_1">\+370 5 210 0151</string>
     <string name="shop_description_1">infocentras@ozas.lt\n\nSHOPS\n\n
-        I-VI 10:00 - 22:00\n\nVII 10:00 - 21:00\n\nRESTORANTS\nI-VII 10:00 - 22:00\n\nMAXIMA XXX\n\n
+        I-VI 10:00 - 22:00\n\nVII 10:00 - 21:00\n\nRESTORANTS\n\nI-VII 10:00 - 22:00\n\nMAXIMA XXX\n\n
         I-VII 8:00 - 22:00\n\nMULTIKINO cinema\n\nI-VII 10:00 - 22:00\n\nX PLANET\n\nI-V 12:00 - 22:00
-        \nVI 10:00 - 22:00\n\nVII 10:00 - 21:00\n\nPARKING\nI-VII 8:00 - 23:30\n\nTo leave parking is
+        \n\nVI 10:00 - 22:00\n\nVII 10:00 - 21:00\n\nPARKING\n\nI-VII 8:00 - 23:30\n\nTo leave parking is
         possible till 1:30.
     </string>
     <string name="shop_resources_1">http://www.ozas.lt/en/</string>
@@ -867,4 +867,6 @@
         \n\nPlease, push heart item to select your favorite</string>
     <string name="email">greta.klimaite@gmail.com</string>
     <string name="feedback">Feedback about \"Vilnius guide\" application</string>
+    <string name="favorites">Favorites</string>
+    <string name="selected_as_favorite">Selected as favorite</string>
 </resources>

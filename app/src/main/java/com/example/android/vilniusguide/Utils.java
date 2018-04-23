@@ -11,8 +11,6 @@ import java.util.ArrayList;
 public class Utils {
     // For saving instance state, shared pref./keys
     public static final String STATE_CURRENT_PAGE = "currentPage";
-    public static final String FAVORITES = "favorites";
-    public static final String FAVORITES_SELECTED = "selected";
     public static final String MY_PREFS_NAME = "MyPrefsFile";
 
     //For saving favorite state

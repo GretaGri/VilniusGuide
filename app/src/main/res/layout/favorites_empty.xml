@@ -1,20 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/main.appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_height_favorites"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_height_favorites"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true"
+        app:layout_scrollFlags="scroll|snap">
+
+        <TextView
+            android:id="@+id/custom_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/boycott"
+            android:padding="@dimen/padding_min"
+            android:text="@string/favorites"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/text_size_button" />
+
+    </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
 
     <TextView
+        android:id="@+id/no_favorites"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorPrimaryDark"
+        android:fontFamily="@font/advent_pro_extralight"
+        android:gravity="center_horizontal"
+        android:padding="@dimen/padding_medium"
+        android:text="@string/no_favorites"
         android:textColor="@color/textColor"
         android:textSize="@dimen/text_size_button"
-        android:textStyle="italic"
-        android:fontFamily="@font/advent_pro_extralight"
-        android:gravity="center"
-        android:text="@string/no_favorites"/>
+        android:textStyle="italic" />
 
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"></android.support.v7.widget.RecyclerView>
 
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

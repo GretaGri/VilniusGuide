@@ -1,6 +1,7 @@
 package com.example.android.vilniusguide;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.provider.ContactsContract;
@@ -10,17 +11,19 @@ import android.support.v7.widget.Toolbar;
 import android.text.Html;
 import android.text.method.LinkMovementMethod;
 import android.text.util.Linkify;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class DetailsActivity extends AppCompatActivity {
-    private int position;
     private int category;
     private int picture;
     private String name;
@@ -50,6 +53,7 @@ public class DetailsActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayShowTitleEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+
         itemPicture = findViewById(R.id.imageView);
         heading = findViewById(R.id.heading);
         goTo = findViewById(R.id.buttonGoToPlace);
@@ -61,7 +65,6 @@ public class DetailsActivity extends AppCompatActivity {
 
         // Get necessary values from category fragment
         Intent intent = getIntent();
-        position = intent.getIntExtra("position",0);
         category = intent.getIntExtra("category",0);
         picture = intent.getIntExtra("picture", 0);
         name = intent.getStringExtra("name");
@@ -125,14 +128,44 @@ if (favoriteSelected) {favorite.setImageDrawable(getResources().getDrawable(R.dr
             @Override
             public void onClick(View v) {
                 if(!favoriteSelected) {
+                    Toast.makeText(DetailsActivity.this, R.string.selected_as_favorite, Toast.LENGTH_SHORT).show();
                     favorite.setImageDrawable(getResources().getDrawable(R.drawable.ic_favorite_black_24dp));
                 favoriteSelected = true;
+                    SharedPreferences.Editor editor = DetailsActivity.this.getSharedPreferences(Utils.MY_PREFS_NAME,DetailsActivity.MODE_PRIVATE).edit();
+                    editor.putBoolean(name, true);
+                    editor.apply();
                 }
                 else {
+                    Toast.makeText(DetailsActivity.this, "Removed from favorites", Toast.LENGTH_SHORT).show();
                     favorite.setImageDrawable(getResources().getDrawable(R.drawable.ic_favorite_border_black_24dp));
                 favoriteSelected = false;
+                    SharedPreferences.Editor editor = DetailsActivity.this.getSharedPreferences(Utils.MY_PREFS_NAME,DetailsActivity.MODE_PRIVATE).edit();
+                    editor.putBoolean(name, false);
+                    editor.apply();
                 }
             }
         });
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.about_application:
+                Intent intentAboutApp = new Intent(this, AboutApplicationActivity.class);
+                this.startActivity(intentAboutApp);
+                return true;
+            case R.id.favorites:
+                Intent intentFavorites = new Intent(this, FavoritesActivity.class);
+                this.startActivity(intentFavorites);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

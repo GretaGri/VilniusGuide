@@ -2,9 +2,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-            <item
-            android:id="@+id/about_application"
-            android:title="@string/about_application"
-            app:showAsAction="never" />
+    <item
+        android:id="@+id/favorites"
+        android:icon="@drawable/ic_favorite_border_black_24dp"
+        android:title="@string/favorites"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/about_application"
+        android:icon="@mipmap/ic_info_outline_black_24dp"
+        android:title="@string/about_application"
+        app:showAsAction="never" />
 
 </menu>

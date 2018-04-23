@@ -33,7 +33,6 @@ public class ObjectFragment extends Fragment {
     private List<Object> mCinemaObjectList = new ArrayList<>();
     private List<Object> mEatObjectList = new ArrayList<>();
     private List<Object> mShoppingObjectList = new ArrayList<>();
-    private List<Object> mFavoritesList = new ArrayList<>();
     private int mPosition;
 
     public ObjectFragment() {
@@ -65,14 +64,6 @@ public class ObjectFragment extends Fragment {
                 mShoppingObjectList.add(objectList.get(position));
             }
         }
-        for (int position = 0; position < objectList.size();position++) {
-            if (objectList.get(position).getFavorite() == Utils.FAVORITE_STATE_TRUE) {
-                mFavoritesList.add(objectList.get(position));
-            }
-            if (objectList.get(position).getFavorite() == Utils.FAVORITE_STATE_FALSE) {
-                mFavoritesList.remove(objectList.get(position));
-            }
-        }
     }
 
     @Override
@@ -96,9 +87,8 @@ public class ObjectFragment extends Fragment {
             objectList = mEatObjectList;
         } else if (mPosition == 5) {
             objectList = mShoppingObjectList;
-        } else if (mPosition == 6) {
-            objectList = mFavoritesList;
         }
+
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
         mAdapter = new ObjectAdapter(objectList);
         mRecyclerView.setAdapter(mAdapter);
@@ -106,7 +96,6 @@ public class ObjectFragment extends Fragment {
             @Override
             public void onClick(View view, int position) {
                 Intent intent = new Intent(getActivity(),DetailsActivity.class);
-                intent.putExtra("position",position);
                 intent.putExtra("category",objectList.get(position).getCategory());
                 intent.putExtra("picture",objectList.get(position).getPictureDescription());
                 intent.putExtra("name", objectList.get(position).getName());
@@ -120,38 +109,26 @@ public class ObjectFragment extends Fragment {
 
             @Override
             public void onLongClick(View view, int position) {
-                Toast.makeText(getContext(), "Long click", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getContext(), R.string.selected_as_favorite, Toast.LENGTH_SHORT).show();
                 if (objectList.get(position).getFavorite() == Utils.FAVORITE_STATE_FALSE) {
                     objectList.get(position).setFavorite(Utils.FAVORITE_STATE_TRUE);
                     mAdapter.notifyDataSetChanged();
+                    //Put the state of the object selected as favorite in shared pref.
+                    SharedPreferences.Editor editor = getActivity().getSharedPreferences(Utils.MY_PREFS_NAME,MainActivity.MODE_PRIVATE).edit();
+                    editor.putBoolean(objectList.get(position).getName(), true);
+                    editor.apply();
                 } else {
+                    Toast.makeText(getContext(), "Removed from favorites", Toast.LENGTH_SHORT).show();
                 objectList.get(position).setFavorite(Utils.FAVORITE_STATE_FALSE);
-                    for (int i = 0; i < objectList.size();i++) {
-                        if (objectList.get(i).getFavorite() == Utils.FAVORITE_STATE_FALSE) {
-                            mFavoritesList.remove(objectList.get(position));
-                            mAdapter.notifyDataSetChanged();
-                        }
-                    }
-            } }
+                    mAdapter.notifyDataSetChanged();
+                    //Put the state of the object removed as favorite in shared pref.
+                    SharedPreferences.Editor editor = getActivity().getSharedPreferences(Utils.MY_PREFS_NAME,MainActivity.MODE_PRIVATE).edit();
+                    editor.putBoolean(objectList.get(position).getName(), false);
+                    editor.apply();
+            }
+            }
         }));
-        if (mFavoritesList.size() > 0) {
-            SharedPreferences.Editor editor = getActivity().getSharedPreferences(Utils.MY_PREFS_NAME, getContext().MODE_PRIVATE).edit();
-            editor.putInt("favorites", 1);
-            editor.commit();
-        }
-        else {
-            SharedPreferences.Editor editor = getActivity().getSharedPreferences(Utils.MY_PREFS_NAME, getContext().MODE_PRIVATE).edit();
-        editor.putInt("favorites", 0);
-        editor.commit();}
 
         return rootView ;
     }
-
-    @Override
-    public void onSaveInstanceState(Bundle savedInstanceState) {
-        // Save the current objectList
-
-        super.onSaveInstanceState(savedInstanceState);
     }
-
-}
